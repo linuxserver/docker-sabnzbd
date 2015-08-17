@@ -8,5 +8,5 @@ ffmpeg \
 sabnzbdplus \
 sabnzbdplus-theme-mobile \
 unrar \
-wget-qqy
+wget -qqy
 
