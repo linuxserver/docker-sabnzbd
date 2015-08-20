@@ -15,11 +15,9 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # install main packages
 RUN add-apt-repository ppa:jcfp/ppa && \
-add-apt-repository ppa:kirillshkrogalev/ffmpeg-next && \
 apt-get update -q && \
 apt-get install \
 curl \
-ffmpeg \ 
 sabnzbdplus \ 
 sabnzbdplus-theme-mobile \ 
 unrar \
