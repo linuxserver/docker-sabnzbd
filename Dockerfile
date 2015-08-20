@@ -1,9 +1,8 @@
 FROM linuxserver/baseimage
 MAINTAINER Mark Burford <sparklyballs@gmail.com>
 
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-
 # Set the locale
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN locale-gen en_US.UTF-8
 
 # install our compiled version of par2 multicore
