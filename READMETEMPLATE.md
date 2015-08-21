@@ -4,7 +4,8 @@ The [LinuxServer.io](http://linuxserver.io) team brings you another quality cont
 
 # linuxserver/sabnzbd
 
-SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. http://sabnzbd.org/
+SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. 
+This container includes par2 multicore.  http://sabnzbd.org/
 
 ## Usage
 
@@ -34,6 +35,7 @@ Part of what makes our containers work so well is by allowing you to specify you
 ## Setting up the application 
 Initial setup is done from the htpp port.
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
+See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
 
 
 ## Updates
@@ -42,6 +44,8 @@ Https access for sabnzbd needs to be enabled in either the intial setup wizard o
 * To monitor the logs of the container in realtime `docker logs -f sabnzbd`.
 
 
+## Credits
+https://github.com/jcfp/debpkg-par2tbb for the par2 multicore used in this container.
 
 ## Versions
 
