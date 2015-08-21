@@ -9,7 +9,7 @@ SABnzbd makes Usenet as simple and streamlined as possible by automating everyth
 ## Usage
 
 ```
-docker create --name=sabnzbd -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -v <path to downloads>:/downloads -v <path to incomplete downloads>:/incomplete-downloads -e PGID=<gid> -e PUID=<uid>  -p 8080:8080 -p 9090:9090 linuxserver/<container-name>
+docker create --name=sabnzbd -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -v <path to downloads>:/downloads -v <path to incomplete downloads>:/incomplete-downloads -e PGID=<gid> -e PUID=<uid>  -p 8080:8080 -p 9090:9090 linuxserver/sabnzbd
 ```
 
 **Parameters**
