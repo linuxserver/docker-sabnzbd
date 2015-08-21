@@ -32,8 +32,8 @@ It is based on phusion-baseimage with ssh removed, for shell access whilst the c
 Part of what makes our containers work so well is by allowing you to specify your own `PUID` and `PGID`. This avoids nasty permissions errors with relation to data volumes (`-v` flags). When an application is installed on the host OS it is normally added to the common group called users, Docker apps due to the nature of the technology can't be added to this group. So we added this feature to let you easily choose when running your containers.
 
 ## Setting up the application 
-
-<Insert a basic user guide here to get a n00b up and running with the software inside the container.> DELETE ME
+Initial setup is done from the htpp port.
+Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
 
 
 ## Updates
