@@ -2,7 +2,7 @@ FROM linuxserver/baseimage
 MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
 
 ENV APTLIST="sabnzbdplus \
-sabnzbdplus-theme-mobile
+sabnzbdplus-theme-mobile \
 unrar \
 wget"
 
