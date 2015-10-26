@@ -1,8 +1,10 @@
-FROM linuxserver/baseimage.python
-MAINTAINER Mark Burford <sparklyballs@gmail.com>
+FROM linuxserver/baseimage
+MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
 
 ENV APTLIST="sabnzbdplus \
-sabnzbdplus-theme-mobile"
+sabnzbdplus-theme-mobile
+unrar \
+wget"
 
 # Set the locale
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
