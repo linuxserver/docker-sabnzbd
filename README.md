@@ -46,7 +46,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application 
-Initial setup is done from the htpp port.
+Initial setup is done from the http port.
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
 See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
 
