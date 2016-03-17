@@ -62,6 +62,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 https://github.com/jcfp/debpkg-par2tbb for the par2 multicore used in this container.
 
 ## Versions
++ **17.03.2016:** Bump to install 1.0 final at startup
 + **14.03.2016:** Refresh image to pick up latest RC
 + **23.01.2015:** Refresh image.
 + **14.12.2015:** Refresh image to pick up latest beta
