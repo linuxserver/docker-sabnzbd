@@ -1,4 +1,4 @@
-FROM sparklyballs/base-python-alpine
+FROM lsiobase/alpine.python
 MAINTAINER sparklyballs
 
 # add local files
