@@ -1,6 +1,6 @@
 ![https://linuxserver.io](https://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
 
-The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring auto-update on startup, easy user mapping and community support. Find us for support at:
+The [LinuxServer.io](https://linuxserver.io) team brings you another container release easy user mapping and community support. Find us for support at:
 * [forum.linuxserver.io](https://forum.linuxserver.io)
 * [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
@@ -51,19 +51,16 @@ Https access for sabnzbd needs to be enabled in either the intial setup wizard o
 See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
 
 
-## Updates
+## Info
 
 * Shell access whilst the container is running: `docker exec -it sabnzbd /bin/bash`
-* Upgrade to the latest version: `docker restart sabnzbd`
 * To monitor the logs of the container in realtime: `docker logs -f sabnzbd`
 
 
-## Credits
-https://github.com/jcfp/debpkg-par2tbb for the par2 multicore used in this container.
-
 ## Versions
-+ **17.03.2016:** Bump to install 1.0 final at startup
-+ **14.03.2016:** Refresh image to pick up latest RC
-+ **23.01.2015:** Refresh image.
-+ **14.12.2015:** Refresh image to pick up latest beta
-+ **21.08.2015:** Intial Release. 
++ **30.06.16:** Rebase to alpine, using git version of sab.
++ **17.03.16:** Bump to install 1.0 final at startup
++ **14.03.16:** Refresh image to pick up latest RC
++ **23.01.15:** Refresh image.
++ **14.12.15:** Refresh image to pick up latest beta
++ **21.08.15:** Intial Release. 
