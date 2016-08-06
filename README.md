@@ -18,9 +18,10 @@ docker create --name=sabnzbd \
 -v <path to data>:/config \
 -v <path to downloads>:/downloads \
 -v <path to incomplete downloads>:/incomplete-downloads \
--v /etc/localtime:/etc/localtime:ro \
 -e PGID=<gid> -e PUID=<uid> \
--p 8080:8080 -p 9090:9090 linuxserver/sabnzbd
+-e TZ=<timezone> \
+-p 8080:8080 -p 9090:9090 \
+linuxserver/sabnzbd
 ```
 
 **Parameters**
@@ -30,9 +31,9 @@ docker create --name=sabnzbd \
 * `-v /config` - local path for sabnzbd config files
 * `-v /downloads` local path for finished downloads
 * `-v /incomplete-downloads` local path for incomplete-downloads - *optional*
-* `-v /etc/localhost` for timesync - *optional*
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
+* `-e TZ` for setting timezone information, eg Europe/London
 
 ### User / Group Identifiers
 
@@ -58,7 +59,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 
 ## Versions
-+ **30.06.16:** Rebase to alpine, using git version of sab.
++ **07.08.16:** Rebase to alpine, using git version of sab.
 + **17.03.16:** Bump to install 1.0 final at startup
 + **14.03.16:** Refresh image to pick up latest RC
 + **23.01.15:** Refresh image.
