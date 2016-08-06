@@ -30,7 +30,7 @@ docker create --name=sabnzbd \
 * `-v /config` - local path for sabnzbd config files
 * `-v /downloads` local path for finished downloads
 * `-v /incomplete-downloads` local path for incomplete-downloads - *optional*
-* `-v /etc/localhost` for timesync - *optional*
+* `-v /etc/localtime` for timesync - *optional*
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
