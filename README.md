@@ -6,10 +6,16 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/sabnzbd
-![](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sabnzbd.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sabnzbd.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sabnzbd)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sabnzbd/)
+[hub]: https://hub.docker.com/r/linuxserver/sabnzbd/
 
 SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. 
-This container includes par2 multicore.  http://sabnzbd.org/
+This container includes par2 multicore.
+
+[![sabnzbd](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png)][saburl]
+[saburl] : http://sabnzbd.org/
 
 ## Usage
 
@@ -59,7 +65,8 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 
 ## Versions
-+ **07.08.16:** Rebase to alpine, using git version of sab.
+
++ **28.08.16:** Rebase to alpine, using git version of sab.
 + **17.03.16:** Bump to install 1.0 final at startup
 + **14.03.16:** Refresh image to pick up latest RC
 + **23.01.15:** Refresh image.
