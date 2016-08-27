@@ -15,7 +15,7 @@ SABnzbd makes Usenet as simple and streamlined as possible by automating everyth
 This container includes par2 multicore.
 
 [![sabnzbd](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png)][saburl]
-[saburl] : http://sabnzbd.org/
+[saburl]: http://sabnzbd.org/
 
 ## Usage
 
