@@ -1,15 +1,18 @@
 FROM lsiobase/alpine.python
 MAINTAINER sparklyballs
 
+# build arguements
+ARG SAB_MAIN="1.1.0"
+ARG SAB_VER="RC4"
+ARG SAB_BUILD="${SAB_MAIN}${SAB_VER}"
+
 # install sabnzbd
 RUN \
  mkdir -p \
 	/app/sabnzbd && \
- LATEST_RELEASE=$(curl -sX GET "https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest" | \
-	awk '/tag_name/{print $4;exit}' FS='[""]') && \
  curl -o \
  /tmp/sabnzbd.tar.gz -L \
-	https://github.com/sabnzbd/sabnzbd/releases/download/"${LATEST_RELEASE}"/SABnzbd-"${LATEST_RELEASE}"-src.tar.gz && \
+	"https://github.com/sabnzbd/sabnzbd/releases/download/${SAB_BUILD}/SABnzbd-${SAB_BUILD}-src.tar.gz" && \
  tar xf \
  /tmp/sabnzbd.tar.gz -C \
 	/app/sabnzbd --strip-components=1 && \
