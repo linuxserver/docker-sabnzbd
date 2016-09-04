@@ -64,6 +64,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 ## Versions
 
++ **28.08.16:** Rebase to xenial.
 + **28.08.16:** Rebase to alpine, using git version of sab.
 + **17.03.16:** Bump to install 1.0 final at startup
 + **14.03.16:** Refresh image to pick up latest RC

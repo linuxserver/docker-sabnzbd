@@ -1,27 +1,31 @@
-FROM lsiobase/alpine.python
+FROM lsiobase/xenial
 MAINTAINER sparklyballs
 
-# install sabnzbd
+# environment settings
+ENV HOME="/config"
+ARG DEBIAN_FRONTEND="noninteractive"
+
+# install packages
 RUN \
- mkdir -p \
-	/app/sabnzbd && \
- LATEST_RELEASE=$(curl -sX GET "https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest" | \
-	awk '/tag_name/{print $4;exit}' FS='[""]') && \
- curl -o \
- /tmp/sabnzbd.tar.gz -L \
-	https://github.com/sabnzbd/sabnzbd/releases/download/"${LATEST_RELEASE}"/SABnzbd-"${LATEST_RELEASE}"-src.tar.gz && \
- tar xf \
- /tmp/sabnzbd.tar.gz -C \
-	/app/sabnzbd --strip-components=1 && \
+ echo "deb http://ppa.launchpad.net/jcfp/ppa/ubuntu xenial main" | tee -a /etc/apt/sources.list && \
+ apt-key adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 0x98703123E0F52B2BE16D586EF13930B14BB9F05F && \
+ apt-get update && \
+ apt-get install -y \
+	p7zip \
+	sabnzbdplus \
+	unrar \
+	unzip && \
 
-# cleanup
- rm -f \
-	/tmp/*
+# cleanup
+ apt-get clean && \
+ rm -rf \
+	/tmp/* \
+	/var/lib/apt/lists/* \
+	/var/tmp/*
 
-# add local files
+# add local files
 COPY root/ /
 
 # ports and volumes
-VOLUME /config /downloads /incomplete-downloads
 EXPOSE 8080 9090
-
+VOLUME /config /downloads /incomplete-downloads
