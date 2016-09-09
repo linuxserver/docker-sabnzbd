@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc python /app/sabnzbd/SABnzbd.py \
-	-f /config/sabnzbd.ini -b 0 -s 0.0.0.0:8080
+	s6-setuidgid abc /usr/bin/sabnzbdplus \
+	--config-file /config --server 0.0.0.0:8080
+
+

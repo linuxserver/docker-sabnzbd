@@ -1,13 +1,12 @@
 #!/usr/bin/with-contenv bash
 
-# make folders
+# make folders
 mkdir -p \
 	/downloads \
 	/incomplete-downloads
 
-# permissions
-chown -R abc:abc \
-	/app/sabnzbd
+# permissions
 chown abc:abc \
 	/downloads \
 	/incomplete-downloads
+
