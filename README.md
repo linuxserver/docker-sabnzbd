@@ -70,6 +70,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 ## Versions
 
++ **15.09.16:** Compile par2 multicore as per latest info sabnbzbd git [readme](https://github.com/sabnzbd/sabnzbd#resolving-dependencies)
 + **11.09.16:** Bump to release of 1.10
 + **09.09.16:** Rebase back to xenial,
 issues with alpine version of python and 1.10 branch of sab.
