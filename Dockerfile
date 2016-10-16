@@ -2,8 +2,8 @@ FROM lsiobase/xenial
 MAINTAINER sparklyballs
 
 # environment settings
-ENV HOME="/config"
 ARG DEBIAN_FRONTEND="noninteractive"
+ENV HOME="/config"
 
 # build packages as variable
 ARG BUILD_PACKAGES="\
