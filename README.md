@@ -32,7 +32,13 @@ docker create --name=sabnzbd \
 linuxserver/sabnzbd
 ```
 
-**Parameters**
+## Parameters
+
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
+So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
+http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
+
 
 * `-p 8080` - http port for the webui
 * `-p 9090` - https port for the webui *see note below*
@@ -70,6 +76,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 ## Versions
 
++ **15.09.16:** Compile par2 multicore as per latest info sabnzbd git [readme](https://github.com/sabnzbd/sabnzbd#resolving-dependencies)
 + **11.09.16:** Bump to release of 1.10
 + **09.09.16:** Rebase back to xenial,
 issues with alpine version of python and 1.10 branch of sab.
