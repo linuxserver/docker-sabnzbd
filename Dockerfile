@@ -3,7 +3,8 @@ MAINTAINER sparklyballs
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
-ENV HOME="/config"
+ENV HOME="/config" \
+PYTHONIOENCODING=utf-8
 
 # build packages as variable
 ARG BUILD_PACKAGES="\
