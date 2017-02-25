@@ -32,6 +32,11 @@ docker create --name=sabnzbd \
 linuxserver/sabnzbd
 ```
 
+You can choose ,using a tags, to use the unstable branch.
+Stable is the default and requires no tag
+(at times both branches may have the same version, but the stable/latest branch should never contain an alpha/beta/rc version)
+Add the tag, if required, to the linuxserver/sabnzbd line of the run/create command in the following format, linuxserver/sabnzbd:unstable
+
 ## Parameters
 
 `The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
@@ -76,7 +81,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 ## Versions
 
-+ **25.02.17:** Switch to nobetas repo for master/latest branch.
++ **25.02.17:** Switch to nobetas repo for master/latest branch and add unstable branch.
 + **08.02.17:** Add pythonioenconding=utf8 as env.
 + **15.09.16:** Compile par2 multicore as per latest info sabnzbd git [readme](https://github.com/sabnzbd/sabnzbd#resolving-dependencies)
 + **11.09.16:** Bump to release of 1.10
