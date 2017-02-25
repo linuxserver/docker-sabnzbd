@@ -37,7 +37,9 @@ Stable is the default and requires no tag
 
 (at times both branches may have the same version, but the stable/latest branch should never contain an alpha/beta/rc version)
 
-Add the tag, if required, to the linuxserver/sabnzbd line of the run/create command in the following format, linuxserver/sabnzbd:unstable
+Add the tag, if required, to the linuxserver/sabnzbd line of the run/create command in the following format:-
+
+`linuxserver/sabnzbd:unstable`
 
 ## Parameters
 
