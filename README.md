@@ -76,6 +76,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 ## Versions
 
++ **25.02.17:** Switch to nobetas repo for master/latest branch.
 + **08.02.17:** Add pythonioenconding=utf8 as env.
 + **15.09.16:** Compile par2 multicore as per latest info sabnzbd git [readme](https://github.com/sabnzbd/sabnzbd#resolving-dependencies)
 + **11.09.16:** Bump to release of 1.10
