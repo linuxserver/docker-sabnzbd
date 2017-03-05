@@ -13,7 +13,8 @@ ARG BUILD_PACKAGES="\
 	devscripts \
 	dh-autoreconf \
 	git \
-	libtbb-dev"
+	libtbb-dev \
+	python-dev"
 
 # install packages
 RUN \
@@ -22,8 +23,9 @@ RUN \
  apt-key adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 0x98703123E0F52B2BE16D586EF13930B14BB9F05F && \
  apt-get update && \
  apt-get install -y \
-	p7zip-full \
 	libtbb2 \
+	p7zip-full \
+	python-pip \
 	sabnzbdplus \
 	unrar \
 	unzip && \
@@ -31,6 +33,9 @@ RUN \
 # install build packages
  apt-get install -y \
 	$BUILD_PACKAGES && \
+
+# install sabyenc
+ pip install sabyenc && \
 
 # compile par2 multicore
  apt-get remove -y \
