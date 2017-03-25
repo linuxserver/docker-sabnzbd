@@ -26,7 +26,7 @@ RUN \
  apt-get remove -y \
 	par2 && \
  apt-get install -y \
-	par2-mt && \
+	par2-tbb && \
 
 # cleanup
  apt-get clean && \
