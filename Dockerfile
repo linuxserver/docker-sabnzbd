@@ -26,6 +26,11 @@ RUN \
 	libtbb2 \
 	sabnzbdplus \
 	unrar \
+	ffmpeg \
+	mkvtoolnix \
+	python-pip \
+	python-subliminal \
+	python-guessit \
 	unzip && \
 
 # install build packages
@@ -44,6 +49,10 @@ RUN \
  cd /tmp/par2/par2cmdline-tbb-* && \
  dpkg-buildpackage -b -us -uc && \
  dpkg -i $(readlink -f ../par2-tbb_*.deb) && \
+
+# necessary for mp4_automator
+ pip install qtfaststart && \
+ git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /mp4_automator && \
 
 # cleanup
  apt-get purge -y --auto-remove \
