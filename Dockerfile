@@ -15,18 +15,12 @@ RUN \
  apt-key adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 0x98703123E0F52B2BE16D586EF13930B14BB9F05F && \
  apt-get update && \
  apt-get install -y \
-	libtbb2 \
 	p7zip-full \
+	par2-tbb \
 	python-sabyenc \
 	sabnzbdplus \
 	unrar \
 	unzip && \
-
-# install par2 multithreaded
- apt-get remove -y \
-	par2 && \
- apt-get install -y \
-	par2-tbb && \
 
 # cleanup
  apt-get clean && \
