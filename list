@@ -1,7 +1,0 @@
-	libtbb2 \
-	p7zip-full \
-	par2-tbb \
-	python-sabyenc \
-	sabnzbdplus \
-	unrar \
-	unzip && \
