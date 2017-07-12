@@ -32,7 +32,7 @@ docker create --name=sabnzbd \
 linuxserver/sabnzbd
 ```
 
-## Tags
+## Tags
 
 You can choose ,using a tag, to use the unstable branch.
 Stable is the default and requires no tag
