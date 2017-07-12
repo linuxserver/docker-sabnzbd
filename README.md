@@ -13,7 +13,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/sabnzbd
-[![](https://images.microbadger.com/badges/image/linuxserver/sabnzbd.svg)](http://microbadger.com/images/linuxserver/sabnzbd "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sabnzbd.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sabnzbd.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-hub-built/linuxserver-sabnzbd)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-hub-built/job/linuxserver-sabnzbd/)
+[![](https://images.microbadger.com/badges/version/linuxserver/sabnzbd.svg)](https://microbadger.com/images/linuxserver/sabnzbd "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/sabnzbd.svg)](https://microbadger.com/images/linuxserver/sabnzbd "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sabnzbd.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sabnzbd.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-sabnzbd)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-sabnzbd/)
 
 SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
 
@@ -84,9 +84,17 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 * Shell access whilst the container is running: `docker exec -it sabnzbd /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f sabnzbd`
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' sabnzbd`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/sabnzbd`
 
 ## Versions
 
++ **12.07.17:** Add inspect commands to README, move to jenkins build and push.
 + **10.04.17:** Bump to 2.0 Release.
 + **25.02.17:** Switch to nobetas repo for master/latest branch and add unstable branch.
 + **08.02.17:** Add pythonioenconding=utf8 as env.
