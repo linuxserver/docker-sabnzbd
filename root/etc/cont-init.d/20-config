@@ -10,3 +10,4 @@ chown abc:abc \
 	/downloads \
 	/incomplete-downloads
 
+locale-gen "en_US.UTF-8"
