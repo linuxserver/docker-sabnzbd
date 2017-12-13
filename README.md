@@ -94,6 +94,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 
 ## Versions
 
++ **13.12.17:** Fix continuation lines.
 + **12.07.17:** Add inspect commands to README, move to jenkins build and push.
 + **10.04.17:** Bump to 2.0 Release.
 + **25.02.17:** Switch to nobetas repo for master/latest branch and add unstable branch.
