@@ -40,3 +40,5 @@ COPY root/ /
 # ports and volumes
 EXPOSE 8080 9090
 VOLUME /config /downloads /incomplete-downloads
+
+HEALTHCHECK --interval=200s --timeout=100s CMD curl --fail http://localhost:8080 || exit 1
