@@ -45,7 +45,7 @@ Add the tag, if required, to the linuxserver/sabnzbd line of the run/create comm
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
@@ -73,10 +73,10 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-## Setting up the application 
+## Setting up the application
 Initial setup is done from the http port.
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
-See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
+See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches
 
 
 ## Info
@@ -84,7 +84,7 @@ See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd
 * Shell access whilst the container is running: `docker exec -it sabnzbd /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f sabnzbd`
 
-* container version number 
+* container version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' sabnzbd`
 
@@ -108,4 +108,4 @@ issues with alpine version of python and 1.10 branch of sab.
 + **14.03.16:** Refresh image to pick up latest RC
 + **23.01.15:** Refresh image.
 + **14.12.15:** Refresh image to pick up latest beta
-+ **21.08.15:** Intial Release. 
++ **21.08.15:** Intial Release.
