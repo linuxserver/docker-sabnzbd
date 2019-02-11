@@ -1,4 +1,7 @@
-FROM lsiobase/ubuntu:xenial
+FROM lsiobase/ubuntu.arm64:xenial
+
+# Add qemu to build on x86_64 systems
+COPY qemu-aarch64-static /usr/bin
 
 # set version label
 ARG BUILD_DATE
@@ -24,7 +27,7 @@ RUN \
 	SABNZBD="sabnzbdplus"; \
  else \
         SABNZBD_CLEAN=$(echo "${SABNZBD_VERSION}"| sed 's/..$//') && \
-	SABNZBD="sabnzbdplus=${SABNZBD_CLEAN}"; \
+        SABNZBD="sabnzbdplus=${SABNZBD_CLEAN}"; \
  fi && \
  apt-get update && \
  apt-get install -y \
