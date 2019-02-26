@@ -27,7 +27,8 @@ RUN \
  if [ -z ${SABNZBD_VERSION+x} ]; then \
 	SABNZBD="sabnzbdplus"; \
  else \
-	SABNZBD="sabnzbdplus=${SABNZBD_VERSION}"; \
+	SABNZBD_CLEAN=$(echo "${SABNZBD_VERSION}"| sed 's/..$//') && \
+	SABNZBD="sabnzbdplus=${SABNZBD_CLEAN}"; \
  fi && \
  apt-get update && \
  apt-get install -y \
