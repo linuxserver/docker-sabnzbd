@@ -132,7 +132,7 @@ In this instance `PUID=1001` and `PGID=1001`, to find yours use `id user` as bel
 
 Initial setup is done from the http port.
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
-See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
+See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
 
 
 
@@ -166,6 +166,7 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **25.02.19:** - Rebase to Bionic, add python deps for scripts.
 * **26.01.19:** - Add pipeline logic and multi arch.
 * **13.12.17:** - Fix continuation lines.
 * **12.07.17:** - Add inspect commands to README, move to jenkins build and push.
