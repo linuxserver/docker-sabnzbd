@@ -39,10 +39,10 @@ RUN \
 	unzip && \
  pip install --no-cache-dir \
 	apprise \
-        chardet \
-        pynzb \
+	chardet \
+	pynzb \
 	requests \
-        sabyenc && \
+	sabyenc && \
  echo "**** cleanup ****" && \
  apt-get purge --auto-remove -y \
 	python-pip && \
