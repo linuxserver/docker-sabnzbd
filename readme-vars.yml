@@ -53,10 +53,12 @@ app_setup_block_enabled: true
 app_setup_block: |
   Initial setup is done from the http port.
   Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
-  See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
+  See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
+
 
 # changelog
 changelogs:
+  - { date: "25.02.19:", desc: "Rebase to Bionic, add python deps for scripts." }
   - { date: "26.01.19:", desc: "Add pipeline logic and multi arch." }
   - { date: "13.12.17:", desc: "Fix continuation lines." }
   - { date: "12.07.17:", desc: "Add inspect commands to README, move to jenkins build and push." }
