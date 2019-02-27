@@ -14,12 +14,6 @@ Find us at:
 * [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
 * [Podcast](https://anchor.fm/linuxserverio) - on hiatus. Coming back soon (late 2018).
 
-# PSA: Changes are happening
-
-From August 2018 onwards, Linuxserver are in the midst of switching to a new CI platform which will enable us to build and release multiple architectures under a single repo. To this end, existing images for `arm64` and `armhf` builds are being deprecated. They are replaced by a manifest file in each container which automatically pulls the correct image for your architecture. You'll also be able to pull based on a specific architecture tag.
-
-TLDR: Multi-arch support is changing from multiple repos to one repo per container image.
-
 # [linuxserver/sabnzbd](https://github.com/linuxserver/docker-sabnzbd)
 [![](https://img.shields.io/discord/354974912613449730.svg?logo=discord&label=LSIO%20Discord&style=flat-square)](https://discord.gg/YWrKVTn)
 [![](https://images.microbadger.com/badges/version/linuxserver/sabnzbd.svg)](https://microbadger.com/images/linuxserver/sabnzbd "Get your own version badge on microbadger.com")
@@ -35,7 +29,7 @@ TLDR: Multi-arch support is changing from multiple repos to one repo per contain
 
 ## Supported Architectures
 
-Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list). 
+Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/). 
 
 Simply pulling `linuxserver/sabnzbd` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
@@ -138,7 +132,7 @@ In this instance `PUID=1001` and `PGID=1001`, to find yours use `id user` as bel
 
 Initial setup is done from the http port.
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
-See here for info on some of the switch settings for sabnzbd http://wiki.sabnzbd.org/configure-switches
+See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
 
 
 
@@ -172,6 +166,7 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **25.02.19:** - Rebase to Bionic, add python deps for scripts.
 * **26.01.19:** - Add pipeline logic and multi arch.
 * **13.12.17:** - Fix continuation lines.
 * **12.07.17:** - Add inspect commands to README, move to jenkins build and push.
