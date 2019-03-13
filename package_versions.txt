@@ -195,7 +195,7 @@ python-six/now 1.11.0-2
 python2.7/now 2.7.15~rc1-1ubuntu0.1
 python2.7-minimal/now 2.7.15~rc1-1ubuntu0.1
 readline-common/now 7.0-3
-sabnzbdplus/now 2.3.8~beta1-0ubuntu1~jcfp1~18.04
+sabnzbdplus/now 2.3.8~rc1-0ubuntu1~jcfp1~18.04
 sed/now 4.4-2
 sensible-utils/now 0.0.12
 shared-mime-info/now 1.9-2
