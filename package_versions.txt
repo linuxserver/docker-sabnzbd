@@ -5,7 +5,7 @@ avahi-daemon0.7-3.1ubuntu1.2
 base-files10.1ubuntu2.4
 base-passwd3.5.44
 bash4.4.18-2ubuntu1
-bind9-host1:9.11.3+dfsg-1ubuntu1.5
+bind9-host1:9.11.3+dfsg-1ubuntu1.7
 bsdutils1:2.31.1-0.4ubuntu3.3
 bzip21.0.6-8.1
 ca-certificates20180409
@@ -55,7 +55,7 @@ libavahi-common30.7-3.1ubuntu1.2
 libavahi-common-data0.7-3.1ubuntu1.2
 libavahi-compat-libdnssd10.7-3.1ubuntu1.2
 libavahi-core70.7-3.1ubuntu1.2
-libbind9-1601:9.11.3+dfsg-1ubuntu1.5
+libbind9-1601:9.11.3+dfsg-1ubuntu1.7
 libblkid12.31.1-0.4ubuntu3.3
 libbz2-1.01.0.6-8.1
 libc62.27-3ubuntu1
@@ -68,7 +68,7 @@ libdaemon00.14-6
 libdb5.35.3.28-13.1ubuntu1
 libdbus-1-31.12.2-1ubuntu1
 libdebconfclient00.213ubuntu1
-libdns11001:9.11.3+dfsg-1ubuntu1.5
+libdns11001:9.11.3+dfsg-1ubuntu1.7
 libexpat12.2.5-3
 libext2fs21.44.1-1ubuntu1.1
 libfdisk12.31.1-0.4ubuntu3.3
@@ -91,9 +91,9 @@ libhogweed43.4-1
 libhx509-5-heimdal7.5.0+dfsg-1
 libicu6060.2-3ubuntu3
 libidn2-02.0.4-1.1build2
-libisc1691:9.11.3+dfsg-1ubuntu1.5
-libisccc1601:9.11.3+dfsg-1ubuntu1.5
-libisccfg1601:9.11.3+dfsg-1ubuntu1.5
+libisc1691:9.11.3+dfsg-1ubuntu1.7
+libisccc1601:9.11.3+dfsg-1ubuntu1.7
+libisccfg1601:9.11.3+dfsg-1ubuntu1.7
 libjs-bootstrap3.3.7+dfsg-2
 libjs-excanvas0.r3-4
 libjs-jquery3.2.1-1
@@ -111,7 +111,7 @@ libkrb5support01.16-2ubuntu0.1
 libksba81.3.5-2
 libldap-2.4-22.4.45+dfsg-1ubuntu1.1
 libldap-common2.4.45+dfsg-1ubuntu1.1
-liblwres1601:9.11.3+dfsg-1ubuntu1.5
+liblwres1601:9.11.3+dfsg-1ubuntu1.7
 liblz4-10.0~r131-2ubuntu3
 liblzma55.2.2-1.3
 libmagic11:5.32-2ubuntu0.2
@@ -150,11 +150,11 @@ libsqlite3-03.22.0-1
 libss21.44.1-1ubuntu1.1
 libssl1.11.1.0g-2ubuntu4.3
 libstdc++68.2.0-1ubuntu2~18.04
-libsystemd0237-3ubuntu10.19
+libsystemd0237-3ubuntu10.20
 libtasn1-64.13-2
 libtbb22017~U7-8
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.19
+libudev1237-3ubuntu10.20
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.3
 libwind0-heimdal7.5.0+dfsg-1
@@ -201,7 +201,7 @@ sensible-utils0.0.12
 shared-mime-info1.9-2
 sysvinit-utils2.88dsf-59.10ubuntu1
 tar1.29b-2ubuntu0.1
-tzdata2018i-0ubuntu0.18.04
+tzdata2019a-0ubuntu0.18.04
 ubuntu-keyring2018.09.18.1~18.04.0
 unrar1:5.5.8-1
 unzip6.0-21ubuntu1
