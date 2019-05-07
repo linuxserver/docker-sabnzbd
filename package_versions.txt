@@ -195,7 +195,7 @@ python-minimal2.7.15~rc1-1
 python-sabyenc3.3.5-0ubuntu1~jcfp1~18.04
 python-six1.11.0-2
 readline-common7.0-3
-sabnzbdplus2.3.8-0ubuntu1~jcfp1~18.04
+sabnzbdplus2.3.9~rc1-0ubuntu1~jcfp1~18.04
 sed4.4-2
 sensible-utils0.0.12
 shared-mime-info1.9-2
