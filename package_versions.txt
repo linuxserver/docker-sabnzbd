@@ -5,7 +5,7 @@ avahi-daemon0.7-3.1ubuntu1.2
 base-files10.1ubuntu2.4
 base-passwd3.5.44
 bash4.4.18-2ubuntu1.1
-bind9-host1:9.11.3+dfsg-1ubuntu1.7
+bind9-host1:9.11.3+dfsg-1ubuntu1.8
 bsdutils1:2.31.1-0.4ubuntu3.3
 bzip21.0.6-8.1
 ca-certificates20180409
@@ -55,7 +55,7 @@ libavahi-common30.7-3.1ubuntu1.2
 libavahi-common-data0.7-3.1ubuntu1.2
 libavahi-compat-libdnssd10.7-3.1ubuntu1.2
 libavahi-core70.7-3.1ubuntu1.2
-libbind9-1601:9.11.3+dfsg-1ubuntu1.7
+libbind9-1601:9.11.3+dfsg-1ubuntu1.8
 libblkid12.31.1-0.4ubuntu3.3
 libbz2-1.01.0.6-8.1
 libc62.27-3ubuntu1
@@ -68,7 +68,7 @@ libdaemon00.14-6
 libdb5.35.3.28-13.1ubuntu1.1
 libdbus-1-31.12.2-1ubuntu1.1
 libdebconfclient00.213ubuntu1
-libdns11001:9.11.3+dfsg-1ubuntu1.7
+libdns11001:9.11.3+dfsg-1ubuntu1.8
 libexpat12.2.5-3
 libext2fs21.44.1-1ubuntu1.1
 libfdisk12.31.1-0.4ubuntu3.3
@@ -91,9 +91,9 @@ libhogweed43.4-1
 libhx509-5-heimdal7.5.0+dfsg-1
 libicu6060.2-3ubuntu3
 libidn2-02.0.4-1.1build2
-libisc1691:9.11.3+dfsg-1ubuntu1.7
-libisccc1601:9.11.3+dfsg-1ubuntu1.7
-libisccfg1601:9.11.3+dfsg-1ubuntu1.7
+libisc1691:9.11.3+dfsg-1ubuntu1.8
+libisccc1601:9.11.3+dfsg-1ubuntu1.8
+libisccfg1601:9.11.3+dfsg-1ubuntu1.8
 libjs-bootstrap3.3.7+dfsg-2
 libjs-excanvas0.r3-4
 libjs-jquery3.2.1-1
@@ -111,7 +111,7 @@ libkrb5support01.16-2ubuntu0.1
 libksba81.3.5-2
 libldap-2.4-22.4.45+dfsg-1ubuntu1.2
 libldap-common2.4.45+dfsg-1ubuntu1.2
-liblwres1601:9.11.3+dfsg-1ubuntu1.7
+liblwres1601:9.11.3+dfsg-1ubuntu1.8
 liblz4-10.0~r131-2ubuntu3
 liblzma55.2.2-1.3
 libmagic11:5.32-2ubuntu0.2
@@ -148,13 +148,13 @@ libsepol12.7-1
 libsmartcols12.31.1-0.4ubuntu3.3
 libsqlite3-03.22.0-1
 libss21.44.1-1ubuntu1.1
-libssl1.11.1.1-1ubuntu2.1~18.04.1
+libssl1.11.1.1-1ubuntu2.1~18.04.2
 libstdc++68.3.0-6ubuntu1~18.04.1
-libsystemd0237-3ubuntu10.21
+libsystemd0237-3ubuntu10.22
 libtasn1-64.13-2
 libtbb22017~U7-8
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.21
+libudev1237-3ubuntu10.22
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.3
 libwind0-heimdal7.5.0+dfsg-1
@@ -169,7 +169,7 @@ mount2.31.1-0.4ubuntu3.3
 multiarch-support2.27-3ubuntu1
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
-openssl1.1.1-1ubuntu2.1~18.04.1
+openssl1.1.1-1ubuntu2.1~18.04.2
 p7zip16.02+dfsg-6
 p7zip-full16.02+dfsg-6
 par2-tbb0.4+20150503-0ubuntu1~jcfp2~bionic
