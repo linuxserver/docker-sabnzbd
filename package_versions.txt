@@ -148,7 +148,7 @@ libsepol12.7-1
 libsmartcols12.31.1-0.4ubuntu3.3
 libsqlite3-03.22.0-1ubuntu0.1
 libss21.44.1-1ubuntu1.1
-libssl1.11.1.1-1ubuntu2.1~18.04.3
+libssl1.11.1.1-1ubuntu2.1~18.04.4
 libstdc++68.3.0-6ubuntu1~18.04.1
 libsystemd0237-3ubuntu10.24
 libtasn1-64.13-2
@@ -169,7 +169,7 @@ mount2.31.1-0.4ubuntu3.3
 multiarch-support2.27-3ubuntu1
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
-openssl1.1.1-1ubuntu2.1~18.04.3
+openssl1.1.1-1ubuntu2.1~18.04.4
 p7zip16.02+dfsg-6
 p7zip-full16.02+dfsg-6
 par2-tbb0.4+20150503-0ubuntu1~jcfp2~bionic
