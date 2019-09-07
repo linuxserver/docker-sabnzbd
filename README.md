@@ -27,8 +27,8 @@ Find us at:
 [![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-sabnzbd.svg?style=flat-square&color=E68523)](https://github.com/linuxserver/docker-sabnzbd/releases)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/sabnzbd.svg?style=flat-square&color=E68523)](https://microbadger.com/images/linuxserver/sabnzbd "Get your own version badge on microbadger.com")
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/linuxserver/sabnzbd.svg?style=flat-square&color=E68523)](https://microbadger.com/images/linuxserver/sabnzbd "Get your own version badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sabnzbd.svg?style=flat-square&color=E68523)](https://hub.docker.com/r/linuxserver/sabnzbd/sabnzbd)
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sabnzbd.svg?style=flat-square&color=E68523)](https://hub.docker.com/r/linuxserver/sabnzbd/sabnzbd)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sabnzbd.svg?style=flat-square&color=E68523)](https://hub.docker.com/r/linuxserver/sabnzbd)
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sabnzbd.svg?style=flat-square&color=E68523)](https://hub.docker.com/r/linuxserver/sabnzbd)
 [![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-sabnzbd/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-sabnzbd/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/sabnzbd/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/sabnzbd/latest/index.html)
 
