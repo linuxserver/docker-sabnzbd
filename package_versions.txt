@@ -5,7 +5,7 @@ avahi-daemon0.7-3.1ubuntu1.2
 base-files10.1ubuntu2.7
 base-passwd3.5.44
 bash4.4.18-2ubuntu1.2
-bind9-host1:9.11.3+dfsg-1ubuntu1.9
+bind9-host1:9.11.3+dfsg-1ubuntu1.10
 bsdutils1:2.31.1-0.4ubuntu3.4
 bzip21.0.6-8.1ubuntu0.2
 ca-certificates20180409
@@ -55,7 +55,7 @@ libavahi-common30.7-3.1ubuntu1.2
 libavahi-common-data0.7-3.1ubuntu1.2
 libavahi-compat-libdnssd10.7-3.1ubuntu1.2
 libavahi-core70.7-3.1ubuntu1.2
-libbind9-1601:9.11.3+dfsg-1ubuntu1.9
+libbind9-1601:9.11.3+dfsg-1ubuntu1.10
 libblkid12.31.1-0.4ubuntu3.4
 libbz2-1.01.0.6-8.1ubuntu0.2
 libc62.27-3ubuntu1
@@ -68,7 +68,7 @@ libdaemon00.14-6
 libdb5.35.3.28-13.1ubuntu1.1
 libdbus-1-31.12.2-1ubuntu1.1
 libdebconfclient00.213ubuntu1
-libdns11001:9.11.3+dfsg-1ubuntu1.9
+libdns11001:9.11.3+dfsg-1ubuntu1.10
 libexpat12.2.5-3ubuntu0.2
 libext2fs21.44.1-1ubuntu1.2
 libfdisk12.31.1-0.4ubuntu3.4
@@ -91,9 +91,9 @@ libhogweed43.4-1
 libhx509-5-heimdal7.5.0+dfsg-1
 libicu6060.2-3ubuntu3
 libidn2-02.0.4-1.1ubuntu0.2
-libisc1691:9.11.3+dfsg-1ubuntu1.9
-libisccc1601:9.11.3+dfsg-1ubuntu1.9
-libisccfg1601:9.11.3+dfsg-1ubuntu1.9
+libisc1691:9.11.3+dfsg-1ubuntu1.10
+libisccc1601:9.11.3+dfsg-1ubuntu1.10
+libisccfg1601:9.11.3+dfsg-1ubuntu1.10
 libjs-bootstrap3.3.7+dfsg-2
 libjs-excanvas0.r3-4
 libjs-jquery3.2.1-1
@@ -111,7 +111,7 @@ libkrb5support01.16-2ubuntu0.1
 libksba81.3.5-2
 libldap-2.4-22.4.45+dfsg-1ubuntu1.4
 libldap-common2.4.45+dfsg-1ubuntu1.4
-liblwres1601:9.11.3+dfsg-1ubuntu1.9
+liblwres1601:9.11.3+dfsg-1ubuntu1.10
 liblz4-10.0~r131-2ubuntu3
 liblzma55.2.2-1.3
 libmagic11:5.32-2ubuntu0.3
