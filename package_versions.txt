@@ -97,8 +97,6 @@ libisccfg1601:9.11.3+dfsg-1ubuntu1.11
 libjs-bootstrap3.3.7+dfsg-2
 libjs-excanvas0.r3-4
 libjs-jquery3.2.1-1
-libjs-jquery-metadata12-1
-libjs-jquery-tablesorter1:2.29.5+dfsg1-1
 libjs-jquery-ui1.12.1+dfsg-5
 libjs-mochikit1.4.2-4fakesync1
 libjs-moment2.20.1+ds-1
@@ -195,7 +193,7 @@ python-minimal2.7.15~rc1-1
 python-sabyenc3.3.6-0ubuntu1~jcfp1~18.04
 python-six1.11.0-2
 readline-common7.0-3
-sabnzbdplus2.3.9-0ubuntu1~jcfp1~18.04
+sabnzbdplus2.3.9-0ubuntu1~jcfp2~18.04
 sed4.4-2
 sensible-utils0.0.12
 shared-mime-info1.9-2
