@@ -5,7 +5,7 @@ ARG BUILD_DATE
 ARG VERSION
 ARG SABNZBD_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL maintainer="thelamer"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -34,6 +34,8 @@ RUN \
 	p7zip-full \
 	par2-tbb \
 	python-pip \
+	python3-pip \
+	python3 \
 	${SABNZBD} \
 	unrar \
 	unzip && \
@@ -43,9 +45,16 @@ RUN \
 	pynzb \
 	requests \
 	sabyenc && \
+ pip3 install --no-cache-dir \
+        apprise \
+        chardet \
+        pynzb \
+        requests \
+        sabyenc && \
  echo "**** cleanup ****" && \
  apt-get purge --auto-remove -y \
-	python-pip && \
+	python-pip \
+	python3-pip && \
  apt-get clean && \
  rm -rf \
 	/tmp/* \
@@ -57,4 +66,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 8080 9090
-VOLUME /config /downloads /incomplete-downloads
+VOLUME /config
