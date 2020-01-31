@@ -18,7 +18,7 @@ debianutils4.8.4
 diffutils1:3.6-1
 dirmngr2.2.4-1ubuntu1.2
 dpkg1.19.0.5ubuntu2.3
-e2fsprogs1.44.1-1ubuntu1.2
+e2fsprogs1.44.1-1ubuntu1.3
 fdisk2.31.1-0.4ubuntu3.4
 file1:5.32-2ubuntu0.3
 findutils4.6.0+git+20170828-2
@@ -61,7 +61,7 @@ libc62.27-3ubuntu1
 libcap21:2.25-1.2
 libcap-ng00.7.7-3.1
 libc-bin2.27-3ubuntu1
-libcom-err21.44.1-1ubuntu1.2
+libcom-err21.44.1-1ubuntu1.3
 libcurl47.58.0-2ubuntu3.8
 libdaemon00.14-6
 libdb5.35.3.28-13.1ubuntu1.1
@@ -69,14 +69,14 @@ libdbus-1-31.12.2-1ubuntu1.1
 libdebconfclient00.213ubuntu1
 libdns11001:9.11.3+dfsg-1ubuntu1.11
 libexpat12.2.5-3ubuntu0.2
-libext2fs21.44.1-1ubuntu1.2
+libext2fs21.44.1-1ubuntu1.3
 libfdisk12.31.1-0.4ubuntu3.4
 libffi63.2.1-8
 libgcc11:8.3.0-6ubuntu1~18.04.1
 libgcrypt201.8.1-4ubuntu1.2
 libgeoip11.6.12-1
 libgmp102:6.1.2+dfsg-2
-libgnutls303.5.18-1ubuntu1.2
+libgnutls303.5.18-1ubuntu1.3
 libgpg-error01.27-6
 libgssapi3-heimdal7.5.0+dfsg-1
 libgssapi-krb5-21.16-2ubuntu0.1
@@ -130,9 +130,9 @@ libpython3-stdlib3.6.7-1~18.04
 libreadline77.0-3
 libroken18-heimdal7.5.0+dfsg-1
 librtmp12.4+20151223.gitfa8646d.1-1
-libsasl2-22.1.27~101-g0780600+dfsg-3ubuntu2
-libsasl2-modules2.1.27~101-g0780600+dfsg-3ubuntu2
-libsasl2-modules-db2.1.27~101-g0780600+dfsg-3ubuntu2
+libsasl2-22.1.27~101-g0780600+dfsg-3ubuntu2.1
+libsasl2-modules2.1.27~101-g0780600+dfsg-3ubuntu2.1
+libsasl2-modules-db2.1.27~101-g0780600+dfsg-3ubuntu2.1
 libseccomp22.4.1-0ubuntu0.18.04.2
 libselinux12.7-2build2
 libsemanage12.7-2build2
@@ -140,7 +140,7 @@ libsemanage-common2.7-2build2
 libsepol12.7-1
 libsmartcols12.31.1-0.4ubuntu3.4
 libsqlite3-03.22.0-1ubuntu0.2
-libss21.44.1-1ubuntu1.2
+libss21.44.1-1ubuntu1.3
 libssl1.11.1.1-1ubuntu2.1~18.04.5
 libstdc++68.3.0-6ubuntu1~18.04.1
 libsystemd0237-3ubuntu10.33
@@ -199,7 +199,7 @@ python3-tempora1.14.1-0ubuntu1~jcfp1.1
 python3-tz2018.3-2
 python3-webob1:1.7.3-2fakesync1
 readline-common7.0-3
-sabnzbdplus3.0.0~alpha0~git20191128.1032-0ubuntu1~jcfp2
+sabnzbdplus3.0.0~alpha0~git20200131.1052-0ubuntu1~jcfp1
 sed4.4-2
 sensible-utils0.0.12
 sysvinit-utils2.88dsf-59.10ubuntu1
