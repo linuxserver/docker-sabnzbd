@@ -29,7 +29,7 @@ findutils4.6.0+git+20170828-2
 fontconfig2.12.6-0ubuntu2
 fontconfig-config2.12.6-0ubuntu2
 fonts-dejavu-core2.37-1
-gcc-8-base8.3.0-26ubuntu1~18.04
+gcc-8-base8.4.0-1ubuntu1~18.04
 geoip-database20180315-1
 gir1.2-glib-2.01.56.1-1
 glib-networking2.56.0-1
@@ -102,7 +102,7 @@ libfdisk12.31.1-0.4ubuntu3.6
 libffi63.2.1-8
 libfontconfig12.12.6-0ubuntu2
 libfreetype62.8.1-2ubuntu2
-libgcc11:8.3.0-26ubuntu1~18.04
+libgcc11:8.4.0-1ubuntu1~18.04
 libgcrypt201.8.1-4ubuntu1.2
 libgdk-pixbuf2.0-02.36.11-2
 libgdk-pixbuf2.0-bin2.36.11-2
@@ -200,7 +200,7 @@ libsoup-gnome2.4-12.62.1-1ubuntu0.4
 libsqlite3-03.22.0-1ubuntu0.3
 libss21.44.1-1ubuntu1.3
 libssl1.11.1.1-1ubuntu2.1~18.04.5
-libstdc++68.3.0-26ubuntu1~18.04
+libstdc++68.4.0-1ubuntu1~18.04
 libsystemd0237-3ubuntu10.39
 libtasn1-64.13-2
 libtbb22017~U7-8
