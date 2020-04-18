@@ -285,7 +285,7 @@ python3-tempora1.14.1-0ubuntu1~jcfp1.1
 python3-tz2018.3-2
 python3-webob1:1.7.3-2fakesync1
 readline-common7.0-3
-sabnzbdplus3.0.0~alpha0~git20200328.0747-0ubuntu1~jcfp1
+sabnzbdplus3.0.0~alpha0~git20200417.1030-0ubuntu1~jcfp1
 sed4.4-2
 sensible-utils0.0.12
 shared-mime-info1.9-2
