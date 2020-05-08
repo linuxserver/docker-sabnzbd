@@ -58,6 +58,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "08.05.20:", desc: "Switch to `ppa:jcfp/ppa`." }
   - { date: "03.01.20:", desc: "Use alpha head for unstable with Python3." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
   - { date: "25.02.19:", desc: "Rebase to Bionic, add python deps for scripts." }
