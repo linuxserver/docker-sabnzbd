@@ -1,13 +1,13 @@
 adduser3.116ubuntu1
 adwaita-icon-theme3.28.0-1ubuntu1
-apt1.6.12
-apt-utils1.6.12
+apt1.6.12ubuntu0.1
+apt-utils1.6.12ubuntu0.1
 at-spi2-core2.28.0-1
 avahi-daemon0.7-3.1ubuntu1.2
 base-files10.1ubuntu2.8
 base-passwd3.5.44
 bash4.4.18-2ubuntu1.2
-bind9-host1:9.11.3+dfsg-1ubuntu1.11
+bind9-host1:9.11.3+dfsg-1ubuntu1.12
 bsdutils1:2.31.1-0.4ubuntu3.6
 bzip21.0.6-8.1ubuntu0.2
 ca-certificates20180409
@@ -57,8 +57,8 @@ javascript-common11
 krb5-locales1.16-2ubuntu0.1
 libacl12.2.52-3build1
 libapparmor12.12-4ubuntu5.1
-libapt-inst2.01.6.12
-libapt-pkg5.01.6.12
+libapt-inst2.01.6.12ubuntu0.1
+libapt-pkg5.01.6.12ubuntu0.1
 libasn1-8-heimdal7.5.0+dfsg-1
 libassuan02.5.1-2
 libatk1.0-02.28.1-1
@@ -73,7 +73,7 @@ libavahi-common30.7-3.1ubuntu1.2
 libavahi-common-data0.7-3.1ubuntu1.2
 libavahi-compat-libdnssd10.7-3.1ubuntu1.2
 libavahi-core70.7-3.1ubuntu1.2
-libbind9-1601:9.11.3+dfsg-1ubuntu1.11
+libbind9-1601:9.11.3+dfsg-1ubuntu1.12
 libblkid12.31.1-0.4ubuntu3.6
 libbsd00.8.7-1ubuntu0.1
 libbz2-1.01.0.6-8.1ubuntu0.2
@@ -94,7 +94,7 @@ libdb5.35.3.28-13.1ubuntu1.1
 libdbus-1-31.12.2-1ubuntu1.1
 libdconf10.26.0-2ubuntu3
 libdebconfclient00.213ubuntu1
-libdns11001:9.11.3+dfsg-1ubuntu1.11
+libdns11001:9.11.3+dfsg-1ubuntu1.12
 libepoxy01.4.3-1
 libexpat12.2.5-3ubuntu0.2
 libext2fs21.44.1-1ubuntu1.3
@@ -128,9 +128,9 @@ libhogweed43.4-1
 libhx509-5-heimdal7.5.0+dfsg-1
 libicu6060.2-3ubuntu3.1
 libidn2-02.0.4-1.1ubuntu0.2
-libisc1691:9.11.3+dfsg-1ubuntu1.11
-libisccc1601:9.11.3+dfsg-1ubuntu1.11
-libisccfg1601:9.11.3+dfsg-1ubuntu1.11
+libisc1691:9.11.3+dfsg-1ubuntu1.12
+libisccc1601:9.11.3+dfsg-1ubuntu1.12
+libisccfg1601:9.11.3+dfsg-1ubuntu1.12
 libjbig02.1-3.1build1
 libjpeg88c-2ubuntu8
 libjpeg-turbo81.5.2-0ubuntu5.18.04.3
@@ -150,7 +150,7 @@ libksba81.3.5-2
 liblcms2-22.9-1ubuntu0.1
 libldap-2.4-22.4.45+dfsg-1ubuntu1.5
 libldap-common2.4.45+dfsg-1ubuntu1.5
-liblwres1601:9.11.3+dfsg-1ubuntu1.11
+liblwres1601:9.11.3+dfsg-1ubuntu1.12
 liblz4-10.0~r131-2ubuntu3
 liblzma55.2.2-1.3
 libmagic11:5.32-2ubuntu0.4
@@ -290,7 +290,7 @@ sensible-utils0.0.12
 shared-mime-info1.9-2
 sysvinit-utils2.88dsf-59.10ubuntu1
 tar1.29b-2ubuntu0.1
-tzdata2019c-0ubuntu0.18.04
+tzdata2020a-0ubuntu0.18.04
 ubuntu-keyring2018.09.18.1~18.04.0
 ubuntu-mono16.10+18.04.20181005-0ubuntu1
 ucf3.0038
