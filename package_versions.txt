@@ -100,7 +100,7 @@ libjs-jquery3.2.1-1
 libjs-jquery-ui1.12.1+dfsg-5
 libjs-mochikit1.4.2-4fakesync1
 libjs-moment2.20.1+ds-1
-libjson-c30.12.1-1.3ubuntu0.2
+libjson-c30.12.1-1.3ubuntu0.3
 libk5crypto31.16-2ubuntu0.1
 libkeyutils11.5.9-9.2ubuntu2
 libkrb5-26-heimdal7.5.0+dfsg-1
@@ -150,13 +150,13 @@ libsepol12.7-1
 libsmartcols12.31.1-0.4ubuntu3.6
 libsqlite3-03.22.0-1ubuntu0.3
 libss21.44.1-1ubuntu1.3
-libssl1.11.1.1-1ubuntu2.1~18.04.5
+libssl1.11.1.1-1ubuntu2.1~18.04.6
 libstdc++68.4.0-1ubuntu1~18.04
-libsystemd0237-3ubuntu10.40
+libsystemd0237-3ubuntu10.41
 libtasn1-64.13-2
 libtbb22017~U7-8
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.40
+libudev1237-3ubuntu10.41
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.6
 libwind0-heimdal7.5.0+dfsg-1
@@ -171,7 +171,7 @@ mount2.31.1-0.4ubuntu3.6
 multiarch-support2.27-3ubuntu1
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
-openssl1.1.1-1ubuntu2.1~18.04.5
+openssl1.1.1-1ubuntu2.1~18.04.6
 p7zip16.02+dfsg-6
 p7zip-full16.02+dfsg-6
 par2-tbb0.4+20150503-0ubuntu1~jcfp2~bionic
