@@ -32,9 +32,9 @@ fonts-dejavu-core2.37-1
 gcc-8-base8.4.0-1ubuntu1~18.04
 geoip-database20180315-1
 gir1.2-glib-2.01.56.1-1
-glib-networking2.56.0-1
-glib-networking-common2.56.0-1
-glib-networking-services2.56.0-1
+glib-networking2.56.0-1ubuntu0.1
+glib-networking-common2.56.0-1ubuntu0.1
+glib-networking-services2.56.0-1ubuntu0.1
 gnupg2.2.4-1ubuntu1.2
 gnupg-l10n2.2.4-1ubuntu1.2
 gnupg-utils2.2.4-1ubuntu1.2
