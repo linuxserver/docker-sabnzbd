@@ -82,7 +82,7 @@ libcairo21.15.10-2ubuntu0.1
 libcairo-gobject21.15.10-2ubuntu0.1
 libcap21:2.25-1.2
 libcap-ng00.7.7-3.1
-libc-bin2.27-3ubuntu1
+libc-bin2.27-3ubuntu1.2
 libcolord21.3.3-2build1
 libcom-err21.44.1-1ubuntu1.3
 libcroco30.6.12-2
@@ -112,7 +112,7 @@ libgirepository-1.0-11.56.1-1
 libglib2.0-02.56.4-0ubuntu0.18.04.6
 libglib2.0-data2.56.4-0ubuntu0.18.04.6
 libgmp102:6.1.2+dfsg-2
-libgnutls303.5.18-1ubuntu1.3
+libgnutls303.5.18-1ubuntu1.4
 libgpg-error01.27-6
 libgraphite2-31.3.11-2
 libgssapi3-heimdal7.5.0+dfsg-1
@@ -284,7 +284,7 @@ python3-tempora2.1.1-0ubuntu1~jcfp1~18.04
 python3-tz2018.3-2
 python3-webob1:1.7.3-2fakesync1
 readline-common7.0-3
-sabnzbdplus3.0.0~rc1-0ubuntu1~jcfp1~18.04
+sabnzbdplus3.0.0~rc2-0ubuntu1~jcfp1~18.04
 sed4.4-2
 sensible-utils0.0.12
 shared-mime-info1.9-2
