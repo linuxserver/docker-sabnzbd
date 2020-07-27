@@ -148,8 +148,8 @@ libkrb5-31.16-2ubuntu0.1
 libkrb5support01.16-2ubuntu0.1
 libksba81.3.5-2
 liblcms2-22.9-1ubuntu0.1
-libldap-2.4-22.4.45+dfsg-1ubuntu1.5
-libldap-common2.4.45+dfsg-1ubuntu1.5
+libldap-2.4-22.4.45+dfsg-1ubuntu1.6
+libldap-common2.4.45+dfsg-1ubuntu1.6
 liblwres1601:9.11.3+dfsg-1ubuntu1.12
 liblz4-10.0~r131-2ubuntu3
 liblzma55.2.2-1.3
@@ -177,8 +177,8 @@ libpng16-161.6.34-1ubuntu0.18.04.2
 libprocps62:3.3.12-3ubuntu1.2
 libproxy1v50.4.15-1
 libpsl50.19.1-5build1
-libpython3.6-minimal3.6.9-1~18.04ubuntu1
-libpython3.6-stdlib3.6.9-1~18.04ubuntu1
+libpython3.6-minimal3.6.9-1~18.04ubuntu1.1
+libpython3.6-stdlib3.6.9-1~18.04ubuntu1.1
 libpython3-stdlib3.6.7-1~18.04
 libreadline77.0-3
 librest-0.7-00.8.0-2
@@ -255,8 +255,8 @@ pinentry-curses1.1.0-1
 procps2:3.3.12-3ubuntu1.2
 publicsuffix20180223.1310-1
 python33.6.7-1~18.04
-python3.63.6.9-1~18.04ubuntu1
-python3.6-minimal3.6.9-1~18.04ubuntu1
+python3.63.6.9-1~18.04ubuntu1.1
+python3.6-minimal3.6.9-1~18.04ubuntu1.1
 python3-asn1crypto0.24.0-1
 python3-cffi-backend1.11.5-1
 python3-chardet3.0.4-1
