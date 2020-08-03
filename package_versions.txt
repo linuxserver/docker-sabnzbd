@@ -183,13 +183,13 @@ libpython3-stdlib3.6.7-1~18.04
 libreadline77.0-3
 librest-0.7-00.8.0-2
 libroken18-heimdal7.5.0+dfsg-1
-librsvg2-22.40.20-2
-librsvg2-common2.40.20-2
+librsvg2-22.40.20-2ubuntu0.2
+librsvg2-common2.40.20-2ubuntu0.2
 librtmp12.4+20151223.gitfa8646d.1-1
 libsasl2-22.1.27~101-g0780600+dfsg-3ubuntu2.1
 libsasl2-modules2.1.27~101-g0780600+dfsg-3ubuntu2.1
 libsasl2-modules-db2.1.27~101-g0780600+dfsg-3ubuntu2.1
-libseccomp22.4.3-1ubuntu3.18.04.2
+libseccomp22.4.3-1ubuntu3.18.04.3
 libselinux12.7-2build2
 libsemanage12.7-2build2
 libsemanage-common2.7-2build2
