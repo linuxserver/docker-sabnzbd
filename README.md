@@ -159,8 +159,11 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 ## Application Setup
 
 Initial setup is done from the http port.
+
 In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
+
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
+
 See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
 
 
