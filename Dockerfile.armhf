@@ -27,6 +27,8 @@ RUN \
  apt-get update && \
  apt-get install -y \
 	jq \
+	libffi-dev \
+	libssl-dev \
 	p7zip-full \
 	par2-tbb \
 	python3 \
@@ -51,6 +53,9 @@ RUN \
  ln -s \
 	/usr/bin/python3 \
 	/usr/bin/python && \
+ apt-get purge --auto-remove -y \
+	libffi-dev \
+	libssl-dev && \
  apt-get clean && \
  rm -rf \
 	/tmp/* \
