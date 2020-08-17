@@ -33,6 +33,7 @@ RUN \
 	par2-tbb \
 	python3 \
 	python3-pip \
+	python3-six \
 	unrar \
 	unzip && \
  if [ -z ${SABNZBD_VERSION+x} ]; then \
@@ -55,7 +56,8 @@ RUN \
 	/usr/bin/python && \
  apt-get purge --auto-remove -y \
 	libffi-dev \
-	libssl-dev && \
+	libssl-dev \
+	python3-pip && \
  apt-get clean && \
  rm -rf \
 	/tmp/* \
