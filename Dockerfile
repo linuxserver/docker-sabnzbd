@@ -48,6 +48,10 @@ RUN \
 	/app/sabnzbd --strip-components=1 && \
  cd /app/sabnzbd && \
  pip3 install -U pip && \
+ pip install -U --no-cache-dir \
+	apprise \
+	pynzb \
+	requests && \
  pip install -U --no-cache-dir -r requirements.txt && \
  echo "**** cleanup ****" && \
  ln -s \
