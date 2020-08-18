@@ -33,8 +33,7 @@ RUN \
 	python3 \
 	python3-pip \
 	python3-six \
-	unrar \
-	unzip && \
+	unrar && \
  if [ -z ${SABNZBD_VERSION+x} ]; then \
 	SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
 	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
