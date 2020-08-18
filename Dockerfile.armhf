@@ -31,8 +31,9 @@ RUN \
 	p7zip-full \
 	par2-tbb \
 	python3 \
+	python3-cryptography \
+	python3-distutils \
 	python3-pip \
-	python3-six \
 	unrar && \
  if [ -z ${SABNZBD_VERSION+x} ]; then \
 	SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
