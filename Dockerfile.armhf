@@ -34,8 +34,7 @@ RUN \
 	python3 \
 	python3-pip \
 	python3-six \
-	unrar \
-	unzip && \
+	unrar && \
  if [ -z ${SABNZBD_VERSION+x} ]; then \
 	SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases \
 	| jq -r 'first(.[]) | .tag_name'); \
@@ -49,6 +48,10 @@ RUN \
 	/app/sabnzbd --strip-components=1 && \
  cd /app/sabnzbd && \
  pip3 install -U pip && \
+ pip install -U --no-cache-dir \
+	apprise \
+	pynzb \
+	requests && \
  pip install -U --no-cache-dir -r requirements.txt && \
  echo "**** cleanup ****" && \
  ln -s \
