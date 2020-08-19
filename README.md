@@ -60,7 +60,7 @@ This image provides various versions that are available via tags. `latest` tag u
 | Tag | Description |
 | :----: | --- |
 | latest | Stable SABnzbd releases |
-| unstable | Beta/Stable SABnzbd releases at edge |
+| unstable | Pre-releases from their GitHub |
 
 ## Usage
 
@@ -76,9 +76,9 @@ docker create \
   -e TZ=Europe/London \
   -p 8080:8080 \
   -p 9090:9090 \
-  -v <path to data>:/config \
-  -v <path to downloads>:/downloads \
-  -v <path to incomplete downloads>:/incomplete-downloads `#optional` \
+  -v /path/to/data:/config \
+  -v /path/to/downloads:/downloads \
+  -v /path/to/incomplete/downloads:/incomplete-downloads `#optional` \
   --restart unless-stopped \
   linuxserver/sabnzbd
 ```
@@ -100,9 +100,9 @@ services:
       - PGID=1000
       - TZ=Europe/London
     volumes:
-      - <path to data>:/config
-      - <path to downloads>:/downloads
-      - <path to incomplete downloads>:/incomplete-downloads #optional
+      - /path/to/data:/config
+      - /path/to/downloads:/downloads
+      - /path/to/incomplete/downloads:/incomplete-downloads #optional
     ports:
       - 8080:8080
       - 9090:9090
@@ -159,7 +159,11 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 ## Application Setup
 
 Initial setup is done from the http port.
+
+In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
+
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
+
 See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
 
 
@@ -233,6 +237,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **17.08.20:** - Run from source with python3 instead of ppa, remove python2 completely, symlink `python` to `python3`.
 * **02.01.20:** - Add python3 on top of python2 to image during transition.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **25.02.19:** - Rebase to Bionic, add python deps for scripts.
