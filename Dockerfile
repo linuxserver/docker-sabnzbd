@@ -16,7 +16,7 @@ RUN \
  echo "***** install gnupg ****" && \
  apt-get update && \
  apt-get install -y \
-    gnupg && \
+	gnupg && \
  echo "***** add sabnzbd repositories ****" && \
  apt-key adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 0x98703123E0F52B2BE16D586EF13930B14BB9F05F && \
  echo "deb http://ppa.launchpad.net/jcfp/nobetas/ubuntu bionic main" >> /etc/apt/sources.list.d/sabnzbd.list && \
