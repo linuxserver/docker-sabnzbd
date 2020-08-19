@@ -233,6 +233,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **17.08.20:** - Switch to running from source with python3 instead of ppa.
 * **08.05.20:** - Switch to `ppa:jcfp/ppa`.
 * **03.01.20:** - Use alpha head for unstable with Python3.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.

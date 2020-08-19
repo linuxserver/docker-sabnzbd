@@ -103,7 +103,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -sX GET http://ppa.launchpad.net/jcfp/ppa/ubuntu/dists/bionic/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: sabnzbdplus' | awk -F ': ' '/Version/{print $2;exit}' | sed 's/$/-u/' ''',
+            script: ''' curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases | jq -r 'first(.[]) | .tag_name' ''',
             returnStdout: true).trim()
             env.RELEASE_LINK = 'custom_command'
         }
