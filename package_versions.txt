@@ -99,8 +99,8 @@ libpam-runtime1.1.8-3.6ubuntu2.18.04.2
 libpcre32:8.39-9
 libprocps62:3.3.12-3ubuntu1.2
 libpsl50.19.1-5build1
-libpython3.6-minimal3.6.9-1~18.04ubuntu1.1
-libpython3.6-stdlib3.6.9-1~18.04ubuntu1.1
+libpython3.6-minimal3.6.9-1~18.04ubuntu1.3
+libpython3.6-stdlib3.6.9-1~18.04ubuntu1.3
 libpython3-stdlib3.6.7-1~18.04
 libreadline77.0-3
 libroken18-heimdal7.5.0+dfsg-1
@@ -145,8 +145,8 @@ pinentry-curses1.1.0-1
 procps2:3.3.12-3ubuntu1.2
 publicsuffix20180223.1310-1
 python33.6.7-1~18.04
-python3.63.6.9-1~18.04ubuntu1.1
-python3.6-minimal3.6.9-1~18.04ubuntu1.1
+python3.63.6.9-1~18.04ubuntu1.3
+python3.6-minimal3.6.9-1~18.04ubuntu1.3
 python3-asn1crypto0.24.0-1
 python3-cffi-backend1.11.5-1
 python3-cryptography2.1.4-1ubuntu1.3
