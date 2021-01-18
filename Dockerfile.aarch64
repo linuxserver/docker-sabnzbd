@@ -47,7 +47,7 @@ RUN \
 	/tmp/sabnzbd.tar.gz -C \
 	/app/sabnzbd --strip-components=1 && \
  cd /app/sabnzbd && \
- pip3 install -U pip && \
+ pip3 install -U --no-cache-dir pip && \
  pip install -U --no-cache-dir \
 	apprise \
 	pynzb \
