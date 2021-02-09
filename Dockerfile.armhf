@@ -34,6 +34,7 @@ RUN \
 	python3-cryptography \
 	python3-distutils \
 	python3-pip \
+	rustc \
 	unrar && \
  if [ -z ${SABNZBD_VERSION+x} ]; then \
 	SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
@@ -60,7 +61,8 @@ RUN \
  apt-get purge --auto-remove -y \
 	libffi-dev \
 	libssl-dev \
-	python3-pip && \
+	python3-pip \
+	rustc && \
  apt-get clean && \
  rm -rf \
 	/tmp/* \
