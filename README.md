@@ -241,6 +241,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **12.02.21:** - Clean up rust/cargo and pip cache.
 * **17.08.20:** - Run from source with python3 instead of ppa, remove python2 completely, symlink `python` to `python3`.
 * **02.01.20:** - Add python3 on top of python2 to image during transition.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.

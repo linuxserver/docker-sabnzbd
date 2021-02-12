@@ -62,6 +62,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "12.02.21:", desc: "Clean up rust/cargo and pip cache." }
   - { date: "17.08.20:", desc: "Run from source with python3 instead of ppa, remove python2 completely, symlink `python` to `python3`." }
   - { date: "02.01.20:", desc: "Add python3 on top of python2 to image during transition." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }

@@ -67,7 +67,9 @@ RUN \
  rm -rf \
 	/tmp/* \
 	/var/lib/apt/lists/* \
-	/var/tmp/*
+	/var/tmp/* \
+	$HOME/.cache \
+	$HOME/.cargo
 
 # add local files
 COPY root/ /
