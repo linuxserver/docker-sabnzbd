@@ -2,11 +2,11 @@
 
 # make folders
 mkdir -p \
-	/downloads \
-	/incomplete-downloads
+    /downloads \
+    /incomplete-downloads
 
 # permissions
 chown abc:abc \
-	/downloads \
-	/incomplete-downloads
+    /downloads \
+    /incomplete-downloads
 
