@@ -70,11 +70,19 @@ This image provides various versions that are available via tags. `latest` tag u
 
 Initial setup is done from the http port.
 
-In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
-
 Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
 
 See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
+
+### Download folders
+
+In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
+
+We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
+
+Use the optional paths if you dont understand, or dont want hardlinks/atomic moves. 
+
+The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/Docker_Guide#Consistent_and_well_planned_paths) on how to get started with this.
 
 ## Usage
 
@@ -97,7 +105,7 @@ services:
       - TZ=Europe/London
     volumes:
       - /path/to/data:/config
-      - /path/to/downloads:/downloads
+      - /path/to/downloads:/downloads #optional
       - /path/to/incomplete/downloads:/incomplete-downloads #optional
     ports:
       - 8080:8080
@@ -116,7 +124,7 @@ docker run -d \
   -p 8080:8080 \
   -p 9090:9090 \
   -v /path/to/data:/config \
-  -v /path/to/downloads:/downloads \
+  -v /path/to/downloads:/downloads `#optional` \
   -v /path/to/incomplete/downloads:/incomplete-downloads `#optional` \
   --restart unless-stopped \
   ghcr.io/linuxserver/sabnzbd
