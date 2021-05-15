@@ -30,7 +30,6 @@ param_env_vars:
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Local path for sabnzbd config files." }
-  - { vol_path: "/downloads", vol_host_path: "<path to downloads>", desc: "Local path for finished downloads." }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8080", internal_port: "8080", port_desc: "HTTP port for the WebUI." }
@@ -42,6 +41,7 @@ cap_add_param: false
 opt_param_usage_include_env: false
 opt_param_usage_include_vols: true
 opt_param_volumes:
+  - { vol_path: "/downloads", vol_host_path: "<path to downloads>", desc: "Local path for finished downloads." }
   - { vol_path: "/incomplete-downloads", vol_host_path: "<path to incomplete downloads>", desc: "Local path for incomplete-downloads." }
 opt_param_usage_include_ports: false
 opt_param_device_map: false
@@ -52,12 +52,24 @@ optional_block_1: false
 app_setup_block_enabled: true
 app_setup_block: |
   Initial setup is done from the http port.
+
   Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
+  
   See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
 
+  ### Download folders
+
+  In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
+
+  We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
+
+  Use the optional paths if you dont understand, or dont want hardlinks/atomic moves. 
+
+  The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/Docker_Guide#Consistent_and_well_planned_paths) on how to get started with this.
 
 # changelog
 changelogs:
+  - { date: "14.05.21:", desc: "Use linuxserver.io wheel index for pip packages." }
   - { date: "12.02.21:", desc: "Clean up rust/cargo and pip cache." }
   - { date: "17.08.20:", desc: "Switch to running from source with python3 instead of ppa." }
   - { date: "08.05.20:", desc: "Switch to `ppa:jcfp/ppa`." }
