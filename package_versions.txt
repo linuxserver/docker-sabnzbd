@@ -154,6 +154,8 @@ python3-distutils3.6.9-1~18.04
 python3-idna2.6-1
 python3-lib2to33.6.9-1~18.04
 python3-minimal3.6.7-1~18.04
+python3-pkg-resources39.0.1-2
+python3-setuptools39.0.1-2
 python3-six1.11.0-2
 readline-common7.0-3
 sed4.4-2
