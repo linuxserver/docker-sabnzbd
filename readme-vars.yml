@@ -69,6 +69,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "24.07.21:", desc: "Add python3-setuptools." }
   - { date: "14.05.21:", desc: "Use linuxserver.io wheel index for pip packages." }
   - { date: "12.02.21:", desc: "Clean up rust/cargo and pip cache." }
   - { date: "17.08.20:", desc: "Switch to running from source with python3 instead of ppa." }
