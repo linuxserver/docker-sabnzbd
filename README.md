@@ -251,6 +251,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **24.07.21:** - Add python3-setuptools.
 * **14.05.21:** - Use linuxserver.io wheel index for pip packages.
 * **12.02.21:** - Clean up rust/cargo and pip cache.
 * **17.08.20:** - Run from source with python3 instead of ppa, remove python2 completely, symlink `python` to `python3`.
