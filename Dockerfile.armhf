@@ -34,6 +34,7 @@ RUN \
     python3-cryptography \
     python3-distutils \
     python3-pip \
+    python3-setuptools \
     rustc \
     unrar && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
