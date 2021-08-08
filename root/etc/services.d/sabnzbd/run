@@ -1,7 +1,11 @@
 #!/usr/bin/with-contenv bash
 
+FAMILY=::
+
+if [ "$HAS_IPV6" = "false" ]; then
+    FAMILY=0.0.0.0
+fi
+
 exec \
     s6-setuidgid abc python3 /app/sabnzbd/SABnzbd.py \
-    --config-file /config --server 0.0.0.0:8080
-
-
+    --config-file /config --server "$FAMILY"
