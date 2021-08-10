@@ -81,7 +81,7 @@ We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, th
 
 Use the optional paths if you dont understand, or dont want hardlinks/atomic moves. 
 
-The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/Docker_Guide#Consistent_and_well_planned_paths) on how to get started with this.
+The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
 ## Usage
 
@@ -251,6 +251,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **08.08.21:** - Bump to focal, dont enforce binding to ipv4 port 8080
 * **24.07.21:** - Add python3-setuptools.
 * **14.05.21:** - Use linuxserver.io wheel index for pip packages.
 * **12.02.21:** - Clean up rust/cargo and pip cache.
