@@ -139,7 +139,7 @@ mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.1
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-openssl1.1.1f-1ubuntu2.4
+openssl1.1.1f-1ubuntu2.5
 p7zip16.02+dfsg-7build1
 p7zip-full16.02+dfsg-7build1
 par2-tbb0.4+20150503-0ubuntu1~jcfp2~focal
