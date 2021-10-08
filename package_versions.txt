@@ -98,8 +98,8 @@ libpcre2-8-010.34-7
 libpcre32:8.39-12build1
 libprocps82:3.3.16-1ubuntu2.3
 libpsl50.21.0-1ubuntu1
-libpython3.8-minimal3.8.10-0ubuntu1~20.04
-libpython3.8-stdlib3.8.10-0ubuntu1~20.04
+libpython3.8-minimal3.8.10-0ubuntu1~20.04.1
+libpython3.8-stdlib3.8.10-0ubuntu1~20.04.1
 libpython3-stdlib3.8.2-0ubuntu2
 libreadline88.0-4
 libroken18-heimdal7.7.0+dfsg-1ubuntu1
@@ -146,8 +146,8 @@ pinentry-curses1.1.0-3build1
 procps2:3.3.16-1ubuntu2.3
 publicsuffix20200303.0012-1
 python33.8.2-0ubuntu2
-python3.83.8.10-0ubuntu1~20.04
-python3.8-minimal3.8.10-0ubuntu1~20.04
+python3.83.8.10-0ubuntu1~20.04.1
+python3.8-minimal3.8.10-0ubuntu1~20.04.1
 python3-cffi-backend1.14.0-1build1
 python3-cryptography2.8-3ubuntu0.1
 python3-distutils3.8.10-0ubuntu1~20.04
