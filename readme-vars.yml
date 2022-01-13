@@ -18,6 +18,7 @@ available_architectures:
 development_versions: true
 development_versions_items:
   - { tag: "latest", desc: "Stable SABnzbd releases" }
+  - { tag: "alpine", desc: "Stable SABnzbd releases using our Alpine baseimage" }
   - { tag: "unstable", desc: "Pre-releases from their GitHub" }
 
 # container parameters
@@ -33,7 +34,6 @@ param_volumes:
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8080", internal_port: "8080", port_desc: "HTTP port for the WebUI." }
-  - { external_port: "9090", internal_port: "9090", port_desc: "HTTPS port for the WebUI." }
 param_device_map: false
 cap_add_param: false
 
@@ -69,6 +69,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "13.01.22:", desc: "Add alpine branch" }
   - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
   - { date: "24.07.21:", desc: "Add python3-setuptools." }
   - { date: "14.05.21:", desc: "Use linuxserver.io wheel index for pip packages." }
