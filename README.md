@@ -65,6 +65,7 @@ This image provides various versions that are available via tags. `latest` tag u
 | Tag | Description |
 | :----: | --- |
 | latest | Stable SABnzbd releases |
+| alpine | Stable SABnzbd releases using our Alpine baseimage |
 | unstable | Pre-releases from their GitHub |
 
 ## Application Setup
@@ -108,7 +109,6 @@ services:
       - /path/to/incomplete/downloads:/incomplete-downloads #optional
     ports:
       - 8080:8080
-      - 9090:9090
     restart: unless-stopped
 ```
 
@@ -121,7 +121,6 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Europe/London \
   -p 8080:8080 \
-  -p 9090:9090 \
   -v /path/to/data:/config \
   -v /path/to/downloads:/downloads `#optional` \
   -v /path/to/incomplete/downloads:/incomplete-downloads `#optional` \
@@ -136,7 +135,6 @@ Container images are configured using parameters passed at runtime (such as thos
 | Parameter | Function |
 | :----: | --- |
 | `-p 8080` | HTTP port for the WebUI. |
-| `-p 9090` | HTTPS port for the WebUI. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
@@ -253,6 +251,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **13.01.22:** - Add Alpine branch.
 * **08.08.21:** - Bump to focal, dont enforce binding to ipv4 port 8080
 * **24.07.21:** - Add python3-setuptools.
 * **14.05.21:** - Use linuxserver.io wheel index for pip packages.
