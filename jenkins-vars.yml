@@ -15,7 +15,7 @@ repo_vars:
   - DOCKERHUB_IMAGE = 'linuxserver/sabnzbd'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/sabnzbd'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/sabnzbd'
-  - DIST_IMAGE = 'ubuntu'
+  - DIST_IMAGE = 'alpine'
   - MULTIARCH='true'
   - CI='true'
   - CI_WEB='true'
