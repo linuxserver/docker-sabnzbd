@@ -30,7 +30,7 @@ RUN \
     unrar && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases \
-      | jq -r 'first(.[] | select(.prerelease==true)) | .tag_name'); \
+      | jq -r 'first(.[] | .tag_name'); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
