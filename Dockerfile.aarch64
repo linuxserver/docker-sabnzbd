@@ -41,12 +41,12 @@ RUN \
     /app/sabnzbd --strip-components=1 && \
   cd /app/sabnzbd && \
   python3 -m pip install --upgrade pip && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.15/ \
     wheel \
     apprise \
     pynzb \
     requests && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ -r requirements.txt && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.15/ -r requirements.txt && \
   pip3 cache purge && \
   echo "**** cleanup ****" && \
   ln -s \
