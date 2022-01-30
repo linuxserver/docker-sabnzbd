@@ -2,12 +2,14 @@
 
 # jenkins variables
 project_name: docker-sabnzbd
-external_type: na
-custom_version_command: "curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases | jq -r 'first(.[]) | .tag_name'"
+external_type: github_devel
 release_type: prerelease
 release_tag: unstable
 ls_branch: unstable
 repo_vars:
+  - EXT_GIT_BRANCH = 'develop'
+  - EXT_USER = 'sabnzbd'
+  - EXT_REPO = 'sabnzbd'
   - BUILD_VERSION_ARG = 'SABNZBD_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-sabnzbd'
@@ -15,7 +17,7 @@ repo_vars:
   - DOCKERHUB_IMAGE = 'linuxserver/sabnzbd'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/sabnzbd'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/sabnzbd'
-  - DIST_IMAGE = 'ubuntu'
+  - DIST_IMAGE = 'alpine'
   - MULTIARCH='true'
   - CI='true'
   - CI_WEB='true'
