@@ -4,8 +4,8 @@
 project_name: docker-sabnzbd
 external_type: github_stable
 release_type: stable
-release_tag: alpine
-ls_branch: alpine
+release_tag: latest
+ls_branch: master
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'sabnzbd'
