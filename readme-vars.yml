@@ -68,7 +68,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "22.02.22:", desc: "Rebase master branch to Alpine, deprecate Alpine branch." }
+  - { date: "22.02.22:", desc: "Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch." }
   - { date: "25.01.22:", desc: "Rebase Unstable branch to Alpine." }  
   - { date: "13.01.22:", desc: "Add alpine branch" }
   - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
