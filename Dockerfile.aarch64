@@ -29,7 +29,7 @@ RUN \
     unrar && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
-      | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
@@ -46,7 +46,6 @@ RUN \
     pynzb \
     requests && \
   pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.15/ -r requirements.txt && \
-  pip3 cache purge && \
   echo "**** cleanup ****" && \
   ln -s \
     /usr/bin/python3 \
