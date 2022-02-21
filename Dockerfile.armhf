@@ -1,6 +1,7 @@
 FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.15
 
 # set version label
+ARG UNRAR_VERSION=6.1.4
 ARG BUILD_DATE
 ARG VERSION
 ARG SABNZBD_VERSION
@@ -15,8 +16,10 @@ RUN \
   echo "**** install packages ****" && \
   apk add -U --update --no-cache --virtual=build-dependencies \
     build-base \
+    g++ \
     gcc \
     libffi-dev \
+    make \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
@@ -25,11 +28,21 @@ RUN \
     par2cmdline \
     python3 \
     py3-pip && \
-  apk add -U --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/main \
-    unrar && \
+  echo "**** install unrar from source ****" && \
+  mkdir /tmp/unrar && \
+  curl -o \
+    /tmp/unrar.tar.gz -L \
+    "https://www.rarlab.com/rar/unrarsrc-${UNRAR_VERSION}.tar.gz" && \  
+  tar xf \
+    /tmp/unrar.tar.gz -C \
+    /tmp/unrar --strip-components=1 && \
+  cd /tmp/unrar && \
+  make && \
+  install -v -m755 unrar /usr/local/bin && \
+  echo "**** install sabnzbd ****" && \  
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+      | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
