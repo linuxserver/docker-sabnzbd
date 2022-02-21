@@ -68,6 +68,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "22.02.22:", desc: "Build unrar from source." }
   - { date: "25.01.22:", desc: "Rebase unstable branch to Alpine." }
   - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
   - { date: "24.07.21:", desc: "Add python3-setuptools." }
