@@ -250,6 +250,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **22.02.22:** - Build unrar from source.
 * **25.01.22:** - Rebase unstable branch to Alpine.
 * **08.08.21:** - Bump to focal, dont enforce binding to ipv4 port 8080
 * **24.07.21:** - Add python3-setuptools.
