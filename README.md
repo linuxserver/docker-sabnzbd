@@ -27,6 +27,12 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
+# DEPRECATION NOTICE
+
+This image is deprecated. We will not offer support for this image and it will not be updated.
+Our standard latest tag is now Alpine based:
+https://github.com/linuxserver/docker-sabnzbd
+
 # [linuxserver/sabnzbd](https://github.com/linuxserver/docker-sabnzbd)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Fsabnzbd?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Fsabnzbd)
@@ -65,7 +71,6 @@ This image provides various versions that are available via tags. `latest` tag u
 | Tag | Description |
 | :----: | --- |
 | latest | Stable SABnzbd releases |
-| alpine | Stable SABnzbd releases using our Alpine baseimage |
 | unstable | Pre-releases from their GitHub |
 
 ## Application Setup
@@ -251,6 +256,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **22.02.22:** - Rebase master branch to Alpine, deprecate alpine branch.
 * **13.01.22:** - Add alpine branch
 * **08.08.21:** - Bump to focal, dont enforce binding to ipv4 port 8080
 * **24.07.21:** - Add python3-setuptools.
