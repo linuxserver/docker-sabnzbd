@@ -18,8 +18,7 @@ available_architectures:
 development_versions: true
 development_versions_items:
   - { tag: "latest", desc: "Stable SABnzbd releases" }
-  - { tag: "alpine", desc: "Stable SABnzbd releases using our Alpine baseimage" }  
-  - { tag: "unstable", desc: "Pre-releases of SABnzbd" }
+  - { tag: "unstable", desc: "Pre-releases from their GitHub" }
 
 # container parameters
 common_param_env_vars_enabled: true
@@ -69,8 +68,9 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "25.01.22:", desc: "Rebase Unstable branch to Alpine." }
-  - { date: "13.01.22:", desc: "Add Alpine branch." }
+  - { date: "22.02.22:", desc: "Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch." }
+  - { date: "25.01.22:", desc: "Rebase Unstable branch to Alpine." }  
+  - { date: "13.01.22:", desc: "Add alpine branch" }
   - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
   - { date: "24.07.21:", desc: "Add python3-setuptools." }
   - { date: "14.05.21:", desc: "Use linuxserver.io wheel index for pip packages." }

@@ -65,8 +65,7 @@ This image provides various versions that are available via tags. `latest` tag u
 | Tag | Description |
 | :----: | --- |
 | latest | Stable SABnzbd releases |
-| alpine | Stable SABnzbd releases using our Alpine baseimage |
-| unstable | Pre-releases of SABnzbd |
+| unstable | Pre-releases from their GitHub |
 
 ## Application Setup
 
@@ -251,8 +250,9 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **22.02.22:** - Rebase master branch to Alpine, deprecate Alpine branch.
 * **25.01.22:** - Rebase Unstable branch to Alpine.
-* **13.01.22:** - Add Alpine branch.
+* **13.01.22:** - Add alpine branch
 * **08.08.21:** - Bump to focal, dont enforce binding to ipv4 port 8080
 * **24.07.21:** - Add python3-setuptools.
 * **14.05.21:** - Use linuxserver.io wheel index for pip packages.
