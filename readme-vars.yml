@@ -52,9 +52,11 @@ app_setup_block_enabled: true
 app_setup_block: |
   Initial setup is done from the http port.
 
-  Https access for sabnzbd needs to be enabled in either the intial setup wizard or in the configure settings of the webui, be sure to use 9090 as port for https.
+  See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
   
-  See here for info on some of the switch settings for sabnzbd https://sabnzbd.org/wiki/configuration/2.3/switches .
+  ### nzb-notify
+  
+  nzb-notify is included with this image as a convenience script. To use it set the Scripts folder in the Folder settings to /app/nzbnotify and then configure it under Notifications. See [nzb-notify](https://github.com/caronc/nzb-notify/) for more information.
 
   ### Download folders
 
@@ -68,6 +70,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "10.03.22:", desc: "Add nzb-notify." }
   - { date: "22.02.22:", desc: "Build unrar from source." }
   - { date: "25.01.22:", desc: "Rebase unstable branch to Alpine." }
   - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
