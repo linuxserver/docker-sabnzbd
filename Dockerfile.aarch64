@@ -49,7 +49,7 @@ RUN \
   mkdir -p /app/sabnzbd && \
   curl -o \
     /tmp/sabnzbd.tar.gz -L \
-    "https://github.com/sabnzbd/sabnzbd/releases/download/${SABNZBD_VERSION}/SABnzbd-${SABNZBD_VERSION}-src.tar.gz" && \
+    "https://github.com/sabnzbd/sabnzbd/archive/${SABNZBD_VERSION}.tar.gz" && \
   tar xf \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
