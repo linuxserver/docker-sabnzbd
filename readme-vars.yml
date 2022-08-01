@@ -18,7 +18,8 @@ available_architectures:
 development_versions: true
 development_versions_items:
   - { tag: "latest", desc: "Stable SABnzbd releases" }
-  - { tag: "unstable", desc: "Pre-releases from their GitHub" }
+  - { tag: "unstable", desc: "Pre-releases from the develop branch" }
+  - { tag: "nightly", desc: "Latest commits from the develop branch" }
 
 # container parameters
 common_param_env_vars_enabled: true
@@ -70,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "31.08.22:", desc: "Add nightly tag." }
   - { date: "10.03.22:", desc: "Add nzb-notify." }
   - { date: "22.02.22:", desc: "Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch." }
   - { date: "25.01.22:", desc: "Rebase Unstable branch to Alpine." }  
