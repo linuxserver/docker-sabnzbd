@@ -18,6 +18,7 @@ RUN \
     build-base \
     g++ \
     gcc \
+    jq \
     libffi-dev \
     make \
     openssl-dev \
@@ -41,13 +42,14 @@ RUN \
   install -v -m755 unrar /usr/local/bin && \
   echo "**** install sabnzbd ****" && \  
   if [ -z ${SABNZBD_VERSION+x} ]; then \
-    SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
-      | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/commits/develop \
+      | jq -r '. | .sha' \
+      | cut -c1-8); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
     /tmp/sabnzbd.tar.gz -L \
-    "https://github.com/sabnzbd/sabnzbd/releases/download/${SABNZBD_VERSION}/SABnzbd-${SABNZBD_VERSION}-src.tar.gz" && \
+    "https://github.com/sabnzbd/sabnzbd/archive/${SABNZBD_VERSION}.tar.gz" && \
   tar xf \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
