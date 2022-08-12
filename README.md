@@ -253,7 +253,8 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **31.08.22:** - Add nightly tag.
+* **12.08.22:** - Bump unrar to 6.1.7.
+* **31.07.22:** - Add nightly tag.
 * **10.03.22:** - Add nzb-notify.
 * **22.02.22:** - Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch.
 * **25.01.22:** - Rebase Unstable branch to Alpine.
