@@ -71,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "12.08.22:", desc: "Bump unrar to 6.1.7." }
   - { date: "31.07.22:", desc: "Add nightly tag." }
   - { date: "10.03.22:", desc: "Add nzb-notify." }
   - { date: "22.02.22:", desc: "Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch." }
