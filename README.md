@@ -252,6 +252,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **03.10.22:** - Rebase unstable branch to Alpine 3.16, migrate to s6v3.
 * **12.08.22:** - Bump unrar to 6.1.7.
 * **10.03.22:** - Add nzb-notify.
 * **22.02.22:** - Build unrar from source.
