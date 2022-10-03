@@ -10,3 +10,5 @@ chown abc:abc \
     /downloads \
     /incomplete-downloads
 
+chown -R abc:abc \
+    /config
