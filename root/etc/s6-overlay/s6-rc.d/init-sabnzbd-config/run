@@ -1,14 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-# make folders
-mkdir -p \
-    /downloads \
-    /incomplete-downloads
-
 # permissions
 chown abc:abc \
-    /downloads \
-    /incomplete-downloads
-
-chown -R abc:abc \
     /config
