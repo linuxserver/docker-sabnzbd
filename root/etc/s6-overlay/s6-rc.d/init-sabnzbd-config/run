@@ -10,3 +10,4 @@ chown abc:abc \
     /downloads \
     /incomplete-downloads
 
+find /config -path /config/Downloads -prune -o -exec chown abc:abc {} +
