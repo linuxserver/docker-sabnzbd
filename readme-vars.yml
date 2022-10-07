@@ -70,6 +70,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "03.10.22:", desc: "Rebase unstable branch to Alpine 3.16, migrate to s6v3." }
   - { date: "12.08.22:", desc: "Bump unrar to 6.1.7." }
   - { date: "10.03.22:", desc: "Add nzb-notify." }
   - { date: "22.02.22:", desc: "Build unrar from source." }
