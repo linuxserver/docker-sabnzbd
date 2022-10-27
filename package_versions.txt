@@ -9,7 +9,7 @@ ca-certificates-20220614-r0
 ca-certificates-bundle-20220614-r0
 coreutils-9.1-r0
 curl-7.83.1-r3
-expat-2.4.9-r0
+expat-2.5.0-r0
 gdbm-1.23-r0
 gmp-6.2.1-r2
 jq-1.6-r1
