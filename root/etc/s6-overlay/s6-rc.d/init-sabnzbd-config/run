@@ -6,8 +6,8 @@ mkdir -p \
     /incomplete-downloads
 
 # permissions
-chown abc:abc \
+lsiown abc:abc \
     /downloads \
     /incomplete-downloads
 
-find /config -path /config/Downloads -prune -o -exec chown abc:abc {} +
+find /config -path /config/Downloads -prune -o -exec lsiown abc:abc {} +
