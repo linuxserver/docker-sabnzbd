@@ -32,14 +32,14 @@ RUN \
   mkdir /tmp/unrar && \
   curl -o \
     /tmp/unrar.tar.gz -L \
-    "https://www.rarlab.com/rar/unrarsrc-${UNRAR_VERSION}.tar.gz" && \  
+    "https://www.rarlab.com/rar/unrarsrc-${UNRAR_VERSION}.tar.gz" && \
   tar xf \
     /tmp/unrar.tar.gz -C \
     /tmp/unrar --strip-components=1 && \
   cd /tmp/unrar && \
   make && \
   install -v -m755 unrar /usr/local/bin && \
-  echo "**** install sabnzbd ****" && \  
+  echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
       | awk '/tag_name/{print $4;exit}' FS='[""]'); \
@@ -59,7 +59,7 @@ RUN \
     pynzb \
     requests && \
   pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ -r requirements.txt && \
-  echo "**** install nzb-notify ****" && \   
+  echo "**** install nzb-notify ****" && \
   NZBNOTIFY_VERSION=$(curl -s https://api.github.com/repos/caronc/nzb-notify/releases/latest \
     | awk '/tag_name/{print $4;exit}' FS='[""]') && \
   mkdir -p /app/nzbnotify && \
