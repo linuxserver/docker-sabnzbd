@@ -1,0 +1,46 @@
+#!/usr/bin/with-contenv bash
+
+network_found=false
+iface=${INTERFACE:-eth0}
+interfaces=($(ip link | awk -F': ' '$0 !~ "lo|wg|tun|tap|^[^0-9]"{print $2;getline}' | cut -d@ -f1))
+if [[ ! " ${interfaces[*]} " =~ " $iface " ]]; then
+    interfaces+=("$iface")
+fi
+for interface in "${interfaces[@]}"; do
+  inet="$(ip -o addr show dev "${interface}" | awk '$3 == "inet" {print $4}')"
+  if [[ -z "$inet" ]]; then
+    continue
+  fi
+  if [ "$network_found" = false ]; then
+    iptables -F
+    iptables -X
+  fi
+  echo "[$(date -Iseconds)] Enabling connection to ${interface} ${inet}"
+  iptables -A INPUT -i "$interface" -s "${inet}" -j ACCEPT
+  iptables -A OUTPUT -o "$interface" -d "${inet}" -j ACCEPT
+  iptables -A FORWARD -i "$interface" -d "${inet}" -j ACCEPT
+  iptables -A FORWARD -i "$interface" -s "${inet}" -j ACCEPT
+  network_found=true
+done
+
+if [ "$network_found" = false ]; then
+  echo "[$(date -Iseconds)] No interface network detected"
+  exit
+fi
+
+echo "[$(date -Iseconds)] Enabling connection to secure interfaces"
+
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+iptables -A FORWARD -i lo -j ACCEPT
+
+iptables -A OUTPUT -o wg+ -j ACCEPT
+iptables -t nat -A POSTROUTING -o wg+ -j MASQUERADE
+
+iptables -A OUTPUT -o "$iface" -p udp -m udp --dport 53 -j ACCEPT
+iptables -A OUTPUT -o "$iface" -p udp -m udp --dport 51820 -j ACCEPT
+iptables -A OUTPUT -o "$iface" -d api.nordvpn.com -p tcp --dport 443 -j ACCEPT
