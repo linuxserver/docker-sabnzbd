@@ -1,1 +1,3 @@
 SABnzbd: https://sabnzbd.org/donate
+Bubuntux: https://github.com/sponsors/bubuntux
+WireGuard: https://www.wireguard.com/donations/
