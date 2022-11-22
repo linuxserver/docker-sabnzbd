@@ -8,6 +8,8 @@ ARG SABNZBD_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
 
+HEALTHCHECK CMD [ $(( $(date -u +%s) - $(wg show wg0 latest-handshakes | awk '{print $2}') )) -le 120 ] || exit 1
+
 # environment settings
 ENV HOME="/config" \
 PYTHONIOENCODING=utf-8
@@ -24,10 +26,13 @@ RUN \
     python3-dev && \
   apk add  -U --update --no-cache \
     curl \
+    jq \
     p7zip \
     par2cmdline \
+    patch \
+    py3-pip \
     python3 \
-    py3-pip && \
+    wireguard-tools && \
   echo "**** install unrar from source ****" && \
   mkdir /tmp/unrar && \
   curl -o \
@@ -83,6 +88,11 @@ RUN \
 
 # add local files
 COPY root/ /
+
+RUN \
+  patch --verbose -d / -p 0 -i /patch/wg-quick.patch && \
+  apk del --purge patch && \
+	rm -rf /tmp/* /patch
 
 # ports and volumes
 EXPOSE 8080
