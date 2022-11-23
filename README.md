@@ -253,6 +253,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.11.22:** - Rebase nightly branch to Alpine Edge for Python 3.11.
 * **03.10.22:** - Rebase nightly branch to Alpine 3.16, migrate to s6v3.
 * **12.08.22:** - Bump unrar to 6.1.7.
 * **31.07.22:** - Add nightly tag.
