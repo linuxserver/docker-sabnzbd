@@ -82,7 +82,7 @@ RUN \
   rm -rf \
     /tmp/* \
     $HOME/.cache \
-    $HOME/cargo
+    /config/cargo
 
 # add local files
 COPY root/ /
