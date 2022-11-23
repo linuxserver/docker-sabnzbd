@@ -20,6 +20,8 @@ RUN \
     gcc \
     jq \
     libffi-dev \
+    libxml2-dev \
+    libxslt-dev \
     make \
     openssl-dev \
     python3-dev && \
