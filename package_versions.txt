@@ -47,5 +47,5 @@ ssl_client-1.35.0-r29
 tzdata-2022f-r1
 utmps-libs-0.1.2.0-r1
 xz-5.2.8-r0
-xz-libs-5.2.8-r0
+xz-libs-5.2.9-r0
 zlib-1.2.13-r0
