@@ -20,12 +20,12 @@ libcrypto3-3.0.7-r0
 libcurl-7.86.0-r1
 libexpat-2.5.0-r0
 libffi-3.4.4-r0
-libgcc-12.2.1_git20220924-r4
-libgomp-12.2.1_git20220924-r4
+libgcc-12.2.1_git20220924-r5
+libgomp-12.2.1_git20220924-r5
 libintl-0.21.1-r1
 libproc-3.3.17-r2
 libssl3-3.0.7-r0
-libstdc++-12.2.1_git20220924-r4
+libstdc++-12.2.1_git20220924-r5
 linux-pam-1.5.2-r1
 mpdecimal-2.5.1-r1
 musl-1.2.3-r4
