@@ -2,7 +2,7 @@ alpine-baselayout-3.4.0-r0
 alpine-baselayout-data-3.4.0-r0
 alpine-keys-2.4-r1
 apk-tools-2.12.10-r1
-bash-5.2.9-r0
+bash-5.2.12-r0
 brotli-libs-1.0.9-r10
 busybox-1.35.0-r29
 busybox-binsh-1.35.0-r29
@@ -30,8 +30,8 @@ linux-pam-1.5.2-r1
 mpdecimal-2.5.1-r1
 musl-1.2.3-r4
 musl-utils-1.2.3-r4
-ncurses-libs-6.3_p20221126-r0
-ncurses-terminfo-base-6.3_p20221126-r0
+ncurses-libs-6.3_p20221203-r0
+ncurses-terminfo-base-6.3_p20221203-r0
 nghttp2-libs-1.51.0-r0
 oniguruma-6.9.8-r0
 p7zip-17.04-r3
@@ -44,8 +44,8 @@ shadow-4.13-r0
 skalibs-2.12.0.1-r0
 sqlite-libs-3.40.0-r0
 ssl_client-1.35.0-r29
-tzdata-2022f-r1
+tzdata-2022g-r0
 utmps-libs-0.1.2.0-r1
-xz-5.2.8-r0
+xz-5.2.9-r0
 xz-libs-5.2.9-r0
 zlib-1.2.13-r0
