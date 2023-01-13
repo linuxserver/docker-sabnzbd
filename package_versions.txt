@@ -46,6 +46,6 @@ sqlite-libs-3.40.1-r0
 ssl_client-1.35.0-r30
 tzdata-2022g-r0
 utmps-libs-0.1.2.0-r1
-xz-5.4.0-r1
-xz-libs-5.4.0-r1
+xz-5.4.1-r0
+xz-libs-5.4.1-r0
 zlib-1.2.13-r0
