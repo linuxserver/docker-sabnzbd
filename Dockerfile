@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM ghcr.io/linuxserver/baseimage-alpine:edge
 
 # set version label
@@ -17,13 +19,9 @@ RUN \
   apk add -U --update --no-cache --virtual=build-dependencies \
     build-base \
     cargo \
-    g++ \
-    gcc \
-    jq \
     libffi-dev \
     libxml2-dev \
     libxslt-dev \
-    make \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
@@ -55,7 +53,8 @@ RUN \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
   cd /app/sabnzbd && \
-  python3 -m ensurepip && \
+  rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && \
+  python3 -m ensurepip --upgrade && \
   pip3 install -U --no-cache-dir \
     pip \
     wheel && \
