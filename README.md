@@ -56,7 +56,7 @@ The architectures supported by this image are:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
 | arm64 | ✅ | arm64v8-\<version tag\> |
-| armhf| ✅ | arm32v7-\<version tag\> |
+| armhf | ✅ | arm32v7-\<version tag\> |
 
 ## Version Tags
 
@@ -66,7 +66,6 @@ This image provides various versions that are available via tags. Please read th
 | :----: | :----: |--- |
 | latest | ✅ | Stable SABnzbd releases |
 | unstable | ✅ | Unstable SABnzbd releases |
-
 ## Application Setup
 
 Initial setup is done from the http port.
@@ -103,7 +102,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Etc/UTC
     volumes:
       - <path to data>:/config
       - <path to downloads>:/downloads #optional
@@ -120,13 +119,14 @@ docker run -d \
   --name=sabnzbd \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Europe/London \
+  -e TZ=Etc/UTC \
   -p 8080:8080 \
   -v <path to data>:/config \
   -v <path to downloads>:/downloads `#optional` \
   -v <path to incomplete downloads>:/incomplete-downloads `#optional` \
   --restart unless-stopped \
   lscr.io/linuxserver/sabnzbd:unstable
+
 ```
 
 ## Parameters
@@ -138,7 +138,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 8080` | HTTP port for the WebUI. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
+| `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-v /config` | Local path for sabnzbd config files. |
 | `-v /downloads` | Local path for finished downloads. |
 | `-v /incomplete-downloads` | Local path for incomplete-downloads. |
