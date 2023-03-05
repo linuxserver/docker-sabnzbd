@@ -69,7 +69,7 @@ RUN \
     /tmp/nzbnotify.tar.gz -C \
     /app/nzbnotify --strip-components=1 && \
   cd /app/nzbnotify && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ -r requirements.txt && \  
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ -r requirements.txt && \  
   echo "**** cleanup ****" && \
   ln -s \
     /usr/bin/python3 \
