@@ -19,6 +19,7 @@ development_versions: true
 development_versions_items:
   - { tag: "latest", desc: "Stable SABnzbd releases" }
   - { tag: "unstable", desc: "Unstable SABnzbd releases" }
+  - { tag: "nightly", desc: "Latest commits from the develop branch" }
 
 # container parameters
 common_param_env_vars_enabled: true
@@ -29,7 +30,7 @@ param_env_vars:
   - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Local path for sabnzbd config files." }
+  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Local path for sabnzbd config files." }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8080", internal_port: "8080", port_desc: "HTTP port for the WebUI." }
@@ -40,8 +41,8 @@ cap_add_param: false
 opt_param_usage_include_env: false
 opt_param_usage_include_vols: true
 opt_param_volumes:
-  - { vol_path: "/downloads", vol_host_path: "<path to downloads>", desc: "Local path for finished downloads." }
-  - { vol_path: "/incomplete-downloads", vol_host_path: "<path to incomplete downloads>", desc: "Local path for incomplete-downloads." }
+  - { vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads." }
+  - { vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads." }
 opt_param_usage_include_ports: false
 opt_param_device_map: false
 opt_cap_add_param: false
@@ -70,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "03.10.22:", desc: "Rebase unstable branch to Alpine 3.17." }
   - { date: "03.10.22:", desc: "Rebase unstable branch to Alpine 3.16, migrate to s6v3." }
   - { date: "12.08.22:", desc: "Bump unrar to 6.1.7." }
   - { date: "10.03.22:", desc: "Add nzb-notify." }

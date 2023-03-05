@@ -66,6 +66,7 @@ This image provides various versions that are available via tags. Please read th
 | :----: | :----: |--- |
 | latest | ✅ | Stable SABnzbd releases |
 | unstable | ✅ | Unstable SABnzbd releases |
+| nightly | ✅ | Latest commits from the develop branch |
 ## Application Setup
 
 Initial setup is done from the http port.
@@ -104,9 +105,9 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - <path to data>:/config
-      - <path to downloads>:/downloads #optional
-      - <path to incomplete downloads>:/incomplete-downloads #optional
+      - /path/to/data:/config
+      - /path/to/downloads:/downloads #optional
+      - /path/to/incomplete/downloads:/incomplete-downloads #optional
     ports:
       - 8080:8080
     restart: unless-stopped
@@ -121,9 +122,9 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
   -p 8080:8080 \
-  -v <path to data>:/config \
-  -v <path to downloads>:/downloads `#optional` \
-  -v <path to incomplete downloads>:/incomplete-downloads `#optional` \
+  -v /path/to/data:/config \
+  -v /path/to/downloads:/downloads `#optional` \
+  -v /path/to/incomplete/downloads:/incomplete-downloads `#optional` \
   --restart unless-stopped \
   lscr.io/linuxserver/sabnzbd:unstable
 
@@ -252,6 +253,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **03.10.22:** - Rebase unstable branch to Alpine 3.17.
 * **03.10.22:** - Rebase unstable branch to Alpine 3.16, migrate to s6v3.
 * **12.08.22:** - Bump unrar to 6.1.7.
 * **10.03.22:** - Add nzb-notify.
