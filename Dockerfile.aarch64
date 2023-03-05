@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:arm64v8-3.16
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:arm64v8-3.17
 
 # set version label
 ARG UNRAR_VERSION=6.1.7
@@ -16,17 +18,13 @@ RUN \
   echo "**** install packages ****" && \
   apk add -U --update --no-cache --virtual=build-dependencies \
     build-base \
-    gcc \
-    jq \
     libffi-dev \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
-    curl \
     p7zip \
     par2cmdline \
-    python3 \
-    py3-pip && \
+    python3 && \
   echo "**** install unrar from source ****" && \
   mkdir /tmp/unrar && \
   curl -o \
@@ -41,7 +39,7 @@ RUN \
   echo "**** install sabnzbd ****" && \  
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases \
-      | jq -r 'first(.[]) | .tag_name'); \
+    | jq -r 'first(.[]) | .tag_name'); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
@@ -51,13 +49,15 @@ RUN \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
   cd /app/sabnzbd && \
-  python3 -m pip install --upgrade pip && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ \
-    wheel \
+  python3 -m ensurepip --upgrade && \
+  pip3 install -U --no-cache-dir \
+    pip \
+    wheel && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
     apprise \
     pynzb \
     requests && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ -r requirements.txt && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ -r requirements.txt && \
   echo "**** install nzb-notify ****" && \   
   NZBNOTIFY_VERSION=$(curl -s https://api.github.com/repos/caronc/nzb-notify/releases/latest \
     | awk '/tag_name/{print $4;exit}' FS='[""]') && \
@@ -69,11 +69,8 @@ RUN \
     /tmp/nzbnotify.tar.gz -C \
     /app/nzbnotify --strip-components=1 && \
   cd /app/nzbnotify && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ -r requirements.txt && \  
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ -r requirements.txt && \  
   echo "**** cleanup ****" && \
-  ln -s \
-    /usr/bin/python3 \
-    /usr/bin/python && \
   apk del --purge \
     build-dependencies && \
   rm -rf \
