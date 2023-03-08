@@ -13,8 +13,8 @@ babelfish               0.6.0                  python
 bash                    5.2.15-r0              apk     
 brotli-libs             1.0.9-r11              apk     
 busybox                 1.36.0                 binary  
-busybox                 1.36.0-r4              apk     
-busybox-binsh           1.36.0-r4              apk     
+busybox                 1.36.0-r5              apk     
+busybox-binsh           1.36.0-r5              apk     
 ca-certificates         20230106-r0            apk     
 ca-certificates-bundle  20230106-r0            apk     
 certifi                 2022.12.7              python  
@@ -92,7 +92,7 @@ shadow                  4.13-r2                apk
 six                     1.16.0                 python  
 skalibs                 2.13.1.0-r0            apk     
 sqlite-libs             3.41.0-r1              apk     
-ssl_client              1.36.0-r4              apk     
+ssl_client              1.36.0-r5              apk     
 tempora                 5.2.1                  python  
 tzdata                  2022g-r0               apk     
 ujson                   5.7.0                  python  
