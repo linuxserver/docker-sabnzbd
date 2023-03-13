@@ -50,8 +50,8 @@ libgcc                  12.2.1_git20220924-r9  apk
 libgomp                 12.2.1_git20220924-r9  apk     
 libintl                 0.21.1-r1              apk     
 libmd                   1.0.4-r1               apk     
-libncursesw             6.4_p20230225-r0       apk     
-libpanelw               6.4_p20230225-r0       apk     
+libncursesw             6.4_p20230311-r0       apk     
+libpanelw               6.4_p20230311-r0       apk     
 libproc2                4.0.3-r0               apk     
 libssl3                 3.0.8-r1               apk     
 libstdc++               12.2.1_git20220924-r9  apk     
@@ -61,7 +61,7 @@ more-itertools          9.1.0                  python
 mpdecimal               2.5.1-r1               apk     
 musl                    1.2.3-r4               apk     
 musl-utils              1.2.3-r4               apk     
-ncurses-terminfo-base   6.4_p20230225-r0       apk     
+ncurses-terminfo-base   6.4_p20230311-r0       apk     
 netcat-openbsd          1.219-r0               apk     
 nghttp2-libs            1.52.0-r0              apk     
 notify2                 0.3.1                  python  
@@ -91,12 +91,12 @@ sgmllib3k               1.0.0                  python
 shadow                  4.13-r2                apk     
 six                     1.16.0                 python  
 skalibs                 2.13.1.0-r0            apk     
-sqlite-libs             3.41.0-r1              apk     
+sqlite-libs             3.41.1-r0              apk     
 ssl_client              1.36.0-r5              apk     
 tempora                 5.2.1                  python  
 tzdata                  2022g-r0               apk     
 ujson                   5.7.0                  python  
-urllib3                 1.26.14                python  
+urllib3                 1.26.15                python  
 utmps-libs              0.1.2.1-r0             apk     
 wheel                   0.38.4                 python  
 xz-libs                 5.4.1-r0               apk     
