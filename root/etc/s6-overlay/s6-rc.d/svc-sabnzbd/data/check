@@ -9,9 +9,9 @@ if [[ -f "/config/sabnzbd.ini" ]]; then
     fi
 fi
 
-if curl -skL "http://localhost:${WEBUI_PORT:-8080}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
+if curl -skL "https://localhost:${WEBUI_HTTPS_PORT:-8080}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
     exit 0
-elif curl -skL "https://localhost:${WEBUI_HTTPS_PORT:-8080}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
+elif curl -skL "http://localhost:${WEBUI_PORT:-8080}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
     exit 0
 else
     exit 1
