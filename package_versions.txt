@@ -48,14 +48,14 @@ libexpat                2.5.0-r0               apk
 libffi                  3.4.4-r0               apk     
 libgcc                  12.2.1_git20220924-r9  apk     
 libgomp                 12.2.1_git20220924-r9  apk     
-libintl                 0.21.1-r1              apk     
+libintl                 0.21.1-r2              apk     
 libmd                   1.0.4-r1               apk     
 libncursesw             6.4_p20230311-r0       apk     
 libpanelw               6.4_p20230311-r0       apk     
 libproc2                4.0.3-r0               apk     
 libssl3                 3.0.8-r1               apk     
 libstdc++               12.2.1_git20220924-r9  apk     
-linux-pam               1.5.2-r3               apk     
+linux-pam               1.5.2-r5               apk     
 lxml                    4.9.2                  python  
 more-itertools          9.1.0                  python  
 mpdecimal               2.5.1-r1               apk     
