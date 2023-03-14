@@ -9,11 +9,7 @@ if [ "$HAS_IPV6" = "false" ]; then
     rm /etc/hosts.new
 fi
 
-if [[ -f "/config/sabnzbd.ini" ]]; then
-    WEBUI_PORT=$(grep -m1 '^port =' /config/sabnzbd.ini | awk -F '=' '{print $2}' | tr -d "[:space:]")
-fi
-
 exec \
-    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost ${WEBUI_PORT:-8080}" \
+    s6-notifyoncheck -d -n 300 -w 1000 \
         s6-setuidgid abc python3 /app/sabnzbd/SABnzbd.py \
         --config-file /config --server "$FAMILY"
