@@ -6,6 +6,8 @@ fi
 
 if curl -skL "http://localhost:${WEBUI_PORT}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
     exit 0
+elif curl -skL "https://localhost:${WEBUI_PORT}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
+    exit 0
 else
     exit 1
 fi
