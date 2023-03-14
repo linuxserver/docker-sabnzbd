@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ -f "/config/sabnzbd.ini" ]]; then
+    WEBUI_PORT=$(grep -m1 '^port =' /config/sabnzbd.ini | awk -F '=' '{print $2}' | tr -d "[:space:]")
+fi
+
+if curl -skL "http://localhost:${WEBUI_PORT}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
+    exit 0
+else
+    exit 1
+fi
