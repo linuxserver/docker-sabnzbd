@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [[ -f "/config/sabnzbd.ini" ]]; then
+    WEBUI_PORT=$(grep -m1 '^port =' /config/sabnzbd.ini | awk -F '=' '{print $2}' | tr -d "[:space:]")
+    if [[ $(grep -m1 '^enable_https =' /config/sabnzbd.ini | awk -F '=' '{print $2}' | tr -d "[:space:]") == '1' ]]; then
+        HTTPS_ENABLED=1
+        if [[ $(grep -m1 '^https_port =' /config/sabnzbd.ini | awk -F '=' '{print $2}' | tr -d "[:space:]") == '""' ]]; then
+            WEBUI_HTTPS_PORT=${WEBUI_PORT}
+        else
+            WEBUI_HTTPS_PORT=$(grep -m1 '^https_port =' /config/sabnzbd.ini | awk -F '=' '{print $2}' | tr -d "[:space:]")
+        fi
+    fi
+fi
+
+if [[ ${HTTPS_ENABLED} == 1 ]]; then
+    if curl -skL "https://localhost:${WEBUI_HTTPS_PORT:-8080}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
+        exit 0
+    else
+        exit 1
+    fi
+else
+    if curl -skL "http://localhost:${WEBUI_PORT:-8080}/sabnzbd/api?mode=version" > /dev/null 2>&1; then
+        exit 0
+    else
+        exit 1
+    fi
+fi
