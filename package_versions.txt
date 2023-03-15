@@ -42,7 +42,7 @@ libattr                 2.5.1-r3               apk
 libbsd                  0.11.7-r0              apk     
 libbz2                  1.0.8-r4               apk     
 libc-utils              0.7.2-r4               apk     
-libcrypto3              3.0.8-r1               apk     
+libcrypto3              3.1.0-r0               apk     
 libcurl                 7.88.1-r1              apk     
 libexpat                2.5.0-r0               apk     
 libffi                  3.4.4-r0               apk     
@@ -53,7 +53,7 @@ libmd                   1.0.4-r1               apk
 libncursesw             6.4_p20230311-r0       apk     
 libpanelw               6.4_p20230311-r0       apk     
 libproc2                4.0.3-r0               apk     
-libssl3                 3.0.8-r1               apk     
+libssl3                 3.1.0-r0               apk     
 libstdc++               12.2.1_git20220924-r9  apk     
 linux-pam               1.5.2-r5               apk     
 lxml                    4.9.2                  python  
@@ -98,7 +98,7 @@ tzdata                  2022g-r0               apk
 ujson                   5.7.0                  python  
 urllib3                 1.26.15                python  
 utmps-libs              0.1.2.1-r0             apk     
-wheel                   0.38.4                 python  
+wheel                   0.40.0                 python  
 xz-libs                 5.4.1-r0               apk     
 zc.lockfile             3.0.post1              python  
 zlib                    1.2.13-r0              apk     
