@@ -22,7 +22,7 @@ RUN \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
-    p7zip \
+    7zip \
     par2cmdline \
     python3 && \
   echo "**** install unrar from source ****" && \
