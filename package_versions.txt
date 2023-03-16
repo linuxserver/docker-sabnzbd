@@ -1,4 +1,5 @@
 NAME                    VERSION                TYPE   
+7zip                    22.01-r1               apk     
 Cheetah3                3.2.6.post1            python  
 CherryPy                18.8.0                 python  
 Markdown                3.4.1                  python  
@@ -67,7 +68,6 @@ nghttp2-libs            1.52.0-r0              apk
 notify2                 0.3.1                  python  
 oauthlib                3.2.2                  python  
 oniguruma               6.9.8-r0               apk     
-p7zip                   17.05-r1               apk     
 par2cmdline             0.8.1-r1               apk     
 pip                     23.0.1                 python  
 portend                 3.1.0                  python  
