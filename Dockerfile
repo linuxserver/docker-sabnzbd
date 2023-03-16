@@ -3,7 +3,7 @@
 FROM ghcr.io/linuxserver/baseimage-alpine:3.17
 
 # set version label
-ARG UNRAR_VERSION=6.1.7
+ARG UNRAR_VERSION=6.2.6
 ARG BUILD_DATE
 ARG VERSION
 ARG SABNZBD_VERSION
@@ -22,7 +22,7 @@ RUN \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
-    p7zip \
+    7zip \
     par2cmdline \
     python3 && \
   echo "**** install unrar from source ****" && \

@@ -71,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "15.03.23:", desc: "Switch from p7zip to 7zip, bump unrar to 6.2.6." }
   - { date: "05.03.23:", desc: "Rebase master branch to Alpine 3.17." }
   - { date: "03.10.22:", desc: "Rebase master branch to Alpine 3.16, migrate to s6v3." }
   - { date: "12.08.22:", desc: "Bump unrar to 6.1.7." }
