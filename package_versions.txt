@@ -99,6 +99,6 @@ ujson                   5.7.0                  python
 urllib3                 1.26.15                python  
 utmps-libs              0.1.2.1-r0             apk     
 wheel                   0.40.0                 python  
-xz-libs                 5.4.1-r0               apk     
+xz-libs                 5.4.2-r0               apk     
 zc.lockfile             3.0.post1              python  
 zlib                    1.2.13-r0              apk     
