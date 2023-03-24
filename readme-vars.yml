@@ -51,7 +51,7 @@ optional_block_1: false
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  Initial setup is done from the http port.
+  https://github.com/linuxserver/docker-sabnzbd/pull/179
 
   See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
   
