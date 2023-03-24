@@ -69,7 +69,7 @@ This image provides various versions that are available via tags. Please read th
 | nightly | ✅ | Latest commits from the develop branch |
 ## Application Setup
 
-Initial setup is done from the http port.
+https://github.com/linuxserver/docker-sabnzbd/pull/179
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
