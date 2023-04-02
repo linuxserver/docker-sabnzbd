@@ -51,8 +51,8 @@ libgcc                  12.2.1_git20220924-r9  apk
 libgomp                 12.2.1_git20220924-r9  apk     
 libintl                 0.21.1-r2              apk     
 libmd                   1.0.4-r1               apk     
-libncursesw             6.4_p20230311-r0       apk     
-libpanelw               6.4_p20230311-r0       apk     
+libncursesw             6.4_p20230401-r0       apk     
+libpanelw               6.4_p20230401-r0       apk     
 libproc2                4.0.3-r0               apk     
 libssl3                 3.1.0-r2               apk     
 libstdc++               12.2.1_git20220924-r9  apk     
@@ -62,7 +62,7 @@ more-itertools          9.1.0                  python
 mpdecimal               2.5.1-r1               apk     
 musl                    1.2.3-r4               apk     
 musl-utils              1.2.3-r4               apk     
-ncurses-terminfo-base   6.4_p20230311-r0       apk     
+ncurses-terminfo-base   6.4_p20230401-r0       apk     
 netcat-openbsd          1.219-r0               apk     
 nghttp2-libs            1.52.0-r0              apk     
 notify2                 0.3.1                  python  
