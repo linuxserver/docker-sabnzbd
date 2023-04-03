@@ -33,7 +33,7 @@ gdbm                    1.23-r0                apk
 guessit                 3.7.1                  python  
 idna                    3.4                    python  
 jaraco.classes          3.2.3                  python  
-jaraco.collections      3.9.0                  python  
+jaraco.collections      4.0.0                  python  
 jaraco.context          4.3.0                  python  
 jaraco.functools        3.6.0                  python  
 jaraco.text             3.8.1                  python  
@@ -79,7 +79,7 @@ pynzbget                0.6.4                  python
 python                  3.11.2                 binary  
 python-dateutil         2.8.2                  python  
 python3                 3.11.2-r0              apk     
-pytz                    2023.2                 python  
+pytz                    2023.3                 python  
 readline                8.2.1-r0               apk     
 rebulk                  3.2.0                  python  
 requests                2.28.2                 python  
