@@ -1,5 +1,5 @@
 NAME                    VERSION                 TYPE   
-7zip                    22.01-r1                apk     
+7zip                    22.01-r2                apk     
 Cheetah3                3.2.6.post1             python  
 CherryPy                18.8.0                  python  
 Markdown                3.4.3                   python  
