@@ -75,13 +75,15 @@ pip                     23.1                    python
 portend                 3.1.0                   python  
 procps-ng               4.0.3-r1                apk     
 puremagic               1.15                    python  
+pyc                     0.1-r0                  apk     
 pycparser               2.21                    python  
 pynzb                   0.1.0                   python  
 pynzbget                0.6.4                   python  
 python                  3.11.3                  binary  
 python-dateutil         2.8.2                   python  
-python3                 3.11.3-r4               apk     
-python3-pycache-pyc0    3.11.3-r4               apk     
+python3                 3.11.3-r10              apk     
+python3-pyc             3.11.3-r10              apk     
+python3-pycache-pyc0    3.11.3-r10              apk     
 pytz                    2023.3                  python  
 readline                8.2.1-r1                apk     
 rebulk                  3.2.0                   python  
