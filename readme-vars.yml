@@ -71,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "11.05.23:", desc: "Rebase nightly branch to Alpine 3.18, deprecate `arm32v7' (armhf) builds." }
   - { date: "15.03.23:", desc: "Switch from p7zip to 7zip, bump unrar to 6.2.6." }
   - { date: "23.11.22:", desc: "Rebase nightly branch to Alpine Edge for Python 3.11." }
   - { date: "03.10.22:", desc: "Rebase nightly branch to Alpine 3.16, migrate to s6v3." }

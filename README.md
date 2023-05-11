@@ -253,6 +253,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **11.05.23:** - Rebase nightly branch to Alpine 3.18, deprecate `arm32v7' (armhf) builds.
 * **15.03.23:** - Switch from p7zip to 7zip, bump unrar to 6.2.6.
 * **23.11.22:** - Rebase nightly branch to Alpine Edge for Python 3.11.
 * **03.10.22:** - Rebase nightly branch to Alpine 3.16, migrate to s6v3.
