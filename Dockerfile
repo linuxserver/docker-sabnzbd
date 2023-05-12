@@ -64,7 +64,7 @@ RUN \
     apprise \
     pynzb \
     requests && \
-  pip install -U --no-cache-dir -r requirements.txt && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18 -r requirements.txt && \
   echo "**** install nzb-notify ****" && \   
   NZBNOTIFY_VERSION=$(curl -s https://api.github.com/repos/caronc/nzb-notify/releases/latest \
     | awk '/tag_name/{print $4;exit}' FS='[""]') && \
@@ -76,7 +76,7 @@ RUN \
     /tmp/nzbnotify.tar.gz -C \
     /app/nzbnotify --strip-components=1 && \
   cd /app/nzbnotify && \
-  pip install -U --no-cache-dir -r requirements.txt && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18 -r requirements.txt && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
