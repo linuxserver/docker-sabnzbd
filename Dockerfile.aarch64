@@ -57,7 +57,7 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18 \
     apprise \
     pynzb \
     requests && \
