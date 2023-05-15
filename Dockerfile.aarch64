@@ -12,9 +12,7 @@ LABEL maintainer="thespad"
 
 # environment settings
 ENV HOME="/config" \
-  PYTHONIOENCODING=utf-8 \
-  VIRTUAL_ENV=/lsiopy \
-  PATH="/lsiopy/bin:$PATH"
+  PYTHONIOENCODING=utf-8
 
 RUN \
   echo "**** install packages ****" && \
@@ -55,7 +53,6 @@ RUN \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
   cd /app/sabnzbd && \
-  mkdir -p /lsiopy && \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
     pip \
