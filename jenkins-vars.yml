@@ -6,6 +6,7 @@ external_type: github_devel
 release_type: prerelease
 release_tag: unstable
 ls_branch: unstable
+build_armhf: false
 repo_vars:
   - EXT_GIT_BRANCH = 'develop'
   - EXT_USER = 'sabnzbd'
