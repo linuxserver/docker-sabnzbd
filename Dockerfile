@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:edge
+FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 # set version label
 ARG UNRAR_VERSION=6.2.6
@@ -12,7 +12,7 @@ LABEL maintainer="thespad"
 
 # environment settings
 ENV HOME="/config" \
-PYTHONIOENCODING=utf-8
+  PYTHONIOENCODING=utf-8
 
 RUN \
   echo "**** install packages ****" && \
@@ -53,16 +53,15 @@ RUN \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
   cd /app/sabnzbd && \
-  rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED && \
-  python3 -m ensurepip --upgrade && \
-  pip3 install -U --no-cache-dir \
+  python3 -m venv /lsiopy && \
+  pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip3 install -U --no-cache-dir \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18 \
     apprise \
     pynzb \
     requests && \
-  pip3 install -U --no-cache-dir -r requirements.txt && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18 -r requirements.txt && \
   echo "**** install nzb-notify ****" && \   
   NZBNOTIFY_VERSION=$(curl -s https://api.github.com/repos/caronc/nzb-notify/releases/latest \
     | awk '/tag_name/{print $4;exit}' FS='[""]') && \
@@ -74,7 +73,7 @@ RUN \
     /tmp/nzbnotify.tar.gz -C \
     /app/nzbnotify --strip-components=1 && \
   cd /app/nzbnotify && \
-  pip3 install -U --no-cache-dir -r requirements.txt && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18 -r requirements.txt && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
