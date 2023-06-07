@@ -102,7 +102,7 @@ ssl_client              1.36.1-r0               apk
 tempora                 5.2.2                   python  
 tzdata                  2023c-r1                apk     
 ujson                   5.7.0                   python  
-urllib3                 2.0.2                   python  
+urllib3                 2.0.3                   python  
 utmps-libs              0.1.2.1-r1              apk     
 wheel                   0.40.0                  python  
 xz-libs                 5.4.3-r0                apk     
