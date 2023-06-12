@@ -99,9 +99,9 @@ six                     1.16.0                  python
 skalibs                 2.13.1.1-r1             apk     
 sqlite-libs             3.41.2-r2               apk     
 ssl_client              1.36.1-r0               apk     
-tempora                 5.2.2                   python  
+tempora                 5.3.0                   python  
 tzdata                  2023c-r1                apk     
-ujson                   5.7.0                   python  
+ujson                   5.8.0                   python  
 urllib3                 2.0.3                   python  
 utmps-libs              0.1.2.1-r1              apk     
 wheel                   0.40.0                  python  
