@@ -34,7 +34,7 @@ gdbm                    1.23-r1                 apk
 guessit                 3.7.1                   python  
 idna                    3.4                     python  
 jaraco.classes          3.2.3                   python  
-jaraco.collections      4.2.0                   python  
+jaraco.collections      4.3.0                   python  
 jaraco.context          4.3.0                   python  
 jaraco.functools        3.7.0                   python  
 jaraco.text             3.8.1                   python  
