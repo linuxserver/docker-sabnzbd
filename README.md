@@ -69,7 +69,7 @@ This image provides various versions that are available via tags. Please read th
 | nightly | ✅ | Latest commits from the develop branch |
 ## Application Setup
 
-Initial setup is done via http://<docker host ip>:<mapped http port> ie, http://192.168.1.100:8080.
+Initial setup is done via `https://<docker host ip>:<mapped http port>` ie, http://192.168.1.100:8080.
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
