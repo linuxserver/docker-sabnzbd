@@ -72,7 +72,7 @@ notify2                 0.3.1                   python
 oauthlib                3.2.2                   python  
 oniguruma               6.9.8-r1                apk     
 par2cmdline             0.8.1-r1                apk     
-pip                     23.1.2                  python  
+pip                     23.2                    python  
 portend                 3.2.0                   python  
 procps-ng               4.0.3-r1                apk     
 puremagic               1.15                    python  
