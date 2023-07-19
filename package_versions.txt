@@ -4,7 +4,7 @@ Cheetah3                3.2.6.post1             python
 CherryPy                18.8.0                  python  
 Markdown                3.4.3                   python  
 PySocks                 1.7.1                   python  
-PyYAML                  6.0                     python  
+PyYAML                  6.0.1                   python  
 alpine-baselayout       3.4.3-r1                apk     
 alpine-baselayout-data  3.4.3-r1                apk     
 alpine-keys             2.4-r1                  apk     
@@ -24,7 +24,7 @@ cffi                    1.15.1                  python
 chardet                 5.1.0                   python  
 charset-normalizer      3.2.0                   python  
 cheroot                 10.0.0                  python  
-click                   8.1.5                   python  
+click                   8.1.6                   python  
 configobj               5.0.8                   python  
 coreutils               9.3-r1                  apk     
 cryptography            41.0.2                  python  
