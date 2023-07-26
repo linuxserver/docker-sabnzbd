@@ -2,7 +2,7 @@ NAME                    VERSION                 TYPE
 7zip                    22.01-r5                apk     
 Cheetah3                3.2.6.post1             python  
 CherryPy                18.8.0                  python  
-Markdown                3.4.3                   python  
+Markdown                3.4.4                   python  
 PySocks                 1.7.1                   python  
 PyYAML                  6.0.1                   python  
 alpine-baselayout       3.4.3-r1                apk     
