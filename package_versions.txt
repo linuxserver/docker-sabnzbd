@@ -3,7 +3,7 @@ NAME                        VERSION                 TYPE
 7zip                        22.01-r5                apk     
 Cheetah3                    3.2.6.post1             python  
 CherryPy                    18.8.0                  python  
-Command line RAR            6.21.0                  dotnet  
+Command line RAR            6.23.0                  dotnet  
 Markdown                    3.4.4                   python  
 PAR2 client                 1.3.2.5                 dotnet  
 PySocks                     1.7.1                   python  
@@ -108,7 +108,7 @@ tzdata                      2023c-r1                apk
 ujson                       5.8.0                   python  
 urllib3                     2.0.4                   python  
 utmps-libs                  0.1.2.1-r1              apk     
-wheel                       0.41.0                  python  
+wheel                       0.41.1                  python  
 xz-libs                     5.4.3-r0                apk     
 zc.lockfile                 3.0.post1               python  
 zlib                        1.2.13-r1               apk     
