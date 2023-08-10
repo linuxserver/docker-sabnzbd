@@ -253,6 +253,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **10.08.23:** - Bump unrar to 6.2.10.
 * **16.05.23:** - Rebase unstable to Alpine 3.18, deprecate armhf.
 * **15.03.23:** - Switch from p7zip to 7zip, bump unrar to 6.2.6.
 * **05.03.23:** - Rebase unstable branch to Alpine 3.17.
