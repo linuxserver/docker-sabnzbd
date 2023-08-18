@@ -70,7 +70,8 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - {date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
+  - { date: "16.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
+  - { date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
   - { date: "16.05.23:", desc: "Rebase stable to Alpine 3.18, deprecate armhf." }
   - { date: "15.03.23:", desc: "Switch from p7zip to 7zip, bump unrar to 6.2.6." }
   - { date: "05.03.23:", desc: "Rebase master branch to Alpine 3.17." }
