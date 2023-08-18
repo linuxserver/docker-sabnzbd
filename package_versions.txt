@@ -24,7 +24,7 @@ cffi                        1.15.1                  python
 chardet                     5.2.0                   python  
 charset-normalizer          3.2.0                   python  
 cheroot                     10.0.0                  python  
-click                       8.1.6                   python  
+click                       8.1.7                   python  
 configobj                   5.0.8                   python  
 coreutils                   9.3-r1                  apk     
 cryptography                41.0.1                  python  
@@ -80,7 +80,6 @@ pyc                         0.1-r0                  apk
 pycparser                   2.21                    python  
 pynzb                       0.1.0                   python  
 pynzbget                    0.6.4                   python  
-python                      3.11.4                  binary  
 python-dateutil             2.8.2                   python  
 python3                     3.11.4-r0               apk     
 python3-pyc                 3.11.4-r0               apk     
@@ -92,7 +91,7 @@ requests                    2.31.0                  python
 requests-oauthlib           1.3.1                   python  
 sabctools                   7.0.2                   python  
 scanelf                     1.3.7-r1                apk     
-setuptools                  68.1.0                  python  
+setuptools                  68.1.2                  python  
 sgmllib3k                   1.0.0                   python  
 shadow                      4.13-r4                 apk     
 six                         1.16.0                  python  
