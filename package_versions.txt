@@ -36,7 +36,7 @@ idna                        3.4                     python
 jaraco.classes              3.3.0                   python  
 jaraco.collections          4.3.0                   python  
 jaraco.context              4.3.0                   python  
-jaraco.functools            3.8.1                   python  
+jaraco.functools            3.9.0                   python  
 jaraco.text                 3.8.1                   python  
 jq                          1.6-r3                  apk     
 libacl                      2.3.1-r3                apk     
@@ -84,14 +84,14 @@ python-dateutil             2.8.2                   python
 python3                     3.11.5-r0               apk     
 python3-pyc                 3.11.5-r0               apk     
 python3-pycache-pyc0        3.11.5-r0               apk     
-pytz                        2023.3                  python  
+pytz                        2023.3.post1            python  
 readline                    8.2.1-r1                apk     
 rebulk                      3.2.0                   python  
 requests                    2.31.0                  python  
 requests-oauthlib           1.3.1                   python  
 sabctools                   7.1.1                   python  
 scanelf                     1.3.7-r1                apk     
-setuptools                  68.2.0                  python  
+setuptools                  68.2.1                  python  
 sgmllib3k                   1.0.0                   python  
 shadow                      4.13-r4                 apk     
 six                         1.16.0                  python  
