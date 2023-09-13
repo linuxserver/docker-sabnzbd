@@ -26,6 +26,7 @@ RUN \
     python3-dev && \
   apk add  -U --update --no-cache \
     7zip \
+    libgomp \
     python3 && \
   echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
