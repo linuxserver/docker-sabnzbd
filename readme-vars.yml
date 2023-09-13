@@ -53,9 +53,9 @@ app_setup_block: |
   Initial setup is done via `http://<docker host ip>:<mapped http port>` ie, http://192.168.1.100:8080.
 
   See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
-  
+
   ### nzb-notify
-  
+
   nzb-notify is included with this image as a convenience script. To use it set the Scripts folder in the Folder settings to /app/nzbnotify and then configure it under Notifications. See [nzb-notify](https://github.com/caronc/nzb-notify/) for more information.
 
   ### Download folders
@@ -64,12 +64,13 @@ app_setup_block: |
 
   We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
 
-  Use the optional paths if you dont understand, or dont want hardlinks/atomic moves. 
+  Use the optional paths if you dont understand, or dont want hardlinks/atomic moves.
 
   The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
 # changelog
 changelogs:
+  - {date: "13.09.23:", desc: "Use par2cmdline-turbo in place of par2cmdline."}
   - { date: "16.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
   - { date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
   - { date: "16.05.23:", desc: "Rebase unstable to Alpine 3.18, deprecate armhf." }
