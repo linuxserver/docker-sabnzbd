@@ -18,15 +18,17 @@ ENV HOME="/config" \
 RUN \
   echo "**** install packages ****" && \
   apk add -U --update --no-cache --virtual=build-dependencies \
+    autoconf \
+    automake \
     build-base \
     libffi-dev \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
     7zip \
-    par2cmdline \
+    libgomp \
     python3 && \
-  echo "**** install sabnzbd ****" && \  
+  echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
     SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest \
       | awk '/tag_name/{print $4;exit}' FS='[""]'); \
@@ -48,7 +50,23 @@ RUN \
     pynzb \
     requests && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ -r requirements.txt && \
-  echo "**** install nzb-notify ****" && \   
+  echo "**** install par2cmdline-turbo from source ****" && \
+  PAR2_VERSION=$(curl -s https://api.github.com/repos/animetosho/par2cmdline-turbo/releases/latest \
+    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+  mkdir /tmp/par2cmdline && \
+  curl -o \
+    /tmp/par2cmdline.tar.gz -L \
+    "https://github.com/animetosho/par2cmdline-turbo/archive/${PAR2_VERSION}.tar.gz" && \
+  tar xf \
+    /tmp/par2cmdline.tar.gz -C \
+    /tmp/par2cmdline --strip-components=1 && \
+  cd /tmp/par2cmdline && \
+  ./automake.sh && \
+  ./configure && \
+  make && \
+  make check && \
+  make install && \
+  echo "**** install nzb-notify ****" && \
   NZBNOTIFY_VERSION=$(curl -s https://api.github.com/repos/caronc/nzb-notify/releases/latest \
     | awk '/tag_name/{print $4;exit}' FS='[""]') && \
   mkdir -p /app/nzbnotify && \

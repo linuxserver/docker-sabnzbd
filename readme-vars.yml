@@ -64,12 +64,13 @@ app_setup_block: |
 
   We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
 
-  Use the optional paths if you dont understand, or dont want hardlinks/atomic moves. 
+  Use the optional paths if you dont understand, or dont want hardlinks/atomic moves.
 
   The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
 # changelog
 changelogs:
+  - {date: "13.09.23:", desc: "Use par2cmdline-turbo in place of par2cmdline."}
   - { date: "16.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
   - { date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
   - { date: "16.05.23:", desc: "Rebase stable to Alpine 3.18, deprecate armhf." }
@@ -80,7 +81,7 @@ changelogs:
   - { date: "31.07.22:", desc: "Add nightly tag." }
   - { date: "10.03.22:", desc: "Add nzb-notify." }
   - { date: "22.02.22:", desc: "Rebase master branch to Alpine, build unrar from source, deprecate Alpine branch." }
-  - { date: "25.01.22:", desc: "Rebase Unstable branch to Alpine." }  
+  - { date: "25.01.22:", desc: "Rebase Unstable branch to Alpine." }
   - { date: "13.01.22:", desc: "Add alpine branch" }
   - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
   - { date: "24.07.21:", desc: "Add python3-setuptools." }
