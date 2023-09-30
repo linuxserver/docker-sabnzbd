@@ -12,7 +12,7 @@ Simple Launcher Executable  1.1.0.14                dotnet
 alpine-baselayout           3.4.3-r1                apk     
 alpine-baselayout-data      3.4.3-r1                apk     
 alpine-keys                 2.4-r1                  apk     
-alpine-release              3.18.3-r0               apk     
+alpine-release              3.18.4-r0               apk     
 apk-tools                   2.14.0-r2               apk     
 apprise                     1.5.0                   python  
 babelfish                   0.6.0                   python  
@@ -25,7 +25,7 @@ ca-certificates-bundle      20230506-r0             apk
 certifi                     2023.7.22               python  
 cffi                        1.15.1                  python  
 chardet                     5.2.0                   python  
-charset-normalizer          3.2.0                   python  
+charset-normalizer          3.3.0                   python  
 cheroot                     10.0.0                  python  
 click                       8.1.7                   python  
 configobj                   5.0.8                   python  
