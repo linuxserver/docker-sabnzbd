@@ -9,7 +9,7 @@ Simple Launcher Executable  1.1.0.14                dotnet
 alpine-baselayout           3.4.3-r1                apk     
 alpine-baselayout-data      3.4.3-r1                apk     
 alpine-keys                 2.4-r1                  apk     
-alpine-release              3.18.3-r0               apk     
+alpine-release              3.18.4-r0               apk     
 apk-tools                   2.14.0-r2               apk     
 apprise                     1.5.0                   python  
 babelfish                   0.6.0                   python  
@@ -22,7 +22,7 @@ ca-certificates-bundle      20230506-r0             apk
 certifi                     2023.7.22               python  
 cffi                        1.15.1                  python  
 chardet                     5.2.0                   python  
-charset-normalizer          3.2.0                   python  
+charset-normalizer          3.3.0                   python  
 cheroot                     10.0.0                  python  
 click                       8.1.7                   python  
 configobj                   5.0.8                   python  
@@ -80,9 +80,9 @@ pycparser                   2.21                    python
 pynzb                       0.1.0                   python  
 pynzbget                    0.6.4                   python  
 python-dateutil             2.8.2                   python  
-python3                     3.11.5-r0               apk     
-python3-pyc                 3.11.5-r0               apk     
-python3-pycache-pyc0        3.11.5-r0               apk     
+python3                     3.11.6-r0               apk     
+python3-pyc                 3.11.6-r0               apk     
+python3-pycache-pyc0        3.11.6-r0               apk     
 pytz                        2023.3.post1            python  
 readline                    8.2.1-r1                apk     
 rebulk                      3.2.0                   python  
@@ -100,7 +100,7 @@ ssl_client                  1.36.1-r2               apk
 tempora                     5.5.0                   python  
 tzdata                      2023c-r1                apk     
 ujson                       5.8.0                   python  
-urllib3                     2.0.5                   python  
+urllib3                     2.0.6                   python  
 utmps-libs                  0.1.2.1-r1              apk     
 wheel                       0.41.2                  python  
 xz-libs                     5.4.3-r0                apk     
