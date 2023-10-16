@@ -14,7 +14,7 @@ alpine-baselayout-data      3.4.3-r1                apk
 alpine-keys                 2.4-r1                  apk     
 alpine-release              3.18.4-r0               apk     
 apk-tools                   2.14.0-r2               apk     
-apprise                     1.5.0                   python  
+apprise                     1.6.0                   python  
 babelfish                   0.6.0                   python  
 bash                        5.2.15-r5               apk     
 brotli-libs                 1.0.9-r14               apk     
