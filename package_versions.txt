@@ -25,7 +25,7 @@ ca-certificates-bundle      20230506-r0             apk
 certifi                     2023.7.22               python  
 cffi                        1.16.0                  python  
 chardet                     5.2.0                   python  
-charset-normalizer          3.3.0                   python  
+charset-normalizer          3.3.1                   python  
 cheroot                     10.0.0                  python  
 click                       8.1.7                   python  
 configobj                   5.0.8                   python  
@@ -74,7 +74,7 @@ nghttp2-libs                1.57.0-r0               apk
 notify2                     0.3.1                   python  
 oauthlib                    3.2.2                   python  
 oniguruma                   6.9.8-r1                apk     
-pip                         23.3                    python  
+pip                         23.3.1                  python  
 portend                     3.2.0                   python  
 procps-ng                   4.0.4-r0                apk     
 puremagic                   1.15                    python  
