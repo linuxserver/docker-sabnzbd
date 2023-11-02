@@ -2,7 +2,7 @@ NAME                        VERSION                 TYPE
 7zip                        22.01-r5                apk     
 Cheetah3                    3.2.6.post1             python  
 CherryPy                    18.8.0                  python  
-Markdown                    3.5                     python  
+Markdown                    3.5.1                   python  
 PySocks                     1.7.1                   python  
 PyYAML                      6.0.1                   python  
 Simple Launcher Executable  1.1.0.14                dotnet  
@@ -22,7 +22,7 @@ ca-certificates-bundle      20230506-r0             apk
 certifi                     2023.7.22               python  
 cffi                        1.16.0                  python  
 chardet                     5.2.0                   python  
-charset-normalizer          3.3.1                   python  
+charset-normalizer          3.3.2                   python  
 cheroot                     10.0.0                  python  
 click                       8.1.7                   python  
 configobj                   5.0.8                   python  
@@ -102,7 +102,7 @@ tzdata                      2023c-r1                apk
 ujson                       5.8.0                   python  
 urllib3                     2.0.7                   python  
 utmps-libs                  0.1.2.1-r1              apk     
-wheel                       0.41.2                  python  
+wheel                       0.41.3                  python  
 xz-libs                     5.4.3-r0                apk     
 zc.lockfile                 3.0.post1               python  
 zlib                        1.2.13-r1               apk     
