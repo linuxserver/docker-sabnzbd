@@ -39,7 +39,7 @@ idna                        3.4                     python
 jaraco.classes              3.3.0                   python  
 jaraco.collections          4.3.0                   python  
 jaraco.context              4.3.0                   python  
-jaraco.functools            3.9.0                   python  
+jaraco.functools            4.0.0                   python  
 jaraco.text                 3.8.1                   python  
 jq                          1.6-r3                  apk     
 libacl                      2.3.1-r3                apk     
