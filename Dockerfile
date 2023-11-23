@@ -26,7 +26,6 @@ RUN \
     python3-dev && \
   apk add  -U --update --no-cache \
     7zip \
-    libgomp \
     python3 && \
   echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
@@ -50,6 +49,8 @@ RUN \
     pynzb \
     requests && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ -r requirements.txt && \
+  echo "**** build sab translations ****" && \
+  python3 tools/make_mo.py && \
   echo "**** install par2cmdline-turbo from source ****" && \
   PAR2_VERSION=$(curl -s https://api.github.com/repos/animetosho/par2cmdline-turbo/releases/latest \
     | awk '/tag_name/{print $4;exit}' FS='[""]'); \
