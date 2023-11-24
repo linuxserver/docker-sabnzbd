@@ -35,7 +35,7 @@ curl                      8.4.0-r0                apk
 feedparser                6.0.10                  python  
 gdbm                      1.23-r1                 apk     
 guessit                   3.7.1                   python  
-idna                      3.4                     python  
+idna                      3.5                     python  
 jaraco.classes            3.3.0                   python  
 jaraco.collections        4.3.0                   python  
 jaraco.context            4.3.0                   python  
