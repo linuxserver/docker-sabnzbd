@@ -30,7 +30,7 @@ cheroot                   10.0.0                  python
 click                     8.1.7                   python  
 configobj                 5.0.8                   python  
 coreutils                 9.3-r1                  apk     
-cryptography              41.0.5                  python  
+cryptography              41.0.6                  python  
 curl                      8.4.0-r0                apk     
 feedparser                6.0.10                  python  
 gdbm                      1.23-r1                 apk     
