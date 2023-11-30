@@ -32,7 +32,7 @@ curl                      8.4.0-r0                apk
 feedparser                6.0.10                  python  
 gdbm                      1.23-r1                 apk     
 guessit                   3.7.1                   python  
-idna                      3.4                     python  
+idna                      3.6                     python  
 jaraco.classes            3.3.0                   python  
 jaraco.collections        4.3.0                   python  
 jaraco.context            4.3.0                   python  
@@ -101,7 +101,7 @@ tzdata                    2023c-r1                apk
 ujson                     5.8.0                   python  
 urllib3                   2.1.0                   python  
 utmps-libs                0.1.2.1-r1              apk     
-wheel                     0.41.3                  python  
+wheel                     0.42.0                  python  
 xz-libs                   5.4.3-r0                apk     
 zc.lockfile               3.0.post1               python  
 zlib                      1.2.13-r1               apk     
