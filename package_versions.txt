@@ -29,12 +29,12 @@ configobj                 5.0.8                   python
 coreutils                 9.3-r1                  apk     
 cryptography              41.0.7                  python  
 curl                      8.5.0-r0                apk     
-feedparser                6.0.10                  python  
+feedparser                6.0.11                  python  
 gdbm                      1.23-r1                 apk     
 guessit                   3.7.1                   python  
 idna                      3.6                     python  
 jaraco.classes            3.3.0                   python  
-jaraco.collections        4.3.0                   python  
+jaraco.collections        5.0.0                   python  
 jaraco.context            4.3.0                   python  
 jaraco.functools          4.0.0                   python  
 jaraco.text               3.8.1                   python  
@@ -98,7 +98,7 @@ sqlite-libs               3.41.2-r2               apk
 ssl_client                1.36.1-r5               apk     
 tempora                   5.5.0                   python  
 tzdata                    2023c-r1                apk     
-ujson                     5.8.0                   python  
+ujson                     5.9.0                   python  
 urllib3                   2.1.0                   python  
 utmps-libs                0.1.2.1-r1              apk     
 wheel                     0.42.0                  python  
