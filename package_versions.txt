@@ -73,7 +73,7 @@ nghttp2-libs              1.57.0-r0               apk
 notify2                   0.3.1                   python  
 oauthlib                  3.2.2                   python  
 oniguruma                 6.9.8-r1                apk     
-pip                       23.3.1                  python  
+pip                       23.3.2                  python  
 portend                   3.2.0                   python  
 procps-ng                 4.0.4-r0                apk     
 puremagic                 1.15                    python  
