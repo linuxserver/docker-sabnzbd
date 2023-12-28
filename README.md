@@ -83,7 +83,7 @@ In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Downlo
 
 We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
 
-Use the optional paths if you dont understand, or dont want hardlinks/atomic moves. 
+Use the optional paths if you dont understand, or dont want hardlinks/atomic moves.
 
 The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
@@ -105,7 +105,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - /path/to/data:/config
+      - /path/to/sabnzbd/config:/config
       - /path/to/downloads:/downloads #optional
       - /path/to/incomplete/downloads:/incomplete-downloads #optional
     ports:
@@ -122,7 +122,7 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
   -p 8080:8080 \
-  -v /path/to/data:/config \
+  -v /path/to/sabnzbd/config:/config \
   -v /path/to/downloads:/downloads `#optional` \
   -v /path/to/incomplete/downloads:/incomplete-downloads `#optional` \
   --restart unless-stopped \
@@ -139,7 +139,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-v /config` | Local path for sabnzbd config files. |
+| `-v /config` | Persistent config files |
 | `-v /downloads` | Local path for finished downloads. |
 | `-v /incomplete-downloads` | Local path for incomplete-downloads. |
 
@@ -319,6 +319,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.12.23:** - Rebase to Alpine 3.19.
 * **23.11.23:** - Build translations.
 * **13.09.23:** - Use par2cmdline-turbo in place of par2cmdline.
 * **16.08.23:** - Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar).
