@@ -63,7 +63,7 @@ libssl3                 3.1.4-r2               apk
 libstdc++               13.2.1_git20231014-r0  apk     
 libunistring            1.1-r2                 apk     
 linux-pam               1.5.3-r7               apk     
-lxml                    4.9.4                  python  
+lxml                    5.0.0                  python  
 more-itertools          10.1.0                 python  
 mpdecimal               2.5.1-r2               apk     
 musl                    1.2.4_git20230717-r4   apk     
@@ -101,7 +101,7 @@ skalibs                 2.14.0.1-r0            apk
 sqlite-libs             3.44.2-r0              apk     
 ssl_client              1.36.1-r15             apk     
 tempora                 5.5.0                  python  
-tzdata                  2023c-r1               apk     
+tzdata                  2023d-r0               apk     
 ujson                   5.9.0                  python  
 urllib3                 2.1.0                  python  
 utmps-libs              0.1.2.2-r0             apk     
