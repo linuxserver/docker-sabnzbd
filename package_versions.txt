@@ -2,7 +2,7 @@ NAME                    VERSION                TYPE
 7zip                    23.01-r0               apk     
 Cheetah3                3.2.6.post1            python  
 CherryPy                18.9.0                 python  
-Markdown                3.5.1                  python  
+Markdown                3.5.2                  python  
 PySocks                 1.7.1                  python  
 PyYAML                  6.0.1                  python  
 Simple Launcher         1.1.0.14               dotnet  
