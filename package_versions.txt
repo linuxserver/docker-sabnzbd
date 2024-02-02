@@ -22,7 +22,7 @@ busybox-binsh           1.36.1-r15             apk
 c-ares                  1.24.0-r1              apk     
 ca-certificates         20230506-r0            apk     
 ca-certificates-bundle  20230506-r0            apk     
-certifi                 2023.11.17             python  
+certifi                 2024.2.2               python  
 cffi                    1.16.0                 python  
 chardet                 5.2.0                  python  
 charset-normalizer      3.3.2                  python  
