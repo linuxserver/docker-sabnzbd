@@ -39,7 +39,7 @@ feedparser              6.0.11                 python
 gdbm                    1.23-r1                apk     
 guessit                 3.8.0                  python  
 idna                    3.6                    python  
-jaraco.classes          3.3.0                  python  
+jaraco.classes          3.3.1                  python  
 jaraco.collections      5.0.0                  python  
 jaraco.context          4.3.0                  python  
 jaraco.functools        4.0.0                  python  
@@ -52,7 +52,7 @@ libbz2                  1.0.8-r6               apk
 libc-utils              0.7.2-r5               apk     
 libcrypto3              3.1.4-r5               apk     
 libcurl                 8.5.0-r0               apk     
-libexpat                2.5.0-r2               apk     
+libexpat                2.6.0-r0               apk     
 libffi                  3.4.4-r3               apk     
 libgcc                  13.2.1_git20231014-r0  apk     
 libidn2                 2.3.4-r4               apk     
@@ -80,7 +80,7 @@ par2j                   1.3.2.5                dotnet
 pip                     24.0                   python  
 portend                 3.2.0                  python  
 procps-ng               4.0.4-r0               apk     
-puremagic               1.15                   python  
+puremagic               1.20                   python  
 pyc                     3.11.6-r1              apk     
 pycparser               2.21                   python  
 pynzb                   0.1.0                  python  
@@ -96,7 +96,7 @@ requests                2.31.0                 python
 requests-oauthlib       1.3.1                  python  
 sabctools               8.1.0                  python  
 scanelf                 1.3.7-r2               apk     
-setuptools              69.0.3                 python  
+setuptools              69.1.0                 python  
 sgmllib3k               1.0.0                  python  
 shadow                  4.14.2-r0              apk     
 six                     1.16.0                 python  
