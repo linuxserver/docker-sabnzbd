@@ -4,6 +4,7 @@ NAME                    VERSION                TYPE
 Cheetah3                3.2.6.post1            python  
 CherryPy                18.9.0                 python  
 Markdown                3.5.2                  python  
+PyJWT                   2.8.0                  python  
 PySocks                 1.7.1                  python  
 PyYAML                  6.0.1                  python  
 Simple Launcher         1.1.0.14               dotnet  
@@ -16,6 +17,7 @@ apk-tools               2.14.0-r5              apk
 apprise                 1.7.2                  python  
 babelfish               0.6.0                  python  
 bash                    5.2.21-r0              apk     
+blinker                 1.7.0                  python  
 brotli-libs             1.1.0-r1               apk     
 busybox                 1.36.1-r15             apk     
 busybox-binsh           1.36.1-r15             apk     
@@ -76,6 +78,7 @@ nghttp2-libs            1.58.0-r0              apk
 notify2                 0.3.1                  python  
 oauthlib                3.2.2                  python  
 oniguruma               6.9.9-r0               apk     
+paho-mqtt               1.6.1                  python  
 par2j                   1.3.2.5                dotnet  
 pip                     24.0                   python  
 portend                 3.2.0                  python  
