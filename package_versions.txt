@@ -35,7 +35,7 @@ coreutils               9.4-r2                 apk
 coreutils-env           9.4-r2                 apk     
 coreutils-fmt           9.4-r2                 apk     
 coreutils-sha512sum     9.4-r2                 apk     
-cryptography            42.0.3                 python  
+cryptography            42.0.5                 python  
 curl                    8.5.0-r0               apk     
 feedparser              6.0.11                 python  
 gdbm                    1.23-r1                apk     
@@ -83,7 +83,7 @@ par2j                   1.3.2.5                dotnet
 pip                     24.0                   python  
 portend                 3.2.0                  python  
 procps-ng               4.0.4-r0               apk     
-puremagic               1.20                   python  
+puremagic               1.21                   python  
 pyc                     3.11.8-r0              apk     
 pycparser               2.21                   python  
 pynzb                   0.1.0                  python  
