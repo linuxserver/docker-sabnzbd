@@ -1,7 +1,7 @@
 NAME                    VERSION                TYPE   
 7-Zip                   23.01                  dotnet  
 7zip                    23.01-r0               apk     
-Cheetah3                3.2.6.post1            python  
+CT3                     3.3.3                  python  
 CherryPy                18.9.0                 python  
 Markdown                3.5.2                  python  
 PyJWT                   2.8.0                  python  
