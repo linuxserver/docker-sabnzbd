@@ -1,7 +1,7 @@
 NAME                    VERSION                TYPE                    
 7-Zip                   23.01                  dotnet                   
 7zip                    23.01-r0               apk                      
-CT3                     3.3.3                  python                   
+CT3                     3.3.3.post1            python                   
 CherryPy                18.9.0                 python                   
 Markdown                3.5.2                  python                   
 PyJWT                   2.8.0                  python                   
@@ -14,7 +14,7 @@ alpine-baselayout-data  3.4.3-r2               apk
 alpine-keys             2.4-r1                 apk                      
 alpine-release          3.19.1-r0              apk                      
 apk-tools               2.14.0-r5              apk                      
-apprise                 1.7.2                  python                   
+apprise                 1.7.3                  python                   
 babelfish               0.6.0                  python                   
 bash                    5.2.21-r0              apk                      
 blinker                 1.7.0                  python                   
@@ -88,7 +88,7 @@ pyc                     3.11.8-r0              apk
 pycparser               2.21                   python                   
 pynzb                   0.1.0                  python                   
 pynzbget                0.6.4                  python                   
-python-dateutil         2.8.2                  python                   
+python-dateutil         2.9.0.post0            python                   
 python3                 3.11.8-r0              apk                      
 python3-pyc             3.11.8-r0              apk                      
 python3-pycache-pyc0    3.11.8-r0              apk                      
