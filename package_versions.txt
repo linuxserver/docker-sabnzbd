@@ -2,7 +2,7 @@ NAME                    VERSION                TYPE
 7zip                    23.01-r0               apk                      
 Cheetah3                3.2.6.post1            python                   
 CherryPy                18.9.0                 python                   
-Markdown                3.5.2                  python                   
+Markdown                3.6                    python                   
 PySocks                 1.7.1                  python                   
 PyYAML                  6.0.1                  python                   
 Simple Launcher         1.1.0.14               dotnet  (+5 duplicates)  
@@ -50,7 +50,7 @@ libbz2                  1.0.8-r6               apk
 libc-utils              0.7.2-r5               apk                      
 libcrypto3              3.1.4-r5               apk                      
 libcurl                 8.5.0-r0               apk                      
-libexpat                2.6.0-r0               apk                      
+libexpat                2.6.2-r0               apk                      
 libffi                  3.4.4-r3               apk                      
 libgcc                  13.2.1_git20231014-r0  apk                      
 libidn2                 2.3.4-r4               apk                      
