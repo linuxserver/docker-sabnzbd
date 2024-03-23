@@ -22,8 +22,8 @@ brotli-libs             1.1.0-r1               apk
 busybox                 1.36.1-r15             apk                      
 busybox-binsh           1.36.1-r15             apk                      
 c-ares                  1.24.0-r1              apk                      
-ca-certificates         20230506-r0            apk                      
-ca-certificates-bundle  20230506-r0            apk                      
+ca-certificates         20240226-r0            apk                      
+ca-certificates-bundle  20240226-r0            apk                      
 certifi                 2024.2.2               python                   
 cffi                    1.16.0                 python                   
 chardet                 5.2.0                  python                   
@@ -67,7 +67,6 @@ libssl3                 3.1.4-r5               apk
 libstdc++               13.2.1_git20231014-r0  apk                      
 libunistring            1.1-r2                 apk                      
 linux-pam               1.5.3-r7               apk                      
-lxml                    5.1.0                  python                   
 more-itertools          10.2.0                 python                   
 mpdecimal               2.5.1-r2               apk                      
 musl                    1.2.4_git20230717-r4   apk                      
@@ -86,8 +85,6 @@ procps-ng               4.0.4-r0               apk
 puremagic               1.21                   python                   
 pyc                     3.11.8-r0              apk                      
 pycparser               2.21                   python                   
-pynzb                   0.1.0                  python                   
-pynzbget                0.6.4                  python                   
 python-dateutil         2.9.0.post0            python                   
 python3                 3.11.8-r0              apk                      
 python3-pyc             3.11.8-r0              apk                      
@@ -99,7 +96,7 @@ requests                2.31.0                 python
 requests-oauthlib       1.4.0                  python                   
 sabctools               8.1.0                  python                   
 scanelf                 1.3.7-r2               apk                      
-setuptools              69.2.0                 python                   
+setuptools              65.5.0                 python                   
 sgmllib3k               1.0.0                  python                   
 shadow                  4.14.2-r0              apk                      
 six                     1.16.0                 python                   
