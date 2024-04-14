@@ -14,7 +14,7 @@ alpine-baselayout-data  3.4.3-r2               apk
 alpine-keys             2.4-r1                 apk                      
 alpine-release          3.19.1-r0              apk                      
 apk-tools               2.14.3-r1              apk                      
-apprise                 1.7.5                  python                   
+apprise                 1.7.6                  python                   
 babelfish               0.6.0                  python                   
 bash                    5.2.21-r0              apk                      
 blinker                 1.7.0                  python                   
@@ -40,7 +40,7 @@ curl                    8.5.0-r0               apk
 feedparser              6.0.11                 python                   
 gdbm                    1.23-r1                apk                      
 guessit                 3.8.0                  python                   
-idna                    3.6                    python                   
+idna                    3.7                    python                   
 jaraco.classes          3.4.0                  python                   
 jaraco.collections      5.0.0                  python                   
 jaraco.context          4.3.0                  python                   
@@ -83,12 +83,12 @@ pip                     24.0                   python
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 puremagic               1.21                   python                   
-pyc                     3.11.8-r0              apk                      
+pyc                     3.11.9-r0              apk                      
 pycparser               2.22                   python                   
 python-dateutil         2.9.0.post0            python                   
-python3                 3.11.8-r0              apk                      
-python3-pyc             3.11.8-r0              apk                      
-python3-pycache-pyc0    3.11.8-r0              apk                      
+python3                 3.11.9-r0              apk                      
+python3-pyc             3.11.9-r0              apk                      
+python3-pycache-pyc0    3.11.9-r0              apk                      
 pytz                    2024.1                 python                   
 readline                8.2.1-r2               apk                      
 rebulk                  3.2.0                  python                   
