@@ -28,7 +28,7 @@ certifi                 2024.2.2               python
 cffi                    1.16.0                 python                   
 chardet                 5.2.0                  python                   
 charset-normalizer      3.3.2                  python                   
-cheroot                 10.0.0                 python                   
+cheroot                 10.0.1                 python                   
 click                   8.1.7                  python                   
 configobj               5.0.8                  python                   
 coreutils               9.4-r2                 apk                      
