@@ -22,6 +22,7 @@ busybox-binsh           1.36.1-r15             apk
 c-ares                  1.27.0-r0              apk                      
 ca-certificates         20240226-r0            apk                      
 ca-certificates-bundle  20240226-r0            apk                      
+catatonit               0.2.0-r0               apk                      
 certifi                 2024.2.2               python                   
 cffi                    1.16.0                 python                   
 chardet                 5.2.0                  python                   
