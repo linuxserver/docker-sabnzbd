@@ -12,7 +12,7 @@ alpine-baselayout-data  3.4.3-r2               apk
 alpine-keys             2.4-r1                 apk                      
 alpine-release          3.19.1-r0              apk                      
 apk-tools               2.14.4-r0              apk                      
-apprise                 1.7.6                  python                   
+apprise                 1.8.0                  python                   
 babelfish               0.6.0                  python                   
 bash                    5.2.21-r0              apk                      
 blinker                 1.8.1                  python                   
@@ -67,7 +67,7 @@ libssl3                 3.1.4-r6               apk
 libstdc++               13.2.1_git20231014-r0  apk                      
 libunistring            1.1-r2                 apk                      
 linux-pam               1.5.3-r7               apk                      
-lxml                    5.2.1                  python                   
+lxml                    5.2.2                  python                   
 more-itertools          10.2.0                 python                   
 mpdecimal               2.5.1-r2               apk                      
 musl                    1.2.4_git20230717-r4   apk                      
