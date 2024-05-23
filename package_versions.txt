@@ -19,8 +19,8 @@ babelfish               0.6.1                  python
 bash                    5.2.21-r0              apk                      
 blinker                 1.8.2                  python                   
 brotli-libs             1.1.0-r1               apk                      
-busybox                 1.36.1-r15             apk                      
-busybox-binsh           1.36.1-r15             apk                      
+busybox                 1.36.1-r18             apk                      
+busybox-binsh           1.36.1-r18             apk                      
 c-ares                  1.27.0-r0              apk                      
 ca-certificates         20240226-r0            apk                      
 ca-certificates-bundle  20240226-r0            apk                      
@@ -104,7 +104,7 @@ shadow                  4.14.2-r0              apk
 six                     1.16.0                 python                   
 skalibs                 2.14.0.1-r0            apk                      
 sqlite-libs             3.44.2-r0              apk                      
-ssl_client              1.36.1-r15             apk                      
+ssl_client              1.36.1-r18             apk                      
 tempora                 5.5.1                  python                   
 tzdata                  2024a-r0               apk                      
 ujson                   5.10.0                 python                   
