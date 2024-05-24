@@ -20,28 +20,16 @@ development_versions_items:
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-param_usage_include_net: false
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
 param_usage_include_ports: true
 param_ports:
   - {external_port: "8080", internal_port: "8080", port_desc: "HTTP port for the WebUI."}
-param_device_map: false
-cap_add_param: false
-# optional container parameters
-opt_param_usage_include_env: false
 opt_param_usage_include_vols: true
 opt_param_volumes:
   - {vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads."}
   - {vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads."}
-opt_param_usage_include_ports: false
-opt_param_device_map: false
-opt_cap_add_param: false
-optional_block_1: false
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -65,6 +53,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - {date: "24.05.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "23.03.24:", desc: "Remove nzb-notify as apprise is now directly supported."}
   - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "23.11.23:", desc: "Build translations."}

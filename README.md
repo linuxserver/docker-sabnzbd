@@ -303,6 +303,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **24.05.24:** - Rebase to Alpine 3.20.
 * **23.03.24:** - Remove nzb-notify as apprise is now directly supported.
 * **23.12.23:** - Rebase to Alpine 3.19.
 * **23.11.23:** - Build translations.
