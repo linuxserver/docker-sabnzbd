@@ -21,10 +21,7 @@ RUN \
     autoconf \
     automake \
     build-base \
-    cargo \
     libffi-dev \
-    libxml2-dev \
-    libxslt-dev \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
@@ -32,9 +29,8 @@ RUN \
     python3 && \
   echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
-    SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/commits/develop \
-      | jq -r '. | .sha' \
-      | cut -c1-8); \
+    SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases \
+    | jq -r 'first(.[]) | .tag_name'); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
