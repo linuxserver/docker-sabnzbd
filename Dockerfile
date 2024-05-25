@@ -11,7 +11,7 @@ ARG SABNZBD_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
 
-# environment settings
+# environment settings
 ENV HOME="/config" \
   PYTHONIOENCODING=utf-8
 
@@ -21,7 +21,10 @@ RUN \
     autoconf \
     automake \
     build-base \
+    cargo \
     libffi-dev \
+    libxml2-dev \
+    libxslt-dev \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
@@ -29,13 +32,14 @@ RUN \
     python3 && \
   echo "**** install sabnzbd ****" && \
   if [ -z ${SABNZBD_VERSION+x} ]; then \
-    SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases \
-    | jq -r 'first(.[]) | .tag_name'); \
+    SABNZBD_VERSION=$(curl -s https://api.github.com/repos/sabnzbd/sabnzbd/commits/develop \
+      | jq -r '. | .sha' \
+      | cut -c1-8); \
   fi && \
   mkdir -p /app/sabnzbd && \
   curl -o \
     /tmp/sabnzbd.tar.gz -L \
-    "https://github.com/sabnzbd/sabnzbd/releases/download/${SABNZBD_VERSION}/SABnzbd-${SABNZBD_VERSION}-src.tar.gz" && \
+    "https://github.com/sabnzbd/sabnzbd/archive/${SABNZBD_VERSION}.tar.gz" && \
   tar xf \
     /tmp/sabnzbd.tar.gz -C \
     /app/sabnzbd --strip-components=1 && \
@@ -44,10 +48,6 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ \
-    apprise \
-    pynzb \
-    requests && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ -r requirements.txt && \
   echo "**** build sab translations ****" && \
   python3 tools/make_mo.py && \
@@ -75,7 +75,7 @@ RUN \
     /tmp/* \
     $HOME/.cache
 
-# add local files
+# add local files
 COPY root/ /
 
 # add unrar

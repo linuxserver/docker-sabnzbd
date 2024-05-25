@@ -67,6 +67,7 @@ RUN \
   make && \
   make check && \
   make install && \
+  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
