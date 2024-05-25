@@ -73,17 +73,13 @@ Initial setup is done via `http://<docker host ip>:<mapped http port>` ie, http:
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
-### nzb-notify
-
-nzb-notify is included with this image as a convenience script. To use it set the Scripts folder in the Folder settings to /app/nzbnotify and then configure it under Notifications. See [nzb-notify](https://github.com/caronc/nzb-notify/) for more information.
-
 ### Download folders
 
-In Sabnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
+In SABnzbd GUI settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
 
 We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
 
-Use the optional paths if you dont understand, or dont want hardlinks/atomic moves.
+Use the optional paths if you don't understand, or don't want hardlinks/atomic moves.
 
 The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 

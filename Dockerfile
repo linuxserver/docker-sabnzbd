@@ -21,10 +21,7 @@ RUN \
     autoconf \
     automake \
     build-base \
-    cargo \
     libffi-dev \
-    libxml2-dev \
-    libxslt-dev \
     openssl-dev \
     python3-dev && \
   apk add  -U --update --no-cache \
