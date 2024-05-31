@@ -2,7 +2,7 @@
 
 FROM ghcr.io/linuxserver/unrar:latest as unrar
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20
 
 # set version label
 ARG BUILD_DATE
@@ -44,11 +44,7 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.19/ \
-    apprise \
-    pynzb \
-    requests && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.19/ -r requirements.txt && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ -r requirements.txt && \
   echo "**** build sab translations ****" && \
   python3 tools/make_mo.py && \
   echo "**** install par2cmdline-turbo from source ****" && \
@@ -67,18 +63,7 @@ RUN \
   make && \
   make check && \
   make install && \
-  echo "**** install nzb-notify ****" && \
-  NZBNOTIFY_VERSION=$(curl -s https://api.github.com/repos/caronc/nzb-notify/releases/latest \
-    | awk '/tag_name/{print $4;exit}' FS='[""]') && \
-  mkdir -p /app/nzbnotify && \
-  curl -o \
-    /tmp/nzbnotify.tar.gz -L \
-    "https://api.github.com/repos/caronc/nzb-notify/tarball/${NZBNOTIFY_VERSION}" && \
-  tar xf \
-    /tmp/nzbnotify.tar.gz -C \
-    /app/nzbnotify --strip-components=1 && \
-  cd /app/nzbnotify && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.19/ -r requirements.txt && \
+  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
