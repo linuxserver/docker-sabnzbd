@@ -6,7 +6,6 @@ external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: master
-build_armhf: false
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'sabnzbd'
@@ -24,10 +23,10 @@ repo_vars:
   - CI_WEB='true'
   - CI_PORT='8080'
   - CI_SSL='false'
-  - CI_DELAY='120'
-  - CI_DOCKERENV='TZ=US/Pacific'
-  - CI_AUTH='user:password'
+  - CI_DELAY='60'
+  - CI_DOCKERENV=''
+  - CI_AUTH=''
   - CI_WEBPATH=''
 sponsor_links:
   - { name: "SABnzbd", url: "https://sabnzbd.org/donate" }
-  
+
