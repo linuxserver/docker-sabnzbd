@@ -36,7 +36,7 @@ coreutils               9.5-r1                 apk
 coreutils-env           9.5-r1                 apk                      
 coreutils-fmt           9.5-r1                 apk                      
 coreutils-sha512sum     9.5-r1                 apk                      
-cryptography            42.0.7                 python                   
+cryptography            42.0.8                 python                   
 curl                    8.7.1-r0               apk                      
 feedparser              6.0.11                 python                   
 findutils               4.9.0-r5               apk                      
