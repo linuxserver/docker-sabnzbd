@@ -2,7 +2,7 @@ NAME                    VERSION                TYPE
 7-Zip                   24.05                  dotnet                   
 7zip                    23.01-r0               apk                      
 CT3                     3.3.3.post1            python                   
-CherryPy                18.9.0                 python                   
+CherryPy                18.10.0                python                   
 Markdown                3.6                    python                   
 PyJWT                   2.8.0                  python                   
 PySocks                 1.7.1                  python                   
@@ -69,7 +69,7 @@ libssl3                 3.3.1-r0               apk
 libstdc++               13.2.1_git20240309-r0  apk                      
 libunistring            1.2-r0                 apk                      
 linux-pam               1.6.0-r0               apk                      
-more-itertools          10.2.0                 python                   
+more-itertools          10.3.0                 python                   
 mpdecimal               4.0.0-r0               apk                      
 musl                    1.2.5-r0               apk                      
 musl-utils              1.2.5-r0               apk                      
@@ -84,7 +84,7 @@ par2j                   1.3.3.2                dotnet  (+1 duplicate)
 pip                     24.0                   python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
-puremagic               1.23                   python                   
+puremagic               1.24                   python                   
 pyc                     3.12.3-r1              apk                      
 pycparser               2.22                   python                   
 python-dateutil         2.9.0.post0            python                   
