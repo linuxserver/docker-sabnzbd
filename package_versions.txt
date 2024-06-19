@@ -98,7 +98,7 @@ requests                2.32.3                 python
 requests-oauthlib       2.0.0                  python                   
 sabctools               8.2.3                  python                   
 scanelf                 1.3.7-r2               apk                      
-setuptools              70.0.0                 python                   
+setuptools              70.1.0                 python                   
 sgmllib3k               1.0.0                  python                   
 shadow                  4.15.1-r0              apk                      
 six                     1.16.0                 python                   
