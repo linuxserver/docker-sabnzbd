@@ -12,7 +12,7 @@ WinRAR                  7.1.0                  dotnet  (+1 duplicate)
 alpine-baselayout       3.6.5-r0               apk                      
 alpine-baselayout-data  3.6.5-r0               apk                      
 alpine-keys             2.4-r1                 apk                      
-alpine-release          3.20.0-r0              apk                      
+alpine-release          3.20.1-r0              apk                      
 apk-tools               2.14.4-r0              apk                      
 apprise                 1.8.0                  python                   
 babelfish               0.6.1                  python                   
@@ -81,7 +81,7 @@ oauthlib                3.2.2                  python
 oniguruma               6.9.9-r0               apk                      
 paho-mqtt               1.6.1                  python                   
 par2j                   1.3.3.2                dotnet  (+1 duplicate)   
-pip                     24.0                   python                   
+pip                     24.1.1                 python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 puremagic               1.23                   python                   
@@ -98,7 +98,7 @@ requests                2.31.0                 python
 requests-oauthlib       2.0.0                  python                   
 sabctools               8.2.0                  python                   
 scanelf                 1.3.7-r2               apk                      
-setuptools              70.1.0                 python                   
+setuptools              70.1.1                 python                   
 sgmllib3k               1.0.0                  python                   
 shadow                  4.15.1-r0              apk                      
 six                     1.16.0                 python                   
