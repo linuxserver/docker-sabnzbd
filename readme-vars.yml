@@ -36,6 +36,8 @@ opt_param_volumes:
   - { vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads." }
   - { vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads." }
 
+readonly_supported: true
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
