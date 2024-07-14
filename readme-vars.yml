@@ -43,7 +43,7 @@ app_setup_block: |
 
   We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability for atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
 
-  Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads` in the SABnzbd gui settings, under `Folders`.
+  Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` and the `Temporary Download Folder` in the SABnzbd gui settings, under `Folders`.
 
   The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
