@@ -69,19 +69,22 @@ This image provides various versions that are available via tags. Please read th
 
 ## Application Setup
 
-Initial setup is done via `http://<docker host ip>:<mapped http port>` ie, http://192.168.1.100:8080.
+Initial setup is done via `http://<your-ip>:8080`.
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
 ### Download folders
 
-In SABnzbd gui settings, under `Folders`, make sure to set the `Completed Download Folder` as `/downloads` and the `Temporary Download Folder` as `/incomplete-downloads`
+We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability for atomic moves (TL;DR instant file moves, rather than copy+delete) of files while processing content.
 
-We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
-
-Use the optional paths if you don't understand, or don't want hardlinks/atomic moves.
+Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` and the `Temporary Download Folder` in the SABnzbd gui settings, under `Folders`.
 
 The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
+
+## Read-Only Operation
+
+This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
+
 
 ## Usage
 
@@ -137,6 +140,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-v /config` | Persistent config files |
 | `-v /downloads` | Local path for finished downloads. |
 | `-v /incomplete-downloads` | Local path for incomplete-downloads. |
+| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 
 ## Environment variables from files (Docker secrets)
 
