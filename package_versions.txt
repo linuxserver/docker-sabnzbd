@@ -8,7 +8,7 @@ alpine-baselayout-data  3.6.5-r0               apk
 alpine-keys             2.4-r1                 apk                      
 alpine-release          3.20.2-r0              apk                      
 apk-tools               2.14.4-r0              apk                      
-apprise                 1.8.0                  python                   
+apprise                 1.8.1                  python                   
 autocommand             2.2.2                  python                   
 babelfish               0.6.1                  python                   
 backports-tarfile       1.2.0                  python                   
@@ -22,7 +22,7 @@ ca-certificates         20240705-r0            apk
 ca-certificates-bundle  20240705-r0            apk                      
 catatonit               0.2.0-r0               apk                      
 certifi                 2024.7.4               python                   
-cffi                    1.16.0                 python                   
+cffi                    1.17.0                 python                   
 chardet                 5.2.0                  python                   
 charset-normalizer      3.3.2                  python                   
 cheroot                 10.0.1                 python                   
@@ -33,7 +33,7 @@ coreutils               9.5-r1                 apk
 coreutils-env           9.5-r1                 apk                      
 coreutils-fmt           9.5-r1                 apk                      
 coreutils-sha512sum     9.5-r1                 apk                      
-cryptography            42.0.8                 python                   
+cryptography            43.0.0                 python                   
 ct3                     3.3.3.post1            python                   
 curl                    8.9.0-r0               apk                      
 feedparser              6.0.11                 python                   
@@ -48,7 +48,8 @@ jaraco-classes          3.4.0                  python
 jaraco-collections      5.0.0                  python                   
 jaraco-context          4.3.0                  python                   
 jaraco-context          5.3.0                  python                   
-jaraco-functools        4.0.1                  python  (+1 duplicate)   
+jaraco-functools        4.0.1                  python                   
+jaraco-functools        4.0.2                  python                   
 jaraco-text             3.12.1                 python                   
 jaraco-text             3.8.1                  python                   
 jq                      1.7.1-r0               apk                      
@@ -73,7 +74,8 @@ libstdc++               13.2.1_git20240309-r0  apk
 libunistring            1.2-r0                 apk                      
 linux-pam               1.6.0-r0               apk                      
 markdown                3.6                    python                   
-more-itertools          10.3.0                 python  (+1 duplicate)   
+more-itertools          10.3.0                 python                   
+more-itertools          10.4.0                 python                   
 mpdecimal               4.0.0-r0               apk                      
 musl                    1.2.5-r0               apk                      
 musl-utils              1.2.5-r0               apk                      
@@ -92,22 +94,22 @@ pip                     24.2                   python
 platformdirs            4.2.2                  python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
-puremagic               1.26                   python                   
+puremagic               1.27                   python                   
 pyc                     3.12.3-r1              apk                      
 pycparser               2.22                   python                   
-pyjwt                   2.8.0                  python                   
+pyjwt                   2.9.0                  python                   
 pysocks                 1.7.1                  python                   
 python-dateutil         2.9.0.post0            python                   
 python3                 3.12.3-r1              apk                      
 python3-pyc             3.12.3-r1              apk                      
 python3-pycache-pyc0    3.12.3-r1              apk                      
 pytz                    2024.1                 python                   
-pyyaml                  6.0.1                  python                   
+pyyaml                  6.0.2                  python                   
 readline                8.2.10-r0              apk                      
 rebulk                  3.2.0                  python                   
 requests                2.32.3                 python                   
 requests-oauthlib       2.0.0                  python                   
-sabctools               8.2.3                  python                   
+sabctools               8.2.5                  python                   
 scanelf                 1.3.7-r2               apk                      
 setuptools              72.1.0                 python                   
 sgmllib3k               1.0.0                  python                   
@@ -116,7 +118,7 @@ six                     1.16.0                 python
 skalibs                 2.14.1.1-r0            apk                      
 sqlite-libs             3.45.3-r1              apk                      
 ssl_client              1.36.1-r29             apk                      
-tempora                 5.6.0                  python                   
+tempora                 5.7.0                  python                   
 tomli                   2.0.1                  python                   
 typeguard               4.3.0                  python                   
 typing-extensions       4.12.2                 python                   
