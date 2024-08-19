@@ -73,7 +73,7 @@ libssl3                 3.3.1-r3               apk
 libstdc++               13.2.1_git20240309-r0  apk                      
 libunistring            1.2-r0                 apk                      
 linux-pam               1.6.0-r0               apk                      
-markdown                3.6                    python                   
+markdown                3.7                    python                   
 more-itertools          10.3.0                 python                   
 more-itertools          10.4.0                 python                   
 mpdecimal               4.0.0-r0               apk                      
