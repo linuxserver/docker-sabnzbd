@@ -28,14 +28,14 @@ charset-normalizer      3.3.2                  python
 cheroot                 10.0.1                 python                   
 cherrypy                18.10.0                python                   
 click                   8.1.7                  python                   
-configobj               5.0.8                  python                   
+configobj               5.0.9                  python                   
 coreutils               9.5-r1                 apk                      
 coreutils-env           9.5-r1                 apk                      
 coreutils-fmt           9.5-r1                 apk                      
 coreutils-sha512sum     9.5-r1                 apk                      
 cryptography            43.0.1                 python                   
 ct3                     3.3.3.post1            python                   
-curl                    8.10.0-r0              apk                      
+curl                    8.9.1-r2               apk                      
 feedparser              6.0.11                 python                   
 findutils               4.9.0-r5               apk                      
 gdbm                    1.23-r1                apk                      
@@ -59,7 +59,7 @@ libattr                 2.5.2-r0               apk
 libbsd                  0.12.2-r0              apk                      
 libbz2                  1.0.8-r6               apk                      
 libcrypto3              3.3.2-r0               apk                      
-libcurl                 8.10.0-r0              apk                      
+libcurl                 8.9.1-r2               apk                      
 libexpat                2.6.3-r0               apk                      
 libffi                  3.4.6-r0               apk                      
 libgcc                  13.2.1_git20240309-r0  apk                      
