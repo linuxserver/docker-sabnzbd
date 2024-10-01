@@ -1,5 +1,5 @@
 NAME                    VERSION                TYPE                    
-7-Zip                   24.05                  dotnet                   
+7-Zip                   24.08                  dotnet                   
 7zip                    23.01-r0               apk                      
 Simple Launcher         1.1.0.14               dotnet  (+5 duplicates)  
 WinRAR                  7.1.0                  dotnet  (+1 duplicate)   
@@ -89,7 +89,7 @@ oauthlib                3.2.2                  python
 oniguruma               6.9.9-r0               apk                      
 packaging               24.1                   python                   
 paho-mqtt               1.6.1                  python                   
-par2j                   1.3.3.2                dotnet  (+1 duplicate)   
+par2j                   1.3.3.3                dotnet  (+1 duplicate)   
 pip                     24.2                   python                   
 platformdirs            4.2.2                  python                   
 portend                 3.2.0                  python                   
