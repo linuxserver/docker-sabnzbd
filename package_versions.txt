@@ -24,7 +24,7 @@ catatonit               0.2.0-r0               apk
 certifi                 2024.8.30              python                   
 cffi                    1.17.1                 python                   
 chardet                 5.2.0                  python                   
-charset-normalizer      3.3.2                  python                   
+charset-normalizer      3.4.0                  python                   
 cheroot                 10.0.1                 python                   
 cherrypy                18.10.0                python                   
 click                   8.1.7                  python                   
