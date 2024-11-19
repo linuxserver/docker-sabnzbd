@@ -96,7 +96,7 @@ procps-ng               4.0.4-r0               apk
 puremagic               1.28                   python                   
 pyc                     3.12.7-r0              apk                      
 pycparser               2.22                   python                   
-pyjwt                   2.9.0                  python                   
+pyjwt                   2.10.0                 python                   
 pysocks                 1.7.1                  python                   
 python-dateutil         2.9.0.post0            python                   
 python3                 3.12.7-r0              apk                      
