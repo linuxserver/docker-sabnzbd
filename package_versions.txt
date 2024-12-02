@@ -33,8 +33,8 @@ coreutils               9.5-r1                 apk
 coreutils-env           9.5-r1                 apk                      
 coreutils-fmt           9.5-r1                 apk                      
 coreutils-sha512sum     9.5-r1                 apk                      
-cryptography            43.0.3                 python                   
-ct3                     3.4.0b4                python                   
+cryptography            44.0.0                 python                   
+ct3                     3.4.0b6                python                   
 curl                    8.9.1-r2               apk                      
 feedparser              6.0.11                 python                   
 findutils               4.9.0-r5               apk                      
@@ -96,7 +96,7 @@ procps-ng               4.0.4-r0               apk
 puremagic               1.28                   python                   
 pyc                     3.12.7-r0              apk                      
 pycparser               2.22                   python                   
-pyjwt                   2.9.0                  python                   
+pyjwt                   2.10.1                 python                   
 pysocks                 1.7.1                  python                   
 python-dateutil         2.9.0.post0            python                   
 python3                 3.12.7-r0              apk                      
