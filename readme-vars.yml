@@ -6,37 +6,31 @@ project_url: "http://sabnzbd.org/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Stable SABnzbd releases" }
-  - { tag: "unstable", desc: "Unstable SABnzbd releases" }
-  - { tag: "nightly", desc: "Latest commits from the develop branch" }
-
+  - {tag: "latest", desc: "Stable SABnzbd releases"}
+  - {tag: "unstable", desc: "Unstable SABnzbd releases"}
+  - {tag: "nightly", desc: "Latest commits from the develop branch"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files"}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "8080", internal_port: "8080", port_desc: "HTTP port for the WebUI." }
-
+  - {external_port: "8080", internal_port: "8080", port_desc: "HTTP port for the WebUI."}
 # optional container parameters
 opt_param_usage_include_vols: true
 opt_param_volumes:
-  - { vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads." }
-  - { vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads." }
-
+  - {vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads."}
+  - {vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads."}
 readonly_supported: true
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -51,44 +45,86 @@ app_setup_block: |
   Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` and the `Temporary Download Folder` in the SABnzbd gui settings, under `Folders`.
 
   The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
-
+# init diagram
+init_diagram: |
+  "sabnzbd:unstable": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-sabnzbd-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-config -> init-sabnzbd-config
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-sabnzbd
+    svc-sabnzbd -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine:3.20"
+  }
+  "sabnzbd:unstable" <- Base Images
 # changelog
 changelogs:
   - {date: "25.05.24:", desc: "Rebase to Alpine 3.20, remove nzb-notify as apprise is now directly supported."}
   - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "23.11.23:", desc: "Build translations."}
   - {date: "13.09.23:", desc: "Use par2cmdline-turbo in place of par2cmdline."}
-  - { date: "16.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
-  - { date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
-  - { date: "16.05.23:", desc: "Rebase unstable to Alpine 3.18, deprecate armhf." }
-  - { date: "15.03.23:", desc: "Switch from p7zip to 7zip, bump unrar to 6.2.6." }
-  - { date: "05.03.23:", desc: "Rebase unstable branch to Alpine 3.17." }
-  - { date: "03.10.22:", desc: "Rebase unstable branch to Alpine 3.16, migrate to s6v3." }
-  - { date: "12.08.22:", desc: "Bump unrar to 6.1.7." }
-  - { date: "10.03.22:", desc: "Add nzb-notify." }
-  - { date: "22.02.22:", desc: "Build unrar from source." }
-  - { date: "25.01.22:", desc: "Rebase unstable branch to Alpine." }
-  - { date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080" }
-  - { date: "24.07.21:", desc: "Add python3-setuptools." }
-  - { date: "14.05.21:", desc: "Use linuxserver.io wheel index for pip packages." }
-  - { date: "12.02.21:", desc: "Clean up rust/cargo and pip cache." }
-  - { date: "17.08.20:", desc: "Switch to running from source with python3 instead of ppa." }
-  - { date: "08.05.20:", desc: "Switch to `ppa:jcfp/ppa`." }
-  - { date: "03.01.20:", desc: "Use alpha head for unstable with Python3." }
-  - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
-  - { date: "25.02.19:", desc: "Rebase to Bionic, add python deps for scripts." }
-  - { date: "26.01.19:", desc: "Add pipeline logic and multi arch." }
-  - { date: "13.12.17:", desc: "Fix continuation lines." }
-  - { date: "12.07.17:", desc: "Add inspect commands to README, move to jenkins build and push." }
-  - { date: "10.04.17:", desc: "Bump to 2.0 Release." }
-  - { date: "25.02.17:", desc: "Switch to nobetas repo for master/latest branch and add unstable branch." }
-  - { date: "08.02.17:", desc: "Add pythonioenconding=utf8 as env." }
-  - { date: "15.09.16:", desc: "Compile par2 multicore as per latest info sabnzbd git [readme](https://github.com/sabnzbd/sabnzbd#resolving-dependencies)." }
-  - { date: "11.09.16:", desc: "Bump to release of 1.10." }
-  - { date: "09.09.16:", desc: "Rebase back to xenial, issues with alpine version of python and 1.10 branch of sab." }
-  - { date: "28.08.16:", desc: "Rebase to alpine, using git version of sab." }
-  - { date: "17.03.16:", desc: "Bump to install 1.0 final at startup." }
-  - { date: "14.03.16:", desc: "Refresh image to pick up latest RC." }
-  - { date: "23.01.15:", desc: "Refresh image." }
-  - { date: "14.12.15:", desc: "Refresh image to pick up latest beta." }
-  - { date: "21.08.15:", desc: "Initial Release." }
+  - {date: "16.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
+  - {date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
+  - {date: "16.05.23:", desc: "Rebase unstable to Alpine 3.18, deprecate armhf."}
+  - {date: "15.03.23:", desc: "Switch from p7zip to 7zip, bump unrar to 6.2.6."}
+  - {date: "05.03.23:", desc: "Rebase unstable branch to Alpine 3.17."}
+  - {date: "03.10.22:", desc: "Rebase unstable branch to Alpine 3.16, migrate to s6v3."}
+  - {date: "12.08.22:", desc: "Bump unrar to 6.1.7."}
+  - {date: "10.03.22:", desc: "Add nzb-notify."}
+  - {date: "22.02.22:", desc: "Build unrar from source."}
+  - {date: "25.01.22:", desc: "Rebase unstable branch to Alpine."}
+  - {date: "08.08.21:", desc: "Bump to focal, dont enforce binding to ipv4 port 8080"}
+  - {date: "24.07.21:", desc: "Add python3-setuptools."}
+  - {date: "14.05.21:", desc: "Use linuxserver.io wheel index for pip packages."}
+  - {date: "12.02.21:", desc: "Clean up rust/cargo and pip cache."}
+  - {date: "17.08.20:", desc: "Switch to running from source with python3 instead of ppa."}
+  - {date: "08.05.20:", desc: "Switch to `ppa:jcfp/ppa`."}
+  - {date: "03.01.20:", desc: "Use alpha head for unstable with Python3."}
+  - {date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag."}
+  - {date: "25.02.19:", desc: "Rebase to Bionic, add python deps for scripts."}
+  - {date: "26.01.19:", desc: "Add pipeline logic and multi arch."}
+  - {date: "13.12.17:", desc: "Fix continuation lines."}
+  - {date: "12.07.17:", desc: "Add inspect commands to README, move to jenkins build and push."}
+  - {date: "10.04.17:", desc: "Bump to 2.0 Release."}
+  - {date: "25.02.17:", desc: "Switch to nobetas repo for master/latest branch and add unstable branch."}
+  - {date: "08.02.17:", desc: "Add pythonioenconding=utf8 as env."}
+  - {date: "15.09.16:", desc: "Compile par2 multicore as per latest info sabnzbd git [readme](https://github.com/sabnzbd/sabnzbd#resolving-dependencies)."}
+  - {date: "11.09.16:", desc: "Bump to release of 1.10."}
+  - {date: "09.09.16:", desc: "Rebase back to xenial, issues with alpine version of python and 1.10 branch of sab."}
+  - {date: "28.08.16:", desc: "Rebase to alpine, using git version of sab."}
+  - {date: "17.03.16:", desc: "Bump to install 1.0 final at startup."}
+  - {date: "14.03.16:", desc: "Refresh image to pick up latest RC."}
+  - {date: "23.01.15:", desc: "Refresh image."}
+  - {date: "14.12.15:", desc: "Refresh image to pick up latest beta."}
+  - {date: "21.08.15:", desc: "Initial Release."}
