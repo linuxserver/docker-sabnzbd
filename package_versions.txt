@@ -2,7 +2,7 @@ NAME                    VERSION                TYPE
 7-Zip                   24.08                  dotnet                   
 7zip                    23.01-r0               apk                      
 Simple Launcher         1.1.0.14               dotnet  (+5 duplicates)  
-WinRAR                  7.1.0                  dotnet  (+1 duplicate)   
+WinRAR                  7.1.0                  dotnet                   
 alpine-baselayout       3.6.5-r0               apk                      
 alpine-baselayout-data  3.6.5-r0               apk                      
 alpine-keys             2.4-r1                 apk                      
@@ -33,8 +33,8 @@ coreutils               9.5-r1                 apk
 coreutils-env           9.5-r1                 apk                      
 coreutils-fmt           9.5-r1                 apk                      
 coreutils-sha512sum     9.5-r1                 apk                      
-cryptography            43.0.3                 python                   
-ct3                     3.4.0b5                python                   
+cryptography            44.0.0                 python                   
+ct3                     3.4.0b6                python                   
 curl                    8.9.1-r2               apk                      
 feedparser              6.0.11                 python                   
 findutils               4.9.0-r5               apk                      
@@ -86,9 +86,10 @@ nghttp2-libs            1.62.1-r0              apk
 notify2                 0.3.1                  python                   
 oauthlib                3.2.2                  python                   
 oniguruma               6.9.9-r0               apk                      
+orjson                  3.10.12                python                   
 packaging               24.2                   python                   
 paho-mqtt               1.6.1                  python                   
-par2j                   1.3.3.3                dotnet  (+1 duplicate)   
+par2j                   1.3.3.3                dotnet                   
 pip                     24.3.1                 python                   
 platformdirs            4.2.2                  python                   
 portend                 3.2.0                  python                   
@@ -96,7 +97,7 @@ procps-ng               4.0.4-r0               apk
 puremagic               1.28                   python                   
 pyc                     3.12.7-r0              apk                      
 pycparser               2.22                   python                   
-pyjwt                   2.10.0                 python                   
+pyjwt                   2.10.1                 python                   
 pysocks                 1.7.1                  python                   
 python-dateutil         2.9.0.post0            python                   
 python3                 3.12.7-r0              apk                      
