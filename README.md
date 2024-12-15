@@ -63,8 +63,8 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | Stable SABnzbd releases |
-| unstable | ✅ | Pre-releases from the develop branch |
+| latest | ✅ | Stable releases |
+| unstable | ✅ | Pre-release builds |
 | nightly | ✅ | Latest commits from the develop branch |
 
 ## Application Setup
@@ -306,6 +306,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **15.12.24:** - Rebase to Alpine 3.21.
 * **24.05.24:** - Rebase to Alpine 3.20.
 * **23.03.24:** - Remove nzb-notify as apprise is now directly supported.
 * **23.12.23:** - Rebase to Alpine 3.19.
