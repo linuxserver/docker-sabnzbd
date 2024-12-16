@@ -31,7 +31,7 @@ opt_param_volumes:
   - {vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads."}
 readonly_supported: true
 noneroot_supported: true
-nonroot_message : |
+nonroot_message: |
   * IPv4-only operation (i.e. with IPv6 disabled on the host) is not supported
 # application setup block
 app_setup_block_enabled: true
@@ -64,30 +64,26 @@ init_diagram: |
     init-migrations -> init-adduser
     init-os-end -> init-config
     init-config -> init-config-end
+    init-crontab-config -> init-config-end
     init-sabnzbd-config -> init-config-end
-    init-os-end -> init-crontab-config
+    init-config -> init-crontab-config
     init-mods-end -> init-custom-files
     base -> init-envfile
     base -> init-migrations
-    base -> init-mods
     init-config-end -> init-mods
-    init-mods -> init-mods-end
     init-mods-package-install -> init-mods-end
     init-mods -> init-mods-package-install
-    base -> init-os-end
     init-adduser -> init-os-end
     init-envfile -> init-os-end
-    init-migrations -> init-os-end
     init-config -> init-sabnzbd-config
     init-custom-files -> init-services
-    init-mods-end -> init-services
     init-services -> svc-cron
     svc-cron -> legacy-services
     init-services -> svc-sabnzbd
     svc-sabnzbd -> legacy-services
   }
   Base Images: {
-    "baseimage-alpine:3.20"
+    "baseimage-alpine:3.21"
   }
   "sabnzbd:nightly" <- Base Images
 # changelog
