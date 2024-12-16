@@ -1,12 +1,14 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
-if grep -qe ' /downloads ' /proc/mounts; then
-    lsiown abc:abc /downloads
-fi
+if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
+    if grep -qe ' /downloads ' /proc/mounts; then
+        lsiown abc:abc /downloads
+    fi
 
-if grep -qe ' /incomplete-downloads ' /proc/mounts; then
-    lsiown abc:abc /incomplete-downloads
-fi
+    if grep -qe ' /incomplete-downloads ' /proc/mounts; then
+        lsiown abc:abc /incomplete-downloads
+    fi
 
-find /config -path /config/Downloads -prune -o -exec lsiown abc:abc {} +
+    find /config -path /config/Downloads -prune -o -exec lsiown abc:abc {} +
+fi
