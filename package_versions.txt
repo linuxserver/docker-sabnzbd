@@ -28,7 +28,7 @@ chardet                 5.2.0             python
 charset-normalizer      3.4.0             python                   
 cheroot                 10.0.1            python                   
 cherrypy                18.10.0           python                   
-click                   8.1.7             python                   
+click                   8.1.8             python                   
 configobj               5.0.9             python                   
 coreutils               9.5-r1            apk                      
 coreutils-env           9.5-r1            apk                      
