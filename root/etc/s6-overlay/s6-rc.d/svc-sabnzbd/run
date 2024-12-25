@@ -3,14 +3,21 @@
 
 FAMILY=::
 
-if [[ "$HAS_IPV6" = "false" ]]; then
-    FAMILY=0.0.0.0
-    sed '/ip6-/d' /etc/hosts > /etc/hosts.new
-    cat /etc/hosts.new > /etc/hosts
-    rm /etc/hosts.new
-fi
+if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
+    if [[ "$HAS_IPV6" = "false" ]]; then
+        FAMILY=0.0.0.0
+        sed '/ip6-/d' /etc/hosts > /etc/hosts.new
+        cat /etc/hosts.new > /etc/hosts
+        rm /etc/hosts.new
+    fi
 
-exec \
-    s6-notifyoncheck -d -n 300 -w 1000 \
-        s6-setuidgid abc python3 /app/sabnzbd/SABnzbd.py \
-        --config-file /config --server "$FAMILY"
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 \
+            s6-setuidgid abc python3 /app/sabnzbd/SABnzbd.py \
+            --config-file /config --server "$FAMILY"
+else
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 \
+            python3 /app/sabnzbd/SABnzbd.py \
+            --config-file /config --server "$FAMILY"
+fi
