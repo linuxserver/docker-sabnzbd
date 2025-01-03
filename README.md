@@ -85,6 +85,14 @@ The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/d
 
 This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
 
+## Non-Root Operation
+
+This image can be run with a non-root user. For details please [read the docs](https://docs.linuxserver.io/misc/non-root/).
+
+### Caveats
+
+* IPv4-only operation (i.e. with IPv6 disabled on the host) is not supported
+
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
@@ -143,6 +151,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-v /downloads` | Local path for finished downloads. |
 | `-v /incomplete-downloads` | Local path for incomplete-downloads. |
 | `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
+| `--user=1000:1000` | Run container with a non-root user. Please [read the docs](https://docs.linuxserver.io/misc/non-root/). |
 
 ## Environment variables from files (Docker secrets)
 
