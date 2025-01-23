@@ -16,8 +16,8 @@ backports-tarfile       1.2.0             python
 bash                    5.2.37-r0         apk                      
 blinker                 1.9.0             python                   
 brotli-libs             1.1.0-r2          apk                      
-busybox                 1.37.0-r9         apk                      
-busybox-binsh           1.37.0-r9         apk                      
+busybox                 1.37.0-r12        apk                      
+busybox-binsh           1.37.0-r12        apk                      
 c-ares                  1.34.3-r0         apk                      
 ca-certificates         20241121-r1       apk                      
 ca-certificates-bundle  20241121-r1       apk                      
@@ -116,7 +116,7 @@ shadow                  4.16.0-r1         apk
 six                     1.17.0            python                   
 skalibs-libs            2.14.3.0-r0       apk                      
 sqlite-libs             3.47.1-r0         apk                      
-ssl_client              1.37.0-r9         apk                      
+ssl_client              1.37.0-r12        apk                      
 tempora                 5.8.0             python                   
 tomli                   2.0.1             python                   
 typeguard               4.3.0             python                   
