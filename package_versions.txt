@@ -86,7 +86,7 @@ oauthlib                3.2.2             python
 oniguruma               6.9.9-r0          apk                      
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
-pip                     24.3.1            python                   
+pip                     25.0              python                   
 platformdirs            4.2.2             python                   
 portend                 3.2.0             python                   
 procps-ng               4.0.4-r2          apk                      
