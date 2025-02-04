@@ -22,7 +22,7 @@ c-ares                  1.34.3-r0         apk
 ca-certificates         20241121-r1       apk                      
 ca-certificates-bundle  20241121-r1       apk                      
 catatonit               0.2.0-r0          apk                      
-certifi                 2024.12.14        python                   
+certifi                 2025.1.31         python                   
 cffi                    1.17.1            python                   
 chardet                 5.2.0             python                   
 charset-normalizer      3.4.1             python                   
@@ -102,7 +102,7 @@ python-dateutil         2.9.0.post0       python
 python3                 3.12.8-r1         apk                      
 python3-pyc             3.12.8-r1         apk                      
 python3-pycache-pyc0    3.12.8-r1         apk                      
-pytz                    2024.2            python                   
+pytz                    2025.1            python                   
 pyyaml                  6.0.2             python                   
 readline                8.2.13-r0         apk                      
 rebulk                  3.2.0             python                   
