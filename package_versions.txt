@@ -57,7 +57,7 @@ jq                      1.7.1-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.3.2-r5          apk                      
+libcrypto3              3.3.3-r0          apk                      
 libcurl                 8.12.0-r0         apk                      
 libexpat                2.6.4-r0          apk                      
 libffi                  3.4.6-r0          apk                      
@@ -69,7 +69,7 @@ libncursesw             6.5_p20241006-r3  apk
 libpanelw               6.5_p20241006-r3  apk                      
 libproc2                4.0.4-r2          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.3.2-r5          apk                      
+libssl3                 3.3.3-r0          apk                      
 libstdc++               14.2.0-r4         apk                      
 libunistring            1.2-r0            apk                      
 linux-pam               1.6.1-r1          apk                      
