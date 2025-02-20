@@ -7,8 +7,8 @@ acl-libs                2.3.2-r1          apk
 alpine-baselayout       3.6.8-r1          apk                      
 alpine-baselayout-data  3.6.8-r1          apk                      
 alpine-keys             2.5-r0            apk                      
-alpine-release          3.21.2-r0         apk                      
-apk-tools               2.14.6-r2         apk                      
+alpine-release          3.21.3-r0         apk                      
+apk-tools               2.14.6-r3         apk                      
 apprise                 1.9.2             python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
@@ -36,7 +36,7 @@ coreutils-fmt           9.5-r2            apk
 coreutils-sha512sum     9.5-r2            apk                      
 cryptography            44.0.0            python                   
 ct3                     3.4.0             python                   
-curl                    8.12.0-r0         apk                      
+curl                    8.12.1-r0         apk                      
 feedparser              6.0.11            python                   
 findutils               4.10.0-r0         apk                      
 gdbm                    1.24-r0           apk                      
@@ -58,7 +58,7 @@ libattr                 2.5.2-r2          apk
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.3.3-r0          apk                      
-libcurl                 8.12.0-r0         apk                      
+libcurl                 8.12.1-r0         apk                      
 libexpat                2.6.4-r0          apk                      
 libffi                  3.4.6-r0          apk                      
 libgcc                  14.2.0-r4         apk                      
@@ -77,8 +77,8 @@ markdown                3.7               python
 more-itertools          10.3.0            python                   
 more-itertools          10.5.0            python                   
 mpdecimal               4.0.0-r0          apk                      
-musl                    1.2.5-r8          apk                      
-musl-utils              1.2.5-r8          apk                      
+musl                    1.2.5-r9          apk                      
+musl-utils              1.2.5-r9          apk                      
 my-test-package         1.0               python                   
 ncurses-terminfo-base   6.5_p20241006-r3  apk                      
 netcat-openbsd          1.226.1.1-r0      apk                      
@@ -121,7 +121,7 @@ tempora                 5.8.0             python
 tomli                   2.0.1             python                   
 typeguard               4.3.0             python                   
 typing-extensions       4.12.2            python                   
-tzdata                  2024b-r1          apk                      
+tzdata                  2025a-r0          apk                      
 ujson                   5.10.0            python                   
 urllib3                 2.3.0             python                   
 utmps-libs              0.1.2.3-r2        apk                      
