@@ -2,7 +2,7 @@ NAME                    VERSION           TYPE
 7-Zip                   24.09             dotnet                   
 7zip                    24.08-r0          apk                      
 Simple Launcher         1.1.0.14          dotnet  (+5 duplicates)  
-WinRAR                  7.1.0             dotnet                   
+WinRAR                  7.10.0            dotnet                   
 acl-libs                2.3.2-r1          apk                      
 alpine-baselayout       3.6.8-r1          apk                      
 alpine-baselayout-data  3.6.8-r1          apk                      
