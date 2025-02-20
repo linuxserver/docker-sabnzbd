@@ -1,8 +1,8 @@
 NAME                    VERSION           TYPE                    
-7-Zip                   24.08             dotnet                   
+7-Zip                   24.09             dotnet                   
 7zip                    24.08-r0          apk                      
 Simple Launcher         1.1.0.14          dotnet  (+5 duplicates)  
-WinRAR                  7.1.0             dotnet                   
+WinRAR                  7.10.0            dotnet                   
 acl-libs                2.3.2-r1          apk                      
 alpine-baselayout       3.6.8-r1          apk                      
 alpine-baselayout-data  3.6.8-r1          apk                      
@@ -22,7 +22,7 @@ c-ares                  1.34.3-r0         apk
 ca-certificates         20241121-r1       apk                      
 ca-certificates-bundle  20241121-r1       apk                      
 catatonit               0.2.0-r0          apk                      
-certifi                 2024.12.14        python                   
+certifi                 2025.1.31         python                   
 cffi                    1.17.1            python                   
 chardet                 5.2.0             python                   
 charset-normalizer      3.4.1             python                   
@@ -34,7 +34,7 @@ coreutils               9.5-r2            apk
 coreutils-env           9.5-r2            apk                      
 coreutils-fmt           9.5-r2            apk                      
 coreutils-sha512sum     9.5-r2            apk                      
-cryptography            44.0.0            python                   
+cryptography            44.0.1            python                   
 ct3                     3.4.0             python                   
 curl                    8.12.1-r0         apk                      
 feedparser              6.0.11            python                   
@@ -75,7 +75,7 @@ libunistring            1.2-r0            apk
 linux-pam               1.6.1-r1          apk                      
 markdown                3.7               python                   
 more-itertools          10.3.0            python                   
-more-itertools          10.5.0            python                   
+more-itertools          10.6.0            python                   
 mpdecimal               4.0.0-r0          apk                      
 musl                    1.2.5-r9          apk                      
 musl-utils              1.2.5-r9          apk                      
@@ -86,7 +86,7 @@ nghttp2-libs            1.64.0-r0         apk
 notify2                 0.3.1             python                   
 oauthlib                3.2.2             python                   
 oniguruma               6.9.9-r0          apk                      
-orjson                  3.10.14           python                   
+orjson                  3.10.15           python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
 pip                     25.0.1            python                   
@@ -102,7 +102,7 @@ python-dateutil         2.9.0.post0       python
 python3                 3.12.9-r0         apk                      
 python3-pyc             3.12.9-r0         apk                      
 python3-pycache-pyc0    3.12.9-r0         apk                      
-pytz                    2024.2            python                   
+pytz                    2025.1            python                   
 pyyaml                  6.0.2             python                   
 readline                8.2.13-r0         apk                      
 rebulk                  3.2.0             python                   
