@@ -73,14 +73,6 @@ Initial setup is done via `http://<your-ip>:8080`.
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
-### Download folders
-
-We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability for atomic moves (TL;DR instant file moves, rather than copy+delete) of files while processing content.
-
-Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` and the `Temporary Download Folder` in the SABnzbd gui settings, under `Folders`.
-
-The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
-
 ## Read-Only Operation
 
 This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
@@ -88,6 +80,15 @@ This image can be run with a read-only container filesystem. For details please 
 ## Non-Root Operation
 
 This image can be run with a non-root user. For details please [read the docs](https://docs.linuxserver.io/misc/non-root/).
+
+### Media folders
+
+We have set /music and /downloads as optional paths, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
+
+Use the optional paths if you don't understand, or don't want hardlinks/atomic moves.
+
+>[!TIP]
+>The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
 ## Usage
 
@@ -110,8 +111,8 @@ services:
       - TZ=Etc/UTC
     volumes:
       - /path/to/sabnzbd/config:/config
-      - /path/to/downloads:/downloads #optional
       - /path/to/incomplete/downloads:/incomplete-downloads #optional
+      - /path/to/downloads:/downloads #optional
     ports:
       - 8080:8080
     restart: unless-stopped
@@ -127,8 +128,8 @@ docker run -d \
   -e TZ=Etc/UTC \
   -p 8080:8080 \
   -v /path/to/sabnzbd/config:/config \
-  -v /path/to/downloads:/downloads `#optional` \
   -v /path/to/incomplete/downloads:/incomplete-downloads `#optional` \
+  -v /path/to/downloads:/downloads `#optional` \
   --restart unless-stopped \
   lscr.io/linuxserver/sabnzbd:latest
 ```
@@ -144,8 +145,8 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-v /config` | Persistent config files |
-| `-v /downloads` | Local path for finished downloads. |
 | `-v /incomplete-downloads` | Local path for incomplete-downloads. |
+| `-v /downloads` | Local path for finished downloads. |
 | `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 | `--user=1000:1000` | Run container with a non-root user. Please [read the docs](https://docs.linuxserver.io/misc/non-root/). |
 
