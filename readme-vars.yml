@@ -29,8 +29,8 @@ param_ports:
 # optional container parameters
 opt_param_usage_include_vols: true
 opt_param_volumes:
-  - {vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads."}
   - {vol_path: "/incomplete-downloads", vol_host_path: "/path/to/incomplete/downloads", desc: "Local path for incomplete-downloads."}
+  - {vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Local path for finished downloads."}
 readonly_supported: true
 nonroot_supported: true
 # application setup block
@@ -39,14 +39,7 @@ app_setup_block: |
   Initial setup is done via `http://<your-ip>:8080`.
 
   See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
-
-  ### Download folders
-
-  We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability for atomic moves (TL;DR instant file moves, rather than copy+delete) of files while processing content.
-
-  Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` and the `Temporary Download Folder` in the SABnzbd gui settings, under `Folders`.
-
-  The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
+readme_media: true
 # init diagram
 init_diagram: |
   "sabnzbd:latest": {
