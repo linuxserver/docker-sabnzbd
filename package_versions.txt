@@ -7,7 +7,7 @@ alpine-baselayout-data  3.6.8-r1          apk
 alpine-keys             2.5-r0            apk                      
 alpine-release          3.21.3-r0         apk                      
 apk-tools               2.14.6-r3         apk                      
-apprise                 1.9.0             python                   
+apprise                 1.9.2             python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
@@ -20,10 +20,10 @@ c-ares                  1.34.3-r0         apk
 ca-certificates         20241121-r1       apk                      
 ca-certificates-bundle  20241121-r1       apk                      
 catatonit               0.2.0-r0          apk                      
-certifi                 2024.8.30         python                   
+certifi                 2025.1.31         python                   
 cffi                    1.17.1            python                   
 chardet                 5.2.0             python                   
-charset-normalizer      3.4.0             python                   
+charset-normalizer      3.4.1             python                   
 cheroot                 10.0.1            python                   
 cherrypy                18.10.0           python                   
 click                   8.1.8             python                   
@@ -32,8 +32,8 @@ coreutils               9.5-r2            apk
 coreutils-env           9.5-r2            apk                      
 coreutils-fmt           9.5-r2            apk                      
 coreutils-sha512sum     9.5-r2            apk                      
-cryptography            44.0.0            python                   
-ct3                     3.4.0b6           python                   
+cryptography            44.0.2            python                   
+ct3                     3.4.0             python                   
 curl                    8.12.1-r1         apk                      
 feedparser              6.0.11            python                   
 findutils               4.10.0-r0         apk                      
@@ -73,7 +73,7 @@ libunistring            1.2-r0            apk
 linux-pam               1.6.1-r1          apk                      
 markdown                3.7               python                   
 more-itertools          10.3.0            python                   
-more-itertools          10.5.0            python                   
+more-itertools          10.6.0            python                   
 mpdecimal               4.0.0-r0          apk                      
 musl                    1.2.5-r9          apk                      
 musl-utils              1.2.5-r9          apk                      
@@ -84,6 +84,7 @@ nghttp2-libs            1.64.0-r0         apk
 notify2                 0.3.1             python                   
 oauthlib                3.2.2             python                   
 oniguruma               6.9.9-r0          apk                      
+orjson                  3.10.15           python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
 pip                     25.0.1            python                   
@@ -99,7 +100,7 @@ python-dateutil         2.9.0.post0       python
 python3                 3.12.9-r0         apk                      
 python3-pyc             3.12.9-r0         apk                      
 python3-pycache-pyc0    3.12.9-r0         apk                      
-pytz                    2024.2            python                   
+pytz                    2025.1            python                   
 pyyaml                  6.0.2             python                   
 readline                8.2.13-r0         apk                      
 rebulk                  3.2.0             python                   
@@ -110,17 +111,17 @@ scanelf                 1.3.8-r1          apk
 setuptools              78.1.0            python                   
 sgmllib3k               1.0.0             python                   
 shadow                  4.16.0-r1         apk                      
-six                     1.16.0            python                   
+six                     1.17.0            python                   
 skalibs-libs            2.14.3.0-r0       apk                      
 sqlite-libs             3.48.0-r0         apk                      
 ssl_client              1.37.0-r12        apk                      
-tempora                 5.7.0             python                   
+tempora                 5.8.0             python                   
 tomli                   2.0.1             python                   
 typeguard               4.3.0             python                   
 typing-extensions       4.12.2            python                   
-tzdata                  2025a-r0          apk                      
+tzdata                  2025b-r0          apk                      
 ujson                   5.10.0            python                   
-urllib3                 2.2.3             python                   
+urllib3                 2.3.0             python                   
 utmps-libs              0.1.2.3-r2        apk                      
 wheel                   0.45.1            python  (+1 duplicate)   
 xz-libs                 5.6.3-r0          apk                      
