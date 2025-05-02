@@ -73,6 +73,15 @@ Initial setup is done via `http://<your-ip>:8080`.
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
+### Media folders
+
+We have set `/incomplete-downloads` and `/downloads` as optional paths, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
+
+Use the optional paths if you don't understand, or don't want hardlinks/atomic moves.
+
+>[!TIP]
+>The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
+
 ## Read-Only Operation
 
 This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
@@ -80,15 +89,6 @@ This image can be run with a read-only container filesystem. For details please 
 ## Non-Root Operation
 
 This image can be run with a non-root user. For details please [read the docs](https://docs.linuxserver.io/misc/non-root/).
-
-### Media folders
-
-We have set /music and /downloads as optional paths, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
-
-Use the optional paths if you don't understand, or don't want hardlinks/atomic moves.
-
->[!TIP]
->The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
 ## Usage
 
