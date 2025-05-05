@@ -112,7 +112,7 @@ sgmllib3k               1.0.0             python
 shadow                  4.16.0-r1         apk                     
 six                     1.17.0            python                  
 skalibs-libs            2.14.3.0-r0       apk                     
-sqlite-libs             3.48.0-r1         apk                     
+sqlite-libs             3.48.0-r2         apk                     
 ssl_client              1.37.0-r12        apk                     
 tempora                 5.8.0             python                  
 tomli                   2.0.1             python                  
