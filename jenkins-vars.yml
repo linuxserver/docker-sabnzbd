@@ -6,6 +6,7 @@ external_type: github_commit
 release_type: prerelease
 release_tag: nightly
 ls_branch: nightly
+build_riscv64: true
 repo_vars:
   - EXT_GIT_BRANCH = 'develop'
   - EXT_USER = 'sabnzbd'
