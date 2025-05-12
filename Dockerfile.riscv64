@@ -21,8 +21,10 @@ RUN \
     autoconf \
     automake \
     build-base \
+    cargo \
     libffi-dev \
     openssl-dev \
+    pkgconfig \
     python3-dev && \
   apk add  -U --update --no-cache \
     7zip \
