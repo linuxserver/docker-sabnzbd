@@ -88,6 +88,7 @@ init_diagram: |
   "sabnzbd:nightly" <- Base Images
 # changelog
 changelogs:
+  - {date: "11.05.25:", desc: "Add experimental RISCV build."}
   - {date: "15.12.24:", desc: "Rebase to Alpine 3.21."}
   - {date: "24.05.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "23.03.24:", desc: "Remove nzb-notify as apprise is now directly supported."}
