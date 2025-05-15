@@ -770,7 +770,7 @@ pipeline {
         }
         stage('Build RISCV64') {
           agent {
-            label 'X86-64-MULTI'
+            label 'ARM64'
           }
           steps {
             echo "Running on node: ${NODE_NAME}"
