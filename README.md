@@ -54,6 +54,7 @@ The architectures supported by this image are:
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
+| riscv64 | ✅ | riscv64-\<version tag\> |
 | arm64 | ✅ | arm64v8-\<version tag\> |
 | armhf | ❌ | |
 
@@ -315,6 +316,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **30.05.25:** - Rebase to Alpine 3.22. Add experimental RISCV build.
 * **15.12.24:** - Rebase to Alpine 3.21.
 * **24.05.24:** - Rebase to Alpine 3.20.
 * **23.03.24:** - Remove nzb-notify as apprise is now directly supported.
