@@ -70,13 +70,14 @@ Initial setup is done via `http://<your-ip>:8080`.
 
 See the [SABnzbd wiki](https://sabnzbd.org/wiki/) for more information.
 
-### Download folders
+### Media folders
 
-We have set `/incomplete-downloads` and `/downloads` as ***optional paths***, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability for atomic moves (TL;DR instant file moves, rather than copy+delete) of files while processing content.
+We have set `/downloads` as optional path, this is because it is the easiest way to get started. While easy to use, it has some drawbacks. Mainly losing the ability to hardlink (TL;DR a way for a file to exist in multiple places on the same file system while only consuming one file worth of space), or atomic move (TL;DR instant file moves, rather than copy+delete) files while processing content.
 
-Use the optional paths if you don't understand, or don't want atomic moves. Whichever paths you choose to use, make sure to set the `Completed Download Folder` and the `Temporary Download Folder` in the SABnzbd gui settings, under `Folders`.
+Use the optional path if you don't understand, or don't want hardlinks/atomic moves.
 
-The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
+>[!TIP]
+>The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
 
 ## Read-Only Operation
 
@@ -308,6 +309,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.07.25:** - Rebase to Alpine 3.22.
 * **20.12.24:** - Rebase to Alpine 3.21.
 * **25.05.24:** - Rebase to Alpine 3.20, remove nzb-notify as apprise is now directly supported.
 * **23.12.23:** - Rebase to Alpine 3.19.
