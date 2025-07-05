@@ -78,7 +78,7 @@ init_diagram: |
     svc-sabnzbd -> legacy-services
   }
   Base Images: {
-    "baseimage-alpine:3.21"
+    "baseimage-alpine:3.22"
   }
   "sabnzbd:latest" <- Base Images
 # changelog
