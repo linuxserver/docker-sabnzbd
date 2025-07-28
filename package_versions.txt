@@ -97,7 +97,7 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.11.0            python                   
+orjson                  3.11.1            python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary                   
