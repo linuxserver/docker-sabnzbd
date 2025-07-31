@@ -101,7 +101,7 @@ orjson                  3.10.18           python
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary                   
-pip                     25.1.1            python                   
+pip                     25.2              python                   
 platformdirs            4.2.2             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.4-r3          apk                      
