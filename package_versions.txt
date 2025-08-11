@@ -2,7 +2,7 @@ NAME                    VERSION           TYPE
 7-Zip                   25.00             binary                   
 7zip                    24.09-r0          apk                      
 Simple Launcher         1.1.0.14          binary  (+5 duplicates)  
-WinRAR                  7.12.0            binary                   
+WinRAR                  7.13.0            binary                   
 acl-libs                2.3.2-r1          apk                      
 alpine-baselayout       3.7.0-r0          apk                      
 alpine-baselayout-data  3.7.0-r0          apk                      
