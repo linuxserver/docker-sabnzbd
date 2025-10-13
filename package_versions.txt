@@ -8,7 +8,7 @@ acl-libs                2.3.2-r1          apk
 alpine-baselayout       3.7.0-r0          apk                      
 alpine-baselayout-data  3.7.0-r0          apk                      
 alpine-keys             2.5-r0            apk                      
-alpine-release          3.22.1-r0         apk                      
+alpine-release          3.22.2-r0         apk                      
 apk-tools               2.14.9-r3         apk                      
 apprise                 1.9.5             python                   
 autocommand             2.2.2             python                   
@@ -50,7 +50,7 @@ gui                     UNKNOWN           binary
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
-idna                    3.10              python                   
+idna                    3.11              python                   
 importlib-metadata      8.0.0             python                   
 inflect                 7.3.1             python                   
 jaraco-classes          3.4.0             python                   
@@ -107,14 +107,14 @@ platformdirs            4.2.2             python
 portend                 3.2.1             python                   
 procps-ng               4.0.4-r3          apk                      
 puremagic               1.30              python                   
-pyc                     3.12.11-r0        apk                      
+pyc                     3.12.12-r0        apk                      
 pycparser               2.23              python                   
 pyjwt                   2.10.1            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
-python3                 3.12.11-r0        apk                      
-python3-pyc             3.12.11-r0        apk                      
-python3-pycache-pyc0    3.12.11-r0        apk                      
+python3                 3.12.12-r0        apk                      
+python3-pyc             3.12.12-r0        apk                      
+python3-pycache-pyc0    3.12.12-r0        apk                      
 pytz                    2025.2            python                   
 pyyaml                  6.0.3             python                   
 rarfile                 4.2               python                   
