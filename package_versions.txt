@@ -26,7 +26,7 @@ catatonit               0.2.1-r0          apk
 certifi                 2025.10.5         python                   
 cffi                    2.0.0             python                   
 chardet                 5.2.0             python                   
-charset-normalizer      3.4.3             python                   
+charset-normalizer      3.4.4             python                   
 cheroot                 11.0.0            python                   
 cherrypy                18.10.0           python                   
 cli                     UNKNOWN           binary                   
@@ -39,7 +39,7 @@ coreutils               9.7-r1            apk
 coreutils-env           9.7-r1            apk                      
 coreutils-fmt           9.7-r1            apk                      
 coreutils-sha512sum     9.7-r1            apk                      
-cryptography            46.0.2            python                   
+cryptography            46.0.3            python                   
 ct3                     3.4.0             python                   
 curl                    8.14.1-r2         apk                      
 feedparser              6.0.12            python                   
