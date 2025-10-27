@@ -98,11 +98,11 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.11.3            python                   
+orjson                  3.11.4            python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary                   
-pip                     25.2              python                   
+pip                     25.3              python                   
 platformdirs            4.2.2             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.4-r3          apk                      
