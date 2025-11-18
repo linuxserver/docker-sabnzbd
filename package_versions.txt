@@ -23,7 +23,7 @@ c-ares                  1.34.5-r0         apk
 ca-certificates         20250911-r0       apk                      
 ca-certificates-bundle  20250911-r0       apk                      
 catatonit               0.2.1-r0          apk                      
-certifi                 2025.10.5         python                   
+certifi                 2025.11.12        python                   
 cffi                    2.0.0             python                   
 chardet                 5.2.0             python                   
 charset-normalizer      3.4.4             python                   
@@ -33,7 +33,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
 cli-arm64               UNKNOWN           binary                   
-click                   8.3.0             python                   
+click                   8.3.1             python                   
 configobj               5.0.9             python                   
 coreutils               9.7-r1            apk                      
 coreutils-env           9.7-r1            apk                      
