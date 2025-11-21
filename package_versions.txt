@@ -23,11 +23,11 @@ c-ares                  1.34.5-r0         apk
 ca-certificates         20250911-r0       apk                      
 ca-certificates-bundle  20250911-r0       apk                      
 catatonit               0.2.1-r0          apk                      
-certifi                 2025.10.5         python                   
+certifi                 2025.11.12        python                   
 cffi                    2.0.0             python                   
 chardet                 5.2.0             python                   
 charset-normalizer      3.4.4             python                   
-cheroot                 11.0.0            python                   
+cheroot                 11.1.2            python                   
 cherrypy                18.10.0           python                   
 cli                     UNKNOWN           binary                   
 cli-32                  UNKNOWN           binary                   
@@ -84,7 +84,7 @@ libstdc++               14.2.0-r6         apk
 libunistring            1.3-r0            apk                      
 linux-pam               1.7.0-r4          apk                      
 liteFirewallW           UNKNOWN           binary                   
-markdown                3.9               python                   
+markdown                3.10              python                   
 more-itertools          10.3.0            python                   
 more-itertools          10.8.0            python                   
 mpdecimal               4.0.1-r0          apk                      
@@ -98,7 +98,7 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.11.3            python                   
+orjson                  3.11.4            python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary                   
