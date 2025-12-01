@@ -40,7 +40,7 @@ coreutils-env           9.7-r1            apk
 coreutils-fmt           9.7-r1            apk                      
 coreutils-sha512sum     9.7-r1            apk                      
 cryptography            46.0.3            python                   
-ct3                     3.4.0             python                   
+ct3                     3.4.0.post5       python                   
 curl                    8.14.1-r2         apk                      
 feedparser              6.0.12            python                   
 findutils               4.10.0-r0         apk                      
