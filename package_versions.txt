@@ -101,7 +101,7 @@ oniguruma               6.9.10-r0         apk
 orjson                  3.11.5            python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
-par2                    UNKNOWN           binary                   
+par2                    UNKNOWN           binary  (+1 duplicate)   
 pip                     25.3              python                   
 platformdirs            4.2.2             python                   
 portend                 3.2.1             python                   
