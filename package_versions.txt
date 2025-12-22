@@ -59,7 +59,7 @@ jaraco-collections      5.1.0             python
 jaraco-context          4.3.0             python                   
 jaraco-context          5.3.0             python                   
 jaraco-functools        4.0.1             python                   
-jaraco-functools        4.3.0             python                   
+jaraco-functools        4.4.0             python                   
 jaraco-text             3.12.1            python                   
 jaraco-text             3.8.1             python                   
 jq                      1.8.1-r0          apk                      
@@ -101,7 +101,7 @@ oniguruma               6.9.10-r0         apk
 orjson                  3.11.5            python                   
 packaging               24.2              python                   
 paho-mqtt               1.6.1             python                   
-par2                    UNKNOWN           binary                   
+par2                    UNKNOWN           binary  (+1 duplicate)   
 pip                     25.3              python                   
 platformdirs            4.2.2             python                   
 portend                 3.2.1             python                   
