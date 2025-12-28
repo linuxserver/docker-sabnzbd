@@ -69,7 +69,8 @@ RUN \
     build-dependencies && \
   rm -rf \
     /tmp/* \
-    $HOME/.cache
+    $HOME/.cache \
+    $HOME/.cargo
 
 # add local files
 COPY root/ /
@@ -79,5 +80,4 @@ COPY --from=unrar /usr/bin/unrar-alpine /usr/bin/unrar
 
 # ports and volumes
 EXPOSE 8080
-
 VOLUME /config
