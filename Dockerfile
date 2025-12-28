@@ -69,7 +69,8 @@ RUN \
     build-dependencies && \
   rm -rf \
     /tmp/* \
-    $HOME/.cache
+    $HOME/.cache \
+    $HOME/.cargo
 
 # add local files
 COPY root/ /
