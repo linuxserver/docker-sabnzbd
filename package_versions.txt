@@ -82,7 +82,7 @@ libpsl                  0.21.5-r3         apk
 libssl3                 3.5.4-r0          apk                      
 libstdc++               15.2.0-r2         apk                      
 libunistring            1.4.1-r0          apk                      
-linux-pam               1.7.1-r1          apk                      
+linux-pam               1.7.1-r2          apk                      
 liteFirewallW           UNKNOWN           binary                   
 markdown                3.10              python                   
 more-itertools          10.3.0            python                   
