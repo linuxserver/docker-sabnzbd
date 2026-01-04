@@ -310,7 +310,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **28.12.25:** - Rebase to Alpine 3.23.
+* **28.12.25:** - Rebase to Alpine 3.23. Add RISCV build.
 * **05.07.25:** - Rebase to Alpine 3.22.
 * **20.12.24:** - Rebase to Alpine 3.21.
 * **25.05.24:** - Rebase to Alpine 3.20, remove nzb-notify as apprise is now directly supported.
