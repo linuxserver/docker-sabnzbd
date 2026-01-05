@@ -23,7 +23,7 @@ c-ares                  1.34.6-r0         apk
 ca-certificates         20251003-r0       apk                      
 ca-certificates-bundle  20251003-r0       apk                      
 catatonit               0.2.1-r0          apk                      
-certifi                 2025.11.12        python                   
+certifi                 2026.1.4          python                   
 cffi                    2.0.0             python                   
 chardet                 5.2.0             python                   
 charset-normalizer      3.4.4             python                   
