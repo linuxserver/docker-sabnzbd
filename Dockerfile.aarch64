@@ -63,6 +63,9 @@ RUN \
   make && \
   make check && \
   make install && \
+  echo "**** Patch Sab commit into version.py ****" && \
+  SAB_COMMIT_SHA=$(curl -s "https://api.github.com/repos/sabnzbd/sabnzbd/git/matching-refs/tags/${SABNZBD_VERSION}" | jq -r '.[].object.sha') && \
+  sed -i "s/__baseline__ .*/__baseline__ = \"${SAB_COMMIT_SHA}\"/" /app/sabnzbd/sabnzbd/version.py && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   apk del --purge \
