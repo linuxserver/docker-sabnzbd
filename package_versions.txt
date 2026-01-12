@@ -138,7 +138,7 @@ typeguard               4.3.0             python
 typing-extensions       4.12.2            python                   
 tzdata                  2025c-r0          apk                      
 ujson                   5.11.0            python                   
-urllib3                 2.6.2             python                   
+urllib3                 2.6.3             python                   
 utmps-libs              0.1.3.1-r0        apk                      
 wheel                   0.45.1            python  (+1 duplicate)   
 xz-libs                 5.8.1-r0          apk                      
