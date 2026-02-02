@@ -8,7 +8,7 @@ acl-libs                2.3.2-r1          apk
 alpine-baselayout       3.7.1-r8          apk                      
 alpine-baselayout-data  3.7.1-r8          apk                      
 alpine-keys             2.6-r0            apk                      
-alpine-release          3.23.2-r0         apk                      
+alpine-release          3.23.3-r0         apk                      
 apk-tools               3.0.3-r1          apk                      
 apprise                 1.9.7             python                   
 autocommand             2.2.2             python                   
@@ -99,7 +99,7 @@ orjson                  3.11.5            python
 packaging               26.0              python  (+1 duplicate)   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
-pip                     25.3              python                   
+pip                     26.0              python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.5-r0          apk                      
