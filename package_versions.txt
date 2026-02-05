@@ -66,7 +66,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.5-r0          apk                      
 libcurl                 8.17.0-r1         apk                      
-libexpat                2.7.3-r0          apk                      
+libexpat                2.7.4-r0          apk                      
 libffi                  3.5.2-r0          apk                      
 libgcc                  15.2.0-r2         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -99,7 +99,7 @@ orjson                  3.11.5            python
 packaging               26.0              python  (+1 duplicate)   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
-pip                     26.0              python                   
+pip                     26.0.1            python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.5-r0          apk                      
