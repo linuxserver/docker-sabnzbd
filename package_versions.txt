@@ -39,7 +39,7 @@ coreutils               9.8-r1            apk
 coreutils-env           9.8-r1            apk                      
 coreutils-fmt           9.8-r1            apk                      
 coreutils-sha512sum     9.8-r1            apk                      
-cryptography            46.0.3            python                   
+cryptography            46.0.4            python                   
 ct3                     3.4.0.post5       python                   
 curl                    8.17.0-r1         apk                      
 feedparser              6.0.12            python                   
@@ -95,7 +95,7 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.11.5            python                   
+orjson                  3.11.7            python                   
 packaging               26.0              python  (+1 duplicate)   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
@@ -106,7 +106,7 @@ procps-ng               4.0.5-r0          apk
 puremagic               1.30              python                   
 pyc                     3.12.12-r0        apk                      
 pycparser               3.0               python                   
-pyjwt                   2.10.1            python                   
+pyjwt                   2.11.0            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
 python3                 3.12.12-r0        apk                      
