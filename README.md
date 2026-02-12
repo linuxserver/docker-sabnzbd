@@ -77,8 +77,11 @@ We have set `/downloads` as optional path, this is because it is the easiest way
 
 Use the optional path if you don't understand, or don't want hardlinks/atomic moves.
 
->[!TIP]
->The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
+<details>
+<summary>Well planned paths</summary>
+
+The folks over at servarr.com wrote a good [write-up](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths) on how to get started with this.
+</details>
 
 ## Read-Only Operation
 
@@ -97,7 +100,7 @@ This image can be run with a non-root user. For details please [read the docs](h
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
 
 >[!NOTE]
->Unless a parameter is flaged as 'optional', it is *mandatory* and a value must be provided.
+>Unless a parameter is flagged as 'optional', it is *mandatory* and a value must be provided.
 
 ### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
