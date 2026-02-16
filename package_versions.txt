@@ -81,7 +81,7 @@ libstdc++               15.2.0-r2         apk
 libunistring            1.4.1-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
 liteFirewallW           UNKNOWN           binary                   
-markdown                3.10.1            python                   
+markdown                3.10.2            python                   
 more-itertools          10.8.0            python  (+1 duplicate)   
 mpdecimal               4.0.1-r0          apk                      
 musl                    1.2.5-r21         apk                      
