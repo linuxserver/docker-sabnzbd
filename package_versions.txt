@@ -1,5 +1,5 @@
 NAME                    VERSION           TYPE                    
-7-Zip                   25.00             binary                   
+7-Zip                   26.00             binary                   
 7zip                    25.01-r0          apk                      
 NSIS StdUtils plug-in   1.1.4.0           binary                   
 Simple Launcher         1.1.0.14          binary  (+5 duplicates)  
