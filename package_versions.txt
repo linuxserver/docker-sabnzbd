@@ -25,7 +25,6 @@ ca-certificates-bundle  20251003-r0       apk
 catatonit               0.2.1-r0          apk                      
 certifi                 2026.2.25         python                   
 cffi                    2.0.0             python                   
-chardet                 7.0.1             python                   
 charset-normalizer      3.4.5             python                   
 cheroot                 11.1.2            python                   
 cherrypy                18.10.0           python                   
