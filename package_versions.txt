@@ -115,7 +115,7 @@ requests                2.32.5            python
 requests-oauthlib       2.0.0             python                   
 sabctools               8.2.6             python                   
 scanelf                 1.3.8-r2          apk                      
-setuptools              82.0.0            python                   
+setuptools              82.0.1            python                   
 sgmllib3k               1.0.0             python                   
 shadow                  4.18.0-r0         apk                      
 six                     1.17.0            python                   
@@ -124,7 +124,7 @@ sqlite-libs             3.51.2-r0         apk
 ssl_client              1.37.0-r30        apk                      
 tempora                 5.8.1             python                   
 tomli                   2.4.0             python                   
-tzdata                  2025c-r0          apk                      
+tzdata                  2026a-r0          apk                      
 ujson                   5.11.0            python                   
 urllib3                 2.5.0             python                   
 utmps-libs              0.1.3.1-r0        apk                      
@@ -132,5 +132,5 @@ wheel                   0.46.3            python  (+1 duplicate)
 xz-libs                 5.8.2-r0          apk                      
 zc-lockfile             4.0               python                   
 zipp                    3.23.0            python                   
-zlib                    1.3.1-r2          apk                      
+zlib                    1.3.2-r0          apk                      
 zstd-libs               1.5.7-r2          apk                      
