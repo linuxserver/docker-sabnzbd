@@ -10,7 +10,7 @@ alpine-baselayout-data  3.7.1-r8          apk
 alpine-keys             2.6-r0            apk                      
 alpine-release          3.23.3-r0         apk                      
 apk-tools               3.0.5-r0          apk                      
-apprise                 1.9.7             python                   
+apprise                 1.9.8             python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
@@ -23,10 +23,9 @@ c-ares                  1.34.6-r0         apk
 ca-certificates         20251003-r0       apk                      
 ca-certificates-bundle  20251003-r0       apk                      
 catatonit               0.2.1-r0          apk                      
-certifi                 2026.1.4          python                   
+certifi                 2026.2.25         python                   
 cffi                    2.0.0             python                   
-chardet                 5.2.0             python                   
-charset-normalizer      3.4.4             python                   
+charset-normalizer      3.4.5             python                   
 cheroot                 11.1.2            python                   
 cherrypy                18.10.0           python                   
 cli                     UNKNOWN           binary                   
@@ -102,7 +101,7 @@ pip                     26.0.1            python
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.5-r0          apk                      
-puremagic               1.30              python                   
+puremagic               2.0.0             python                   
 pyc                     3.12.12-r0        apk                      
 pycparser               3.0               python                   
 pyjwt                   2.11.0            python                   
@@ -111,7 +110,7 @@ python-dateutil         2.9.0.post0       python
 python3                 3.12.12-r0        apk                      
 python3-pyc             3.12.12-r0        apk                      
 python3-pycache-pyc0    3.12.12-r0        apk                      
-pytz                    2025.2            python                   
+pytz                    2026.1.post1      python                   
 pyyaml                  6.0.3             python                   
 rarfile                 4.2               python                   
 readline                8.3.1-r0          apk                      
