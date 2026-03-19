@@ -65,7 +65,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.5-r0          apk                      
 libcurl                 8.17.0-r1         apk                      
-libexpat                2.7.4-r0          apk                      
+libexpat                2.7.5-r0          apk                      
 libffi                  3.5.2-r0          apk                      
 libgcc                  15.2.0-r2         apk                      
 libidn2                 2.3.8-r0          apk                      
