@@ -10,7 +10,7 @@ alpine-baselayout-data  3.7.1-r8          apk
 alpine-keys             2.6-r0            apk                      
 alpine-release          3.23.3-r0         apk                      
 apk-tools               3.0.5-r0          apk                      
-apprise                 1.9.8             python                   
+apprise                 1.9.9             python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
