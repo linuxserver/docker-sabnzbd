@@ -9,6 +9,7 @@ alpine-baselayout       3.7.2-r0          apk
 alpine-baselayout-data  3.7.2-r0          apk                      
 alpine-keys             2.6-r0            apk                      
 alpine-release          3.23.3-r0         apk                      
+annotated-doc           0.0.4             python                   
 apk-tools               3.0.5-r0          apk                      
 apprise                 1.9.9             python                   
 autocommand             2.2.2             python                   
@@ -52,12 +53,12 @@ gui-arm64               UNKNOWN           binary
 idna                    3.11              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-classes          3.4.0             python                   
-jaraco-collections      5.0.0             python                   
-jaraco-context          4.3.0             python                   
+jaraco-collections      5.2.1             python                   
 jaraco-context          6.1.0             python                   
+jaraco-context          6.1.2             python                   
 jaraco-functools        4.4.0             python  (+1 duplicate)   
-jaraco-text             3.8.1             python                   
 jaraco-text             4.0.0             python                   
+jaraco-text             4.2.0             python                   
 jq                      1.8.1-r0          apk                      
 libapk                  3.0.5-r0          apk                      
 libattr                 2.5.2-r2          apk                      
@@ -81,6 +82,8 @@ libunistring            1.4.1-r0          apk
 linux-pam               1.7.1-r2          apk                      
 liteFirewallW           UNKNOWN           binary                   
 markdown                3.10.2            python                   
+markdown-it-py          4.0.0             python                   
+mdurl                   0.1.2             python                   
 more-itertools          10.8.0            python  (+1 duplicate)   
 mpdecimal               4.0.1-r0          apk                      
 musl                    1.2.5-r21         apk                      
@@ -104,6 +107,7 @@ procps-ng               4.0.5-r0          apk
 puremagic               2.1.1             python                   
 pyc                     3.12.12-r0        apk                      
 pycparser               3.0               python                   
+pygments                2.20.0            python                   
 pyjwt                   2.12.1            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
@@ -117,17 +121,21 @@ readline                8.3.1-r0          apk
 rebulk                  3.2.0             python                   
 requests                2.33.0            python                   
 requests-oauthlib       2.0.0             python                   
+rich                    14.3.3            python                   
 sabctools               9.4.0             python                   
 scanelf                 1.3.8-r2          apk                      
 setuptools              82.0.1            python                   
 sgmllib3k               1.0.0             python                   
 shadow                  4.18.0-r0         apk                      
+shellingham             1.5.4             python                   
 six                     1.17.0            python                   
 skalibs-libs            2.14.4.0-r0       apk                      
 sqlite-libs             3.51.2-r0         apk                      
 ssl_client              1.37.0-r30        apk                      
 tempora                 5.8.1             python                   
 tomli                   2.4.0             python                   
+typer                   0.24.1            python                   
+typer-slim              0.24.0            python                   
 tzdata                  2026a-r0          apk                      
 ujson                   5.12.0            python                   
 urllib3                 2.6.3             python                   
