@@ -32,13 +32,13 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
 cli-arm64               UNKNOWN           binary                   
-click                   8.3.1             python                   
+click                   8.3.2             python                   
 configobj               5.0.9             python                   
 coreutils               9.8-r1            apk                      
 coreutils-env           9.8-r1            apk                      
 coreutils-fmt           9.8-r1            apk                      
 coreutils-sha512sum     9.8-r1            apk                      
-cryptography            46.0.6            python                   
+cryptography            46.0.7            python                   
 ct3                     3.4.0.post5       python                   
 curl                    8.17.0-r1         apk                      
 feedparser              6.0.12            python                   
