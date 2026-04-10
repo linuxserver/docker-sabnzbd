@@ -25,7 +25,7 @@ ca-certificates-bundle  20251003-r0       apk
 catatonit               0.2.1-r0          apk                      
 certifi                 2026.2.25         python                   
 cffi                    2.0.0             python                   
-charset-normalizer      3.4.6             python                   
+charset-normalizer      3.4.7             python                   
 cheroot                 11.1.2            python                   
 cherrypy                18.10.0           python                   
 cli                     UNKNOWN           binary                   
@@ -63,7 +63,7 @@ libapk                  3.0.5-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.5-r0          apk                      
+libcrypto3              3.5.6-r0          apk                      
 libcurl                 8.17.0-r1         apk                      
 libexpat                2.7.5-r0          apk                      
 libffi                  3.5.2-r0          apk                      
@@ -75,15 +75,16 @@ libncursesw             6.5_p20251123-r0  apk
 libpanelw               6.5_p20251123-r0  apk                      
 libproc2                4.0.5-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.5.5-r0          apk                      
+libssl3                 3.5.6-r0          apk                      
 libstdc++               15.2.0-r2         apk                      
 libunistring            1.4.1-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
 liteFirewallW           UNKNOWN           binary                   
 markdown                3.10.2            python                   
-more-itertools          10.8.0            python  (+1 duplicate)   
+more-itertools          10.8.0            python                   
+more-itertools          11.0.1            python                   
 mpdecimal               4.0.1-r0          apk                      
-musl                    1.2.5-r21         apk                      
+musl                    1.2.5-r22         apk                      
 musl-utils              1.2.5-r21         apk                      
 ncurses-terminfo-base   6.5_p20251123-r0  apk                      
 netcat-openbsd          1.234.1-r0        apk                      
@@ -93,7 +94,7 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.11.7            python                   
+orjson                  3.11.8            python                   
 packaging               26.0              python  (+1 duplicate)   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
@@ -115,7 +116,7 @@ pyyaml                  6.0.3             python
 rarfile                 4.2               python                   
 readline                8.3.1-r0          apk                      
 rebulk                  3.2.0             python                   
-requests                2.33.0            python                   
+requests                2.33.1            python                   
 requests-oauthlib       2.0.0             python                   
 sabctools               9.4.0             python                   
 scanelf                 1.3.8-r2          apk                      
