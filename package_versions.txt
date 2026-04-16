@@ -95,7 +95,8 @@ nsProcess               UNKNOWN           binary
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
 orjson                  3.11.8            python                   
-packaging               26.0              python  (+1 duplicate)   
+packaging               26.0              python                   
+packaging               26.1              python                   
 paho-mqtt               1.6.1             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
 pip                     26.0.1            python                   
