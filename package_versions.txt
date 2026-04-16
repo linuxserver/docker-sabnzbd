@@ -62,7 +62,7 @@ libapk                  3.0.5-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.5-r0          apk                      
+libcrypto3              3.5.6-r0          apk                      
 libcurl                 8.17.0-r1         apk                      
 libexpat                2.7.5-r0          apk                      
 libffi                  3.5.2-r0          apk                      
@@ -74,15 +74,15 @@ libncursesw             6.5_p20251123-r0  apk
 libpanelw               6.5_p20251123-r0  apk                      
 libproc2                4.0.5-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.5.5-r0          apk                      
+libssl3                 3.5.6-r0          apk                      
 libstdc++               15.2.0-r2         apk                      
 libunistring            1.4.1-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
 markdown                3.9               python                   
 more-itertools          10.8.0            python  (+1 duplicate)   
 mpdecimal               4.0.1-r0          apk                      
-musl                    1.2.5-r21         apk                      
-musl-utils              1.2.5-r21         apk                      
+musl                    1.2.5-r23         apk                      
+musl-utils              1.2.5-r23         apk                      
 ncurses-terminfo-base   6.5_p20251123-r0  apk                      
 netcat-openbsd          1.234.1-r0        apk                      
 nghttp2-libs            1.68.0-r0         apk                      
@@ -91,21 +91,22 @@ notify2                 0.3.1             python
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
 orjson                  3.11.3            python                   
-packaging               26.0              python  (+1 duplicate)   
+packaging               26.0              python                   
+packaging               26.1              python                   
 paho-mqtt               1.6.1             python                   
 pip                     26.0.1            python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.5-r0          apk                      
 puremagic               1.30              python                   
-pyc                     3.12.12-r0        apk                      
+pyc                     3.12.13-r0        apk                      
 pycparser               2.23              python                   
 pyjwt                   2.10.1            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
-python3                 3.12.12-r0        apk                      
-python3-pyc             3.12.12-r0        apk                      
-python3-pycache-pyc0    3.12.12-r0        apk                      
+python3                 3.12.13-r0        apk                      
+python3-pyc             3.12.13-r0        apk                      
+python3-pycache-pyc0    3.12.13-r0        apk                      
 pytz                    2025.2            python                   
 pyyaml                  6.0.3             python                   
 rarfile                 4.2               python                   
