@@ -1,9 +1,9 @@
 NAME                    VERSION           TYPE                    
-7-Zip                   26.00             binary                   
+7-Zip                   26.01             binary                   
 7zip                    25.01-r0          apk                      
 NSIS StdUtils plug-in   1.1.4.0           binary                   
 Simple Launcher         1.1.0.14          binary  (+5 duplicates)  
-WinRAR                  7.20.0            binary                   
+WinRAR                  7.21.0            binary                   
 acl-libs                2.3.2-r1          apk                      
 alpine-baselayout       3.7.2-r0          apk                      
 alpine-baselayout-data  3.7.2-r0          apk                      
