@@ -1,16 +1,16 @@
 NAME                    VERSION           TYPE                    
-7-Zip                   26.00             binary                   
+7-Zip                   26.01             binary                   
 7zip                    25.01-r0          apk                      
 NSIS StdUtils plug-in   1.1.4.0           binary                   
 Simple Launcher         1.1.0.14          binary  (+5 duplicates)  
-WinRAR                  7.20.0            binary                   
+WinRAR                  7.21.0            binary                   
 acl-libs                2.3.2-r1          apk                      
 alpine-baselayout       3.7.2-r0          apk                      
 alpine-baselayout-data  3.7.2-r0          apk                      
 alpine-keys             2.6-r0            apk                      
 alpine-release          3.23.4-r0         apk                      
 apk-tools               3.0.6-r0          apk                      
-apprise                 1.9.9             python                   
+apprise                 1.10.0            python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
@@ -23,7 +23,7 @@ c-ares                  1.34.6-r0         apk
 ca-certificates         20260413-r0       apk                      
 ca-certificates-bundle  20260413-r0       apk                      
 catatonit               0.2.1-r0          apk                      
-certifi                 2026.2.25         python                   
+certifi                 2026.4.22         python                   
 cffi                    2.0.0             python                   
 charset-normalizer      3.4.7             python                   
 cheroot                 11.1.2            python                   
@@ -49,7 +49,7 @@ gui                     UNKNOWN           binary
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
-idna                    3.11              python                   
+idna                    3.13              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-classes          3.4.0             python                   
 jaraco-collections      5.0.0             python                   
