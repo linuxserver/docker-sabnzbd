@@ -32,7 +32,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
 cli-arm64               UNKNOWN           binary                   
-click                   8.3.3             python                   
+click                   8.4.0             python                   
 configobj               5.0.9             python                   
 coreutils               9.8-r1            apk                      
 coreutils-env           9.8-r1            apk                      
@@ -111,7 +111,7 @@ python-dateutil         2.9.0.post0       python
 python3                 3.12.13-r0        apk                      
 python3-pyc             3.12.13-r0        apk                      
 python3-pycache-pyc0    3.12.13-r0        apk                      
-pytz                    2026.1.post1      python                   
+pytz                    2026.2            python                   
 pyyaml                  6.0.3             python                   
 rarfile                 4.2               python                   
 readline                8.3.1-r0          apk                      
