@@ -49,7 +49,7 @@ gui                     UNKNOWN           binary
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
-idna                    3.13              python                   
+idna                    3.14              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-classes          3.4.0             python                   
 jaraco-collections      5.0.0             python                   
@@ -93,7 +93,7 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                3.3.1             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.11.8            python                   
+orjson                  3.11.9            python                   
 packaging               26.0              python                   
 packaging               26.2              python                   
 paho-mqtt               1.6.1             python                   
@@ -116,7 +116,7 @@ pyyaml                  6.0.3             python
 rarfile                 4.2               python                   
 readline                8.3.1-r0          apk                      
 rebulk                  3.2.0             python                   
-requests                2.33.1            python                   
+requests                2.34.0            python                   
 requests-oauthlib       2.0.0             python                   
 sabctools               9.4.0             python                   
 scanelf                 1.3.8-r2          apk                      
@@ -131,7 +131,7 @@ tempora                 5.8.1             python
 tomli                   2.4.0             python                   
 tzdata                  2026b-r0          apk                      
 ujson                   5.12.1            python                   
-urllib3                 2.6.3             python                   
+urllib3                 2.7.0             python                   
 utmps-libs              0.1.3.1-r0        apk                      
 wheel                   0.46.3            python                   
 wheel                   0.47.0            python                   
