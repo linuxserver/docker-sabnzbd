@@ -92,7 +92,7 @@ orjson                  3.11.8            python
 packaging               26.0              python                   
 packaging               26.2              python                   
 paho-mqtt               1.6.1             python                   
-pip                     26.1.1            python                   
+pip                     26.1.2            python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.5-r0          apk                      
