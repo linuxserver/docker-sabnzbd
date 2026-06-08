@@ -49,7 +49,7 @@ gui                     UNKNOWN           binary
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
-idna                    3.15              python                   
+idna                    3.16              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-classes          3.4.0             python                   
 jaraco-collections      5.0.0             python                   
@@ -83,7 +83,7 @@ linux-pam               1.7.1-r2          apk
 liteFirewallW           UNKNOWN           binary                   
 markdown                3.10.2            python                   
 more-itertools          10.8.0            python                   
-more-itertools          11.0.2            python                   
+more-itertools          11.1.0            python                   
 mpdecimal               4.0.1-r0          apk                      
 musl                    1.2.5-r23         apk                      
 musl-utils              1.2.5-r23         apk                      
@@ -106,7 +106,7 @@ procps-ng               4.0.5-r0          apk
 puremagic               2.2.0             python                   
 pyc                     3.12.13-r0        apk                      
 pycparser               3.0               python                   
-pyjwt                   2.12.1            python                   
+pyjwt                   2.13.0            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
 python3                 3.12.13-r0        apk                      
