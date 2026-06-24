@@ -32,7 +32,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
 cli-arm64               UNKNOWN           binary                   
-click                   8.4.1             python                   
+click                   8.4.2             python                   
 configobj               5.0.9             python                   
 coreutils               9.8-r1            apk                      
 coreutils-env           9.8-r1            apk                      
@@ -119,7 +119,7 @@ readline                8.3.1-r0          apk
 rebulk                  3.2.0             python                   
 requests                2.34.2            python                   
 requests-oauthlib       2.0.0             python                   
-sabctools               9.4.0             python                   
+sabctools               9.5.0             python                   
 scanelf                 1.3.8-r2          apk                      
 setuptools              82.0.1            python                   
 sgmllib3k               1.0.0             python                   
