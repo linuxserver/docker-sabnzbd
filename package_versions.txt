@@ -49,6 +49,7 @@ gui                     UNKNOWN           binary
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
+hachoir                 3.3.0             python                   
 idna                    3.18              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-classes          3.4.0             python                   
