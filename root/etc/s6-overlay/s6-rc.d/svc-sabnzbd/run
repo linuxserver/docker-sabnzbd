@@ -4,7 +4,7 @@
 FAMILY=::
 
 if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
-    if [[ "$HAS_IPV6" = "false" ]]; then
+    if ! test -f /proc/net/if_inet6; then
         FAMILY=0.0.0.0
         sed '/ip6-/d' /etc/hosts > /etc/hosts.new
         cat /etc/hosts.new > /etc/hosts
