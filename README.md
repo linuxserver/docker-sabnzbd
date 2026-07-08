@@ -316,6 +316,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **04.07.26:** - Rebase to Alpine 3.24
 * **26.12.25:** - Rebase to Alpine 3.23.
 * **30.05.25:** - Rebase to Alpine 3.22. Add experimental RISCV build.
 * **15.12.24:** - Rebase to Alpine 3.21.
