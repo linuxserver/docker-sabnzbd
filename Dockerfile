@@ -2,7 +2,7 @@
 
 FROM ghcr.io/linuxserver/unrar:latest AS unrar
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.23
+FROM ghcr.io/linuxserver/baseimage-alpine:3.24
 
 # set version label
 ARG BUILD_DATE
@@ -44,8 +44,8 @@ RUN \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
     pip \
-    wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.23/ -r requirements.txt && \
+    setuptools && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.24/ -r requirements.txt && \
   echo "**** build sab translations ****" && \
   python3 tools/make_mo.py && \
   echo "**** install par2cmdline-turbo from source ****" && \
