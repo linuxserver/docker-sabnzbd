@@ -1,9 +1,9 @@
 NAME                    VERSION           TYPE                    
-7-Zip                   26.01             binary                   
+7-Zip                   26.02             binary                   
 7zip                    26.01-r0          apk                      
 NSIS StdUtils plug-in   1.1.4.0           binary                   
 Simple Launcher         1.1.0.14          binary  (+5 duplicates)  
-WinRAR                  7.22.0            binary                   
+WinRAR                  7.23.0            binary                   
 acl-libs                2.3.2-r1          apk                      
 alpine-baselayout       3.7.2-r1          apk                      
 alpine-baselayout-data  3.7.2-r1          apk                      
@@ -23,7 +23,7 @@ c-ares                  1.34.6-r0         apk
 ca-certificates         20260611-r0       apk                      
 ca-certificates-bundle  20260611-r0       apk                      
 catatonit               0.2.1-r0          apk                      
-certifi                 2026.5.20         python                   
+certifi                 2026.6.17         python                   
 cffi                    2.0.0             python                   
 charset-normalizer      3.4.7             python                   
 cheroot                 11.1.2            python                   
@@ -49,6 +49,7 @@ gui                     UNKNOWN           binary
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
+hachoir                 3.3.0             python                   
 idna                    3.18              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-classes          3.4.0             python                   
@@ -113,12 +114,12 @@ python3-pyc             3.14.5-r0         apk
 python3-pycache-pyc0    3.14.5-r0         apk                      
 pytz                    2026.2            python                   
 pyyaml                  6.0.3             python                   
-rarfile                 4.2               python                   
+rarfile                 4.3               python                   
 readline                8.3.3-r1          apk                      
 rebulk                  3.2.0             python                   
 requests                2.34.2            python                   
 requests-oauthlib       2.0.0             python                   
-sabctools               9.5.0             python                   
+sabctools               9.6.1             python                   
 scanelf                 1.3.9-r1          apk                      
 setuptools              83.0.0            python                   
 sgmllib3k               1.0.0             python                   
