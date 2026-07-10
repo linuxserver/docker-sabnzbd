@@ -114,7 +114,7 @@ python3-pyc             3.14.5-r0         apk
 python3-pycache-pyc0    3.14.5-r0         apk                      
 pytz                    2026.2            python                   
 pyyaml                  6.0.3             python                   
-rarfile                 4.2               python                   
+rarfile                 4.3               python                   
 readline                8.3.3-r1          apk                      
 rebulk                  3.2.0             python                   
 requests                2.34.2            python                   
