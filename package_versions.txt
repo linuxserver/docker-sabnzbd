@@ -10,7 +10,7 @@ alpine-baselayout-data  3.7.2-r1          apk
 alpine-keys             2.6-r0            apk                      
 alpine-release          3.24.1-r0         apk                      
 apk-tools               3.0.6-r0          apk                      
-apprise                 1.11.0            python                   
+apprise                 1.12.0            python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
@@ -44,7 +44,7 @@ curl                    8.21.0-r0         apk
 feedparser              6.0.12            python                   
 findutils               4.10.0-r1         apk                      
 gdbm                    1.26-r0           apk                      
-guessit                 3.8.0             python                   
+guessit                 4.1.0             python                   
 gui                     UNKNOWN           binary                   
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
@@ -116,7 +116,7 @@ pytz                    2026.2            python
 pyyaml                  6.0.3             python                   
 rarfile                 4.3               python                   
 readline                8.3.3-r1          apk                      
-rebulk                  4.2.2             python                   
+rebulk                  6.0.1             python                   
 requests                2.34.2            python                   
 requests-oauthlib       2.0.0             python                   
 sabctools               9.6.2             python                   
