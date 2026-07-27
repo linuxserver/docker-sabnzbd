@@ -24,8 +24,8 @@ ca-certificates         20260611-r0       apk
 ca-certificates-bundle  20260611-r0       apk                      
 catatonit               0.2.1-r0          apk                      
 certifi                 2026.6.17         python                   
-cffi                    2.0.0             python                   
-charset-normalizer      3.4.7             python                   
+cffi                    2.1.0             python                   
+charset-normalizer      3.4.9             python                   
 cheroot                 11.1.2            python                   
 cherrypy                18.10.0           python                   
 cli                     UNKNOWN           binary                   
