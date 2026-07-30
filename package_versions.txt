@@ -99,7 +99,7 @@ orjson                  3.11.9            python
 packaging               26.0              python                   
 paho-mqtt               2.1.0             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
-pip                     26.1.2            python                   
+pip                     26.2              python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.6-r0          apk                      
