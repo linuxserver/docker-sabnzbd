@@ -57,7 +57,7 @@ jaraco-collections      5.0.0             python
 jaraco-context          4.3.0             python                   
 jaraco-context          6.1.0             python                   
 jaraco-functools        4.4.0             python                   
-jaraco-functools        4.5.0             python                   
+jaraco-functools        4.6.0             python                   
 jaraco-text             3.8.1             python                   
 jaraco-text             4.0.0             python                   
 jq                      1.8.1-r0          apk                      
