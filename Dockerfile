@@ -49,7 +49,7 @@ RUN \
   python3 tools/make_mo.py && \
   echo "**** install par2cmdline-turbo from source ****" && \
   PAR2_VERSION=$(curl -s https://api.github.com/repos/animetosho/par2cmdline-turbo/releases/latest \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   mkdir /tmp/par2cmdline && \
   curl -o \
     /tmp/par2cmdline.tar.gz -L \
