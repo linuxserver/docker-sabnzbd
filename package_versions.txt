@@ -37,7 +37,7 @@ coreutils               9.11-r0           apk
 coreutils-env           9.11-r0           apk                      
 coreutils-fmt           9.11-r0           apk                      
 coreutils-sha512sum     9.11-r0           apk                      
-cryptography            50.0.0            python                   
+cryptography            50.0.1            python                   
 ct3                     3.4.0.post5       python                   
 curl                    8.21.0-r0         apk                      
 feedparser              6.0.14            python                   
@@ -63,7 +63,7 @@ libapk                  3.0.7-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.7-r0          apk                      
+libcrypto3              3.5.8-r0          apk                      
 libcurl                 8.21.0-r0         apk                      
 libexpat                2.8.3-r0          apk                      
 libffi                  3.5.2-r1          apk                      
@@ -75,7 +75,7 @@ libncursesw             6.6_p20260516-r0  apk
 libpanelw               6.6_p20260516-r0  apk                      
 libproc2                4.0.6-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.5.7-r0          apk                      
+libssl3                 3.5.8-r0          apk                      
 libstdc++               15.2.0-r5         apk                      
 libunistring            1.4.2-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
