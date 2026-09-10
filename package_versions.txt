@@ -135,7 +135,7 @@ ujson                   5.13.0            python
 urllib3                 2.7.0             python                   
 utmps-libs              0.1.3.3-r0        apk                      
 wheel                   0.46.3            python                   
-xz-libs                 5.8.3-r0          apk                      
+xz-libs                 5.8.4-r0          apk                      
 zc-lockfile             4.0               python                   
 zipp                    3.23.0            python                   
 zlib                    1.3.2-r0          apk                      
