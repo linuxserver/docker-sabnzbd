@@ -11,7 +11,7 @@ alpine-keys             2.6-r0            apk
 alpine-release          3.24.1-r0         apk                      
 anyio                   4.14.2            python                   
 apk-tools               3.0.8-r0          apk                      
-apprise                 1.13.0            python                   
+apprise                 1.13.1            python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
@@ -31,7 +31,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
 cli-arm64               UNKNOWN           binary                   
-click                   8.4.2             python                   
+click                   8.5.0             python                   
 configobj               5.0.9             python                   
 coreutils               9.11-r0           apk                      
 coreutils-env           9.11-r0           apk                      
