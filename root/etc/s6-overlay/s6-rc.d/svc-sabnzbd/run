@@ -8,6 +8,11 @@ FAMILY=::
 # value back through --server is a no-op, so this cannot lock anyone out of
 # the web UI, which is the reason --server is here at all.
 #
+# :: is treated as unset too. It is this script's own default and SABnzbd
+# persists --server into the ini, so almost every existing config holds it.
+# Respecting it would bypass the fallback to 0.0.0.0 below on a host without
+# IPv6, and SABnzbd would fail to bind.
+#
 # Section tracking, because the NNTP server entries under [servers] carry
 # their own unindented `host = ...` line.
 CONFIGURED_HOST=$(awk '/^\[/{s=$0} s=="[misc]" && /^host[[:space:]]*=/{sub(/^host[[:space:]]*=[[:space:]]*/,""); print; exit}' /config/sabnzbd.ini 2>/dev/null)
@@ -21,7 +26,7 @@ if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
     fi
 
     case ${CONFIGURED_HOST} in
-        "" | 127.0.0.1 | ::1 | localhost) ;;
+        "" | :: | 127.0.0.1 | ::1 | localhost) ;;
         *) FAMILY=${CONFIGURED_HOST} ;;
     esac
 
@@ -31,7 +36,7 @@ if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
             --config-file /config --server "$FAMILY"
 else
     case ${CONFIGURED_HOST} in
-        "" | 127.0.0.1 | ::1 | localhost) ;;
+        "" | :: | 127.0.0.1 | ::1 | localhost) ;;
         *) FAMILY=${CONFIGURED_HOST} ;;
     esac
 
