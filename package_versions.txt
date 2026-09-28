@@ -50,7 +50,7 @@ gui-32                  UNKNOWN           binary
 gui-64                  UNKNOWN           binary                   
 gui-arm64               UNKNOWN           binary                   
 h11                     0.16.0            python                   
-hachoir                 3.3.0             python                   
+hachoir                 3.4.0             python                   
 httptools               0.8.0             python                   
 idna                    3.19              python                   
 importlib-metadata      8.7.1             python                   
@@ -103,7 +103,7 @@ procps-ng               4.0.6-r0          apk
 puremagic               2.2.0             python                   
 pyc                     3.14.7-r1         apk                      
 pycparser               3.0               python                   
-pyjwt                   2.13.0            python                   
+pyjwt                   2.14.0            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
 python-multipart        0.0.32            python                   
