@@ -11,7 +11,7 @@ alpine-keys             2.6-r0            apk
 alpine-release          3.24.2-r0         apk                      
 anyio                   4.15.1            python                   
 apk-tools               3.0.8-r0          apk                      
-apprise                 2.0.0             python                   
+apprise                 2.0.1             python                   
 autocommand             2.2.2             python                   
 babelfish               0.6.1             python                   
 backports-tarfile       1.2.0             python                   
@@ -26,7 +26,7 @@ ca-certificates-bundle  20260909-r0       apk
 catatonit               0.2.1-r0          apk                      
 certifi                 2026.7.22         python                   
 cffi                    2.1.1             python                   
-charset-normalizer      3.5.1             python                   
+charset-normalizer      3.5.2             python                   
 cli                     UNKNOWN           binary                   
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
@@ -65,7 +65,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.9-r0          apk                      
 libcurl                 8.22.0-r0         apk                      
-libexpat                2.8.5-r0          apk                      
+libexpat                2.9.0-r0          apk                      
 libffi                  3.5.2-r1          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -103,7 +103,7 @@ procps-ng               4.0.6-r0          apk
 puremagic               2.2.0             python                   
 pyc                     3.14.8-r0         apk                      
 pycparser               3.0               python                   
-pyjwt                   2.15.0            python                   
+pyjwt                   2.15.1            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
 python-multipart        0.0.32            python                   
