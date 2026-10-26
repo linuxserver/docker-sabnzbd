@@ -8,7 +8,7 @@ acl-libs                2.3.2-r1          apk
 alpine-baselayout       3.7.2-r1          apk                      
 alpine-baselayout-data  3.7.2-r1          apk                      
 alpine-keys             2.6-r0            apk                      
-alpine-release          3.24.2-r0         apk                      
+alpine-release          3.24.3-r0         apk                      
 anyio                   4.15.1            python                   
 apk-tools               3.0.8-r0          apk                      
 apprise                 2.0.1             python                   
@@ -17,7 +17,7 @@ babelfish               0.6.1             python
 backports-tarfile       1.2.0             python                   
 bash                    5.3.9-r1          apk                      
 blinker                 1.9.0             python                   
-brotli-libs             1.2.0-r1          apk                      
+brotli-libs             1.2.1-r0          apk                      
 busybox                 1.37.0-r31        apk                      
 busybox-binsh           1.37.0-r31        apk                      
 c-ares                  1.34.9-r0         apk                      
@@ -51,7 +51,7 @@ gui-64                  UNKNOWN           binary
 gui-arm64               UNKNOWN           binary                   
 h11                     0.16.0            python                   
 hachoir                 3.4.0             python                   
-httptools               0.8.0             python                   
+httptools               0.9.0             python                   
 idna                    3.20              python                   
 importlib-metadata      8.7.1             python                   
 itsdangerous            2.2.0             python                   
@@ -85,7 +85,7 @@ more-itertools          10.8.0            python
 more-itertools          11.1.0            python                   
 mpdecimal               4.0.1-r0          apk                      
 musl                    1.2.6-r3          apk                      
-musl-utils              1.2.6-r2          apk                      
+musl-utils              1.2.6-r3          apk                      
 ncurses-terminfo-base   6.6_p20260516-r0  apk                      
 netcat-openbsd          1.234.1-r0        apk                      
 nghttp2-libs            1.70.0-r0         apk                      
@@ -93,7 +93,7 @@ notify2                 0.3.1             python
 nsProcess               UNKNOWN           binary                   
 oauthlib                4.0.0             python                   
 oniguruma               6.9.10-r0         apk                      
-orjson                  3.12.0            python                   
+orjson                  3.13.0            python                   
 packaging               26.3              python                   
 paho-mqtt               2.1.0             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
@@ -102,7 +102,7 @@ platformdirs            4.4.0             python
 procps-ng               4.0.6-r0          apk                      
 puremagic               2.2.0             python                   
 pyc                     3.14.8-r0         apk                      
-pycparser               3.0               python                   
+pycparser               3.11              python                   
 pyjwt                   2.15.1            python                   
 pysocks                 1.7.1             python                   
 python-dateutil         2.9.0.post0       python                   
@@ -116,7 +116,7 @@ readline                8.3.3-r1          apk
 rebulk                  6.0.1             python                   
 requests                2.34.2            python                   
 requests-oauthlib       2.0.0             python                   
-sabctools               9.7.1             python                   
+sabctools               9.7.2             python                   
 scanelf                 1.3.9-r1          apk                      
 setuptools              84.2.1            python                   
 shadow                  4.18.0-r1         apk                      
