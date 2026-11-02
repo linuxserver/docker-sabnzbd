@@ -39,7 +39,7 @@ coreutils-fmt           9.11-r0           apk
 coreutils-sha512sum     9.11-r0           apk                      
 cryptography            50.0.2            python                   
 ct3                     3.4.0.post5       python                   
-curl                    8.22.0-r0         apk                      
+curl                    8.23.0-r0         apk                      
 feedparser              6.0.14            python                   
 feedparser-sgmllib      2.1.0             python                   
 findutils               4.10.0-r1         apk                      
@@ -64,8 +64,8 @@ libattr                 2.5.2-r2          apk
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.9-r0          apk                      
-libcurl                 8.22.0-r0         apk                      
-libexpat                2.9.0-r0          apk                      
+libcurl                 8.23.0-r0         apk                      
+libexpat                2.10.0-r0         apk                      
 libffi                  3.5.2-r1          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -80,9 +80,9 @@ libstdc++               15.2.0-r5         apk
 libunistring            1.4.2-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
 liteFirewallW           UNKNOWN           binary                   
-markdown                3.11              python                   
+markdown                3.11.1            python                   
 more-itertools          10.8.0            python                   
-more-itertools          11.1.0            python                   
+more-itertools          11.2.1            python                   
 mpdecimal               4.0.1-r0          apk                      
 musl                    1.2.6-r3          apk                      
 musl-utils              1.2.6-r3          apk                      
@@ -125,7 +125,7 @@ skalibs-libs            2.15.0.0-r0       apk
 sniffio                 1.3.1             python                   
 sqlite-libs             3.53.4-r0         apk                      
 ssl_client              1.37.0-r31        apk                      
-starlette               1.7.0             python                   
+starlette               1.9.0             python                   
 tomli                   2.4.0             python                   
 typing-extensions       4.16.0            python                   
 tzdata                  2026e-r0          apk                      
