@@ -97,7 +97,7 @@ orjson                  3.13.0            python
 packaging               26.3              python                   
 paho-mqtt               2.1.0             python                   
 par2                    UNKNOWN           binary  (+1 duplicate)   
-pip                     26.2.2            python                   
+pip                     26.3              python                   
 platformdirs            4.4.0             python                   
 procps-ng               4.0.6-r0          apk                      
 puremagic               2.2.0             python                   
