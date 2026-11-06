@@ -1,11 +1,31 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
-FAMILY=::
+if [[ -f "/config/sabnzbd.ini" ]]; then
+  CONFIGURED_HOST=$(grep -Poz '(?s)\[misc\].*?\nhost\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" ')
+fi
+
+case ${CONFIGURED_HOST} in
+    "" | :: | 127.0.0.1 | ::1 | localhost)
+      if ip -6 addr show | grep -q 'inet6'; then
+          FAMILY=::
+      else
+          FAMILY=0.0.0.0
+      fi
+    ;;
+    *)
+      if ip addr | grep -qP "inet6? ${CONFIGURED_HOST}" 2>/dev/null; then
+        FAMILY=${CONFIGURED_HOST}
+      else
+        echo "ERROR: Bind address is configured as ${CONFIGURED_HOST} in sabnzdb.ini but"
+        echo "       no such interface exists in the container. Cannot start Sabnzbd."
+        sleep infinity
+      fi
+    ;;
+esac
 
 if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
-    if ! test -f /proc/net/if_inet6; then
-        FAMILY=0.0.0.0
+    if ! ip -6 addr show | grep -q 'inet6'; then
         sed '/ip6-/d' /etc/hosts > /etc/hosts.new
         cat /etc/hosts.new > /etc/hosts
         rm /etc/hosts.new
@@ -14,10 +34,10 @@ if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
     exec \
         s6-notifyoncheck -d -n 300 -w 1000 \
             s6-setuidgid abc python3 /app/sabnzbd/SABnzbd.py \
-            --config-file /config --server "$FAMILY"
+            --config-file /config --server "${FAMILY}"
 else
     exec \
         s6-notifyoncheck -d -n 300 -w 1000 \
             python3 /app/sabnzbd/SABnzbd.py \
-            --config-file /config --server "$FAMILY"
+            --config-file /config --server "${FAMILY}"
 fi
