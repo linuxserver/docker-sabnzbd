@@ -2,9 +2,12 @@
 
 if [[ -f "/config/sabnzbd.ini" ]]; then
     CONFIGURED_HOST=$(grep -Poz '(?s)\[misc\].*?\nhost\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" ')
+    if [[ ${CONFIGURED_HOST} =~ \"\"|::|127.0.0.1|::1 ]]; then
+      CONFIGURED_HOST='localhost'
+    fi
     WEBUI_PORT=$(grep -Poz '(?s)\[misc\].*?\port\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" ')
     HTTPS_ENABLED=$(grep -Poz '(?s)\[misc\].*?\nenable_https\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" ')
-    if grep -Poz '(?s)\[misc\].*?\nhttps_port\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" '; then
+    if grep -qPoz '(?s)\[misc\].*?\nhttps_port\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null; then
         WEBUI_HTTPS_PORT=${WEBUI_PORT}
     else
         WEBUI_HTTPS_PORT=$(grep -Poz '(?s)\[misc\].*?\nehttps_port\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" ')
