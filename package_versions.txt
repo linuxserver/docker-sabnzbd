@@ -44,6 +44,7 @@ feedparser              6.0.14            python
 feedparser-sgmllib      2.1.0             python                   
 findutils               4.10.0-r1         apk                      
 gdbm                    1.26-r0           apk                      
+grep                    3.12-r0           apk                      
 guessit                 4.4.0             python                   
 gui                     UNKNOWN           binary                   
 gui-32                  UNKNOWN           binary                   
@@ -96,6 +97,7 @@ oniguruma               6.9.10-r0         apk
 orjson                  3.13.0            python                   
 packaging               26.3              python                   
 paho-mqtt               2.1.0             python                   
+pcre2                   10.49-r0          apk                      
 pip                     26.3              python                   
 platformdirs            4.4.0             python                   
 procps-ng               4.0.6-r0          apk                      
