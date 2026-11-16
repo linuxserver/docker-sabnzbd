@@ -2,7 +2,7 @@
 # shellcheck shell=bash
 
 if [[ -f "/config/sabnzbd.ini" ]]; then
-  CONFIGURED_HOST=$(grep -Poz '(?s)\[misc\].*?\nhost\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0" ')
+  CONFIGURED_HOST=$(grep -Poz '(?s)\[misc\].*?\nhost\s*=\K(\N+)' /config/sabnzbd.ini 2>/dev/null | tr -d '\0\r" ')
 fi
 
 case ${CONFIGURED_HOST} in
