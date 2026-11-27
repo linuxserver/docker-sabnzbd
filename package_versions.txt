@@ -67,7 +67,7 @@ libbz2                  1.0.8-r6          apk
 libcrypto3              3.5.9-r1          apk                      
 libcurl                 8.23.0-r0         apk                      
 libexpat                2.11.0-r0         apk                      
-libffi                  3.8.1-r0          apk                      
+libffi                  3.8.2-r0          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
 libintl                 1.0-r0            apk                      
